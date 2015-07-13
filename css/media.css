@@ -1,0 +1,887 @@
+
+/*@media only screen and (min-device-width : 760px) and (max-device-width : 1250px) and (orientation : portrait) */
+
+@media (max-width: 1450px) {
+
+    .main-slaider .bx-controls-direction{
+        width: 1020px;
+    }
+
+    .slide-content{
+        width: 1020px;
+    }
+
+    .slide-content a.button{
+        background-color: rgba(255, 255, 255, 0.09);
+    }
+
+    .slide-item-info{
+        left: -150px;
+        padding: 66px 30px 66px 30px;
+    }
+
+    .slide3 .slider-item-piece{
+        padding-top: 50px;
+    }
+
+    .slide3 .item-piece:last-child{
+        display: none;
+    }
+
+    #slider-type-frame{
+        background-position-x: -113px;
+    }
+
+    .slider-products-content{
+        width: 1020px;
+    }
+
+    .slider-products-content .slider-products li{
+        margin: 0px 25px 0 0;
+    }
+
+
+    .spa-promo{
+        width: 480px;
+        height: 447px;
+    }
+
+    .promo-banner{
+        width: 480px;
+        height: 447px;
+    }
+
+    .promo-banner:before{
+        left: 220px;
+    }
+
+    .bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager{
+        bottom: -40px;
+    }
+
+    .promo-slider .promo-slide-info{
+        padding: 10px 0;
+    }
+
+    .promo-banner .promo-banner-menu{
+        margin: 0px 56px 10px 61px;
+    }
+
+    .city{
+        width: 313px;
+        margin-right: 12px;
+    }
+
+        /*------------------------------------------------------------------------------------------------*/
+    .container{
+        width: 1020px;
+    }
+
+    .main-catalog-type-item{
+        padding: 0 17px;
+    }
+
+    .madein{
+        margin-left: 350px;
+    }
+
+    footer{
+        height: 220px;
+    }
+
+}
+
+
+
+/*@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) */
+
+@media (max-width: 480px) {
+
+    body{
+        background-color: #ffffff;
+    }
+
+    main {
+        overflow: hidden;
+    }
+
+    #upBtn {
+        display: none;
+    }
+
+    #parallax-bg {
+        width: 100%;
+        margin: 0;
+        left: 0;
+        overflow: hidden;
+    }
+
+    .container{
+     width: 290px;
+     margin: 0 auto;
+    }
+
+    header{
+        width: 100%;
+        height: 95px;
+        position: absolute;
+        background: none;
+    }
+
+    #wrapper {
+
+    }
+
+    .head-container{
+        height: 100%;
+    }
+
+
+    /* Becomes header container in mobile */
+    .head-container .logo{
+        width: 100%;
+        height: 95px;
+        background-color: white;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+        margin: 0;
+        position: relative;
+        z-index: 10;
+    }
+
+    /* Becomes standalone log in mobile */
+    .head-container .logo a{
+        width: 83px;
+        height: 64px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #mobile-menu-switch {
+        display: block;
+    }
+
+    .head-container .logo img{
+        width: 83px;
+        height: 64px;
+        margin-top: 10px;
+    }
+
+    .menu li.active-menu {
+        width: auto;
+        background-color: transparent;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        box-shadow: none;
+    }
+
+    .menu > li.active-menu > a {
+        color: white;
+        font-weight: normal;
+        width: auto;
+    }
+
+    .menu > li.active-menu > a .menu-icon {
+        background-position-x: 0;
+    }
+
+    .menu > li.active-menu > a:hover {
+        background-color: rgba(255, 255, 255, 0.21);
+    }
+
+    header nav{
+        display: none;
+        background: #fbbacb url("../img/back-menu-mobile.png") 0 0 repeat-x;
+        min-height: 100%;
+        position: relative;
+        z-index: 5;
+        padding-bottom: 10px;
+    }
+
+    header nav .menu {
+        /*background: url("../img/back-menu-mobile.png") 0 0 repeat-x;*/
+    }
+
+    .menu{
+        margin: 0 0 20px 0;
+    }
+
+    .menu > li {
+        height: 90px;
+        text-align: left;
+    }
+
+    .menu > li > a {
+        height: 90px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.21);
+    }
+
+    .menu > li > a:last-child{
+        border-bottom: none;
+    }
+
+    .menu > li > a .menu-item{
+        width: 260px;
+
+        margin: 0 auto;
+    }
+
+    .menu > li > a .menu-icon{
+        display: inline-block;
+        vertical-align: middle;
+
+        position: relative;
+        top: 0;
+    }
+
+    .menu > li > a .menu-name{
+        display: inline-block;
+
+        position: relative;
+        top: 0;
+    }
+
+    .vk {
+        text-align: center;
+        color: rgba(255, 255, 255, 0.84);
+        padding: 10px;
+        width: 220px;
+        margin: 0 auto 25px auto;
+    }
+
+    .up{
+        display: none;
+    }
+
+    .hide-menu {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -100px;
+        left: 0;
+        z-index: 1;
+        background: url("../img/back-menu-mobile.png") 0 -100px repeat-x;
+        padding: 0px 20px 0px 10px;
+        margin-top: 95px;
+    }
+
+    .hide-menu h2, .hide-menu p {
+        display: none;
+    }
+
+    .hide-menu .catalog-type .catalog-type-item{
+        box-shadow: none;
+        min-height: 250px;
+    }
+
+    #catalog-back{
+        display: block;
+    }
+
+    .catalog-type{
+        margin: 30px 0 30px 30px;
+    }
+
+    .catalog-type-item{
+        margin: 0 auto;
+        width: 260px;
+        padding: 0;
+
+        margin-bottom: 20px;
+    }
+
+    .catalog-type-item:hover {
+        background-color: rgba(252, 251, 251, 0);
+    }
+
+    .catalog-type-item h3{
+        text-align: left;
+        padding-left: 5px;
+    }
+
+    .catalog-type-item a:hover{
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .catalog-type-item h3 > a {
+
+        font-size: 30px;
+        color: #fff;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(223, 222, 224, 0.25);
+    }
+
+    .catalog-type-item li > a {
+        font-family: "Athelas";
+        font-size: 19px;
+        font-weight: normal;
+
+        color: #fff;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(223, 222, 224, 0.25);
+    }
+
+
+    .catalog-type-item li::before {
+        width: 40px;
+        height: 40px;
+        background: url('../img/small-icon-white.png') 0 0 no-repeat;
+    }
+
+    .catalog-type-item .bottle-icon::before {
+        background-position-y: 0px;
+    }
+
+    .catalog-type-item .sauna-icon::before {
+        background-position-y: -40px;
+    }
+
+    .catalog-type-item .present-icon::before {
+        background-position-y: -80px;
+    }
+
+    .catalog-type-item .keramika-icon::before {
+        background-position-y: -120px;
+    }
+
+    main{
+        padding: 0;
+
+        margin-top: 95px;
+    }
+
+    .main-slaider {
+        margin-bottom: 30px;
+        height: 350px;
+        overflow: hidden;
+    }
+
+    .main-slaider li {
+        width: 100%;
+        height: 350px;
+    }
+
+    .main-slaider .slide1 {
+        background: url('../img/slaider1.jpg') no-repeat 0 0;
+        background-size: cover;
+    }
+
+    .main-slaider .slide2 {
+        background: url('../img/slaider2.jpg') no-repeat 0 0;
+        background-size: cover;
+    }
+
+    .main-slaider .slide3 {
+        display: none;
+    }
+
+    .main-slaider ul.bxslider > li {
+        background-position-x: 50%;
+    }
+
+    .main-slaider .bx-controls-direction {
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        top: -300px;
+    }
+
+
+    .main-slaider .bx-wrapper .bx-controls-direction a {
+        width: 28px;
+        height: 55px;
+        margin-top: 105px;
+    }
+
+    .main-slaider .bx-wrapper .bx-prev {
+        background: url('../img/controls-mobile.png') no-repeat 0 0;
+        left: 0;
+        z-index: 9998;
+    }
+
+    .main-slaider .bx-wrapper .bx-next {
+        background: url('../img/controls-mobile.png') no-repeat -28px 0;
+        right: 0;
+        z-index: 9998;
+    }
+
+    .main-slaider .slide2 .slide-content .slide-item-pic img {
+        height: auto;
+    }
+    .main-slaider .slide2 .slide-content .slide-item-pic {
+        overflow: hidden;
+        width: 100%;
+        height: 280px;
+        display: block;
+        float: none;
+    }
+    .main-slaider .slide2 .slide-content .slide-item-info {
+        top: 0;
+        margin: 0;
+        width: 100%;
+        background: none;
+        padding: 0;
+    }
+    .main-slaider .slide2 .slide-content .slide-item-info p.description,
+    .main-slaider .slide2 .slide-content .slide-item-info a.button {
+        display: none;
+    }
+
+
+    /* Главный слайдер СЛАЙД 1*/
+
+    .slide-content h2 {
+        font-size: 28px;
+
+    }
+
+    .slide-content p {
+       display: none;
+    }
+
+
+    .slide-content {
+        width: 80%;
+        margin: 0 auto;
+
+
+    }
+
+    .slide-item-info{
+        left: -4px;
+    }
+
+    .slide1 .slide-content {
+        margin: 100px auto 0 auto;
+    }
+
+
+
+    .scrollbar{
+        display: none;
+    }
+
+
+
+    .mobile-catalog-type{
+        display: block;
+    }
+
+    #mobile-mid-slider {
+        position: relative;
+        z-index: 2;
+    }
+
+    .mobile-catalog-type-item {
+
+        float: left;
+        vertical-align: top;
+        width: 265px;
+        height: 387px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+
+        margin-left: 20px;
+
+        position: relative;
+        z-index: 1;
+
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.36);
+    }
+
+    .mobile-catalog-type-item img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .mobile-catalog-type-item .mobile-catalog-item-info h3{
+        padding-top: 20px;
+        margin: 0;
+    }
+    .mobile-catalog-type-item .mobile-catalog-item-info{
+        z-index: 2;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.85);
+        transition: background-color 0.2s linear 0s;
+    }
+
+    .mobile-catalog-type-item:hover {
+        background-color: rgba(252, 251, 251, 0.52);
+    }
+
+    .mobile-catalog-type-item:last-child {
+        margin-right: 0;
+    }
+
+    .mobile-catalog-type-item h3 {
+        font-family: "Athelas";
+        font-size: 36px;
+        color: #856aab;
+        font-style: italic;
+        line-height: 28px;
+        text-align: center;
+        margin: 45px 0 15px 0;
+    }
+
+    .mobile-catalog-type-item h3 a {
+        border-bottom: 1px solid #dfdee0;
+        text-decoration: none;
+    }
+
+    .mobile-catalog-type-item p {
+        font-family: "Athelas";
+        font-size: 20px;
+        text-align: center;
+        line-height: 22px;
+    }
+
+    .mobile-catalog-type-item ul {
+        margin: 25px 10px 0 10px;
+        padding: 0;
+        list-style: none;
+    }
+
+    .mobile-catalog-type-item li {
+        font-family: "Athelas";
+        font-size: 18px;
+        color: #856aab;
+        padding: 10px 10px;
+    }
+
+    .mobile-catalog-type-item li a {
+        border-bottom: 1px solid #dfdee0;
+        text-decoration: none;
+    }
+
+    .mobile-catalog-type-item li::before {
+        content: '';
+        display: block;
+        float: left;
+        position: relative;
+        top: -10px;
+        left: -8px;
+        width: 40px;
+        height: 40px;
+        background: url('../img/small-icon.png') 0 0 no-repeat;
+        margin: 0 auto;
+    }
+
+    .mobile-catalog-type-item .bottle-icon::before {
+        background-position-y: 0px;
+    }
+
+    .mobile-catalog-type-item .sauna-icon::before {
+        background-position-y: -40px;
+    }
+
+    .mobile-catalog-type-item .present-icon::before {
+        background-position-y: -80px;
+    }
+
+    .mobile-catalog-type-item .keramika-icon::before {
+        background-position-y: -120px;
+    }
+
+    .mobile-catalog-type-items {
+        height: 430px;
+        z-index: 10;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .mobile-paparotnik{
+        background: url("../img/paparotnik.png") 0 0 no-repeat;
+        position: absolute;
+        width: 399px;
+        height: 268px;
+        z-index: 0;
+        top: -26px;
+        transform: rotate(-6deg) scale(0.7);
+    }
+
+
+
+    .promo-products-decorate{
+        display: none;
+    }
+
+    .myata{
+        top: -77px;
+        right: -90px;
+        z-index: 7;
+    }
+
+    .flower{
+        top: 252px;
+        left: -66px;
+        z-index: 3;
+    }
+
+    .promo{
+        margin-top: 40px;
+    }
+
+    .spa-promo {
+        height: 260px;
+        width: 290px;
+    }
+
+    .spa-promo-name{
+        margin: 82px auto 0 auto;
+    }
+
+    .promo-banner:before{
+        left: 126px;
+    }
+
+    .promo-banner {
+        height: 500px;
+        width: 290px;
+
+        margin-top: 55px;
+    }
+
+    .promo-banner .promo-banner-menu{
+        margin: 0 auto;
+    }
+
+    .promo-banner .promo-banner-menu li{
+        display: block;
+    }
+
+    .promo-banner .promo-banner-menu li:after{
+        display: none;
+    }
+
+    .promo-slider .promo-slide-info{
+        width: 260px;;
+    }
+
+        /* Карта */
+
+    .maps {
+        height: 1078px;
+        margin-top: 40px;
+        background: transparent url("../img/mobile-map.jpg") 0 0 no-repeat;
+        background-size: cover;
+    }
+
+    .map .container{
+        width: 290px;
+    }
+
+    .maps-content {
+        margin-top: 50px;
+    }
+
+    .map-title {
+        margin-bottom: 50px;
+        line-height: 35px;
+    }
+
+    .city:hover{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    .other-city:hover{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    .city {
+        width: 290px;
+        margin-right: 0;
+
+        margin-bottom: 30px;
+    }
+
+
+    .city-info {
+        margin: 10px auto 0 auto;
+        width: 260px;
+    }
+
+    .other-city {
+        width: 260px;
+        height: 225px;
+        padding: 15px;
+    }
+
+    .other-city .city {
+        width: 260px;
+        height: 225px;
+    }
+
+
+    /* Футер */
+
+    footer {
+        height: 530px;
+        width: 100%;
+        padding-left: 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .footer-content {
+        width: 290px;
+
+        margin: 0px auto;
+        padding: 20px 0 0 0 ;
+    }
+
+    footer .container{
+        width: 290px;
+    }
+
+    .footer-decor{
+        padding-left: 0;
+    }
+
+    .footer-menu-one {
+        margin: 0;
+        padding: 0 15px 0 10px;
+        margin-bottom: 45px;
+    }
+
+    .footer-menu-two {
+        margin: 0;
+        padding: 0 10px 0 0;
+        margin-bottom: 45px;
+    }
+
+    .footer-contacts {
+        width: 245px;
+        padding: 23px 20px;
+        margin-bottom: 30px;
+
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .footer-contacts .work-time {
+        left: 64px;
+        padding: 0 15px;
+    }
+
+    .footer-contacts .footer-city {
+        color: #525252;
+        font-family: "Athelas";
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 26px;
+    }
+
+    .footer-contacts .contact-moscow {
+        margin-right: 0;
+
+        margin-bottom: 15px;
+    }
+
+    .footer-contacts .contact-spb {
+        margin: 0;
+        padding: 0 5px;
+    }
+
+    .footer-contacts .tel-number {
+        color: #525252;
+        font-family: "Athelas";
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    .madein{
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    /*------------------------------------------------------------------------------------------------*/
+
+    .main-catalog{
+        padding-bottom: 30px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .main-catalog-title{
+        display: none;
+    }
+
+    .main-catalog-type-item{
+
+        width: 290px;
+        position: relative;
+        padding: 135px 0 0 0;
+        margin-bottom: 50px;
+        height: 215px;
+    }
+
+    .main-catalog-type{
+        width: 290px;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .main-catalog-type-item .main-catalog-decor{
+        width: 290px;
+        padding: 0;
+
+
+        position: absolute;
+        height: 350px;
+        z-index: 1;
+        top: 0;
+    }
+
+    .main-catalog-type-item li{
+        padding: 10px 15px;
+    }
+
+    .main-catalog-title-info{
+        z-index: 5;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-catalog-decor img{
+
+    }
+
+    .main-catalog-type-item h3{
+        margin: 30px 0 15px 0;
+    }
+
+    .main-catalog .main-catalog-type-item p{
+        width: 270px;
+    }
+
+    .main-catalog-type-item ul{
+        position: relative;
+        z-index: 2;
+    }
+
+    #footer-flower-plant{
+        display: none;
+    }
+
+    #flower-main-catalog{
+        top: 26px;
+        left: -57px;
+    }
+
+    #paparotnik-main-catalog{
+        top: 429px;
+        right: -184px;
+    }
+}
+
+
+

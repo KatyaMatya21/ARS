@@ -1,0 +1,1614 @@
+/* Подключение шрифтов */
+
+@font-face {
+    font-family: "Adventure";
+    src: url("../fonts/Adventure.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Athelas';
+    src: url('../fonts/Athelas-Bold.eot'),
+    url('../fonts/Athelas-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+000D-25CA;
+}
+
+@font-face {
+    font-family: 'Athelas';
+    src: url('../fonts/Athelas-BoldItalic.eot'),
+    url('../fonts/Athelas-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+000D-25CA;
+}
+
+@font-face {
+    font-family: 'Athelas';
+    src: url('../fonts/Athelas-Italic.eot'),
+    url('../fonts/Athelas-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+000D-25CA;
+}
+
+@font-face {
+    font-family: 'Athelas';
+    src: url('../fonts/Athelas-Regular.eot'),
+    url('../fonts/Athelas-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
+
+/* index page */
+
+/* Стили для body */
+
+body {
+    background: url("../img/bg-pattern.jpg") 0 0 repeat;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+p {
+    font-family: 'Athelas', sans-serif;
+    font-size: 18px;
+    color: #5d5c67;
+}
+
+a, a:visited {
+    color: #856aab;
+}
+
+/* Основное меню */
+
+header {
+    width: 160px;
+    height: 100%;
+    position: fixed;
+
+    z-index: 9999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: #fbbacb url("../img/back-menu.png") 0 0 no-repeat;
+}
+
+.logo {
+    margin: 24px 0px 35px 5px;
+}
+
+.logo a {
+    display: block;
+    cursor: pointer;
+}
+
+.menu {
+    margin: 0 0 40px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu > li {
+    text-align: center;
+    height: 115px;
+}
+
+/*.menu > li:first-child:hover .hide-menu{
+    display: block;
+}*/
+
+.menu > li > a {
+    font-family: "Athelas";
+    font-size: 22px;
+    line-height: 26px;
+    font-style: italic;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu .menu-name {
+    position: relative;
+    top: -25px;
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.21);
+}
+
+.menu a:active {
+    background-color: rgba(255, 255, 255, 0.33);
+}
+
+.menu > li > a {
+    display: block;
+}
+
+.menu .active-menu {
+    width: 195px;
+    background-color: #fffffe;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu > li.active-menu > a {
+    color: #ffa92f;
+    font-weight: 700;
+    width: 180px;
+}
+
+.menu .active-menu a:hover{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.menu .active-menu .menu-icon {
+    background-position-x: -100px;
+}
+
+.menu li .menu-icon {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: url('../img/menu-icon.png') 0 0 no-repeat;
+    margin: 0 auto;
+}
+
+.menu .menu-encyclopedia .menu-icon {
+    background-position-y: -100px;
+}
+
+.menu .menu-partner .menu-icon {
+    background-position-y: -200px;
+}
+
+.menu .menu-company .menu-icon {
+    background-position-y: -308px;
+}
+
+.menu .menu-map .menu-icon {
+    background-position-y: -400px;
+}
+
+.vk {
+    display: block;
+    color: #ffffff;
+    font-family: "Athelas";
+    font-size: 22px;
+    line-height: 23px;
+    font-style: italic;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 0;
+    text-align: center;
+    width: 138px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    margin: 0 auto 25px auto;
+}
+
+.vk:visited {
+    color: #ffffff;
+}
+
+.vk:hover {
+    background-color: rgba(255, 255, 255, 0.21);
+}
+
+.vk:active {
+    background-color: rgba(255, 255, 255, 0.36);
+}
+
+.up {
+    position: absolute;
+    bottom: 0;
+
+    display: block;
+    color: #5d5c67;
+    font-family: "Athelas";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+    width: 139px;
+    margin-left: 9px;
+    padding-top: 10px;
+    height: 50px;
+}
+
+.up:visited {
+    color: #5d5c67;
+}
+
+.up::before {
+    content: '';
+    display: block;
+    float: left;
+    width: 14px;
+    height: 30px;
+    background: url('../img/menu-up.png') 0 0 no-repeat;
+    position: relative;
+    left: 23px;
+}
+
+.up:hover {
+    background-color: rgba(255, 255, 255, 0.21);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+/* Появляющееся меню КАТАЛОГ*/
+
+#catalog-back{
+    display: none;
+    font-family: 'Athelas', sans-serif;
+    font-size: 20px;
+    color: #47474f;
+    font-weight: 600;
+    padding-left: 60px;
+    padding-bottom: 25px;
+    padding-top: 30px;
+    border-bottom: 1px solid rgba(223, 222, 224, 0.36);
+    margin-bottom: 20px;
+    background: url("../img/back-arrow-menu.png") 30px 31px no-repeat;
+
+    cursor: pointer;
+}
+
+.hide-menu {
+    display: none;
+    width: 909px;
+    height: 1240px;
+    position: absolute;
+    top: 0;
+    left: 142px;
+    z-index: 10000;
+    background: url("../img/menu.png") 0 0 no-repeat;
+    box-shadow: 12px 0 26px -16px rgba(0, 0, 0, 0.2);
+    padding: 100px 73px 50px 50px;
+}
+
+.hide-menu h2 {
+    font-family: "Adventure";
+    font-size: 70px;
+    color: #f44677;
+    text-align: left;
+
+    margin: 30px 0 5px 0;
+    padding: 0;
+}
+
+.hide-menu .catalog-type .catalog-type-item {
+    box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.06);
+    min-height: 387px;
+}
+
+.hide-menu .catalog-type .catalog-type-item ul li {
+    text-align: left;
+}
+
+.catalog-type {
+    margin: 43px 0 20px 0;
+}
+
+.catalog-type-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 270px;
+    margin-right: 15px;
+    padding: 30px 10px;
+}
+
+.catalog-type-item:hover {
+    background-color: rgba(252, 251, 251, 0.52);
+}
+
+.catalog-type-item:last-child {
+    margin-right: 0;
+}
+
+.catalog-type-item h3 {
+    font-family: "Athelas";
+    font-size: 36px;
+    color: #856aab;
+    font-style: italic;
+    line-height: 28px;
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+.catalog-type-item h3 a {
+    border-bottom: 1px solid #dfdee0;
+    text-decoration: none;
+}
+
+.catalog-type-item p {
+    font-family: "Athelas";
+    font-size: 20px;
+    text-align: center;
+    line-height: 22px;
+}
+
+.catalog-type-item ul {
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.catalog-type-item li {
+    font-family: "Athelas";
+    font-size: 18px;
+    color: #856aab;
+    padding: 10px 5px;
+}
+
+.catalog-type-item li a {
+    border-bottom: 1px solid #dfdee0;
+    text-decoration: none;
+}
+
+.catalog-type-item li::before {
+    content: '';
+    display: block;
+    float: left;
+    position: relative;
+    top: -10px;
+    left: -8px;
+    width: 40px;
+    height: 40px;
+    background: url('../img/small-icon.png') 0 0 no-repeat;
+    margin: 0 auto;
+}
+
+.catalog-type-item .bottle-icon::before {
+    background-position-y: 0px;
+}
+
+.catalog-type-item .sauna-icon::before {
+    background-position-y: -40px;
+}
+
+.catalog-type-item .present-icon::before {
+    background-position-y: -80px;
+}
+
+.catalog-type-item .keramika-icon::before {
+    background-position-y: -120px;
+}
+
+/* index page content */
+
+main {
+    position: relative;
+    padding-left: 160px;
+}
+
+/* Главный слайдер */
+
+.main-slaider {
+    margin-bottom: 52px;
+    height: 497px;
+    overflow: hidden;
+
+    z-index: 2;
+    position: relative;
+}
+
+.main-slaider li {
+    width: 100%;
+    height: 497px;
+}
+
+.main-slaider .slide1 {
+    background: url('../img/slaider1.jpg') no-repeat 0 0;
+    background-size: cover;
+}
+
+.main-slaider .slide2 {
+    background: url('../img/slaider2.jpg') no-repeat 0 0;
+    background-size: cover;
+}
+
+.main-slaider .slide3 {
+    background: url('../img/slaider3.jpg') no-repeat 0 0;
+    background-size: cover;
+}
+
+.main-slaider .bx-wrapper {
+    border: none;
+    margin: 0 auto;
+}
+
+.main-slaider .bx-controls-direction {
+    width: 1250px;
+    position: relative;
+    margin: 0 auto;
+    top: -300px;
+}
+
+
+.main-slaider .bx-wrapper .bx-controls-direction a {
+    width: 52px;
+    height: 126px;
+    margin-top: -10px;
+}
+
+.main-slaider .bx-wrapper .bx-prev {
+    background: url('../img/controls.png') no-repeat 0 0;
+    left: 0;
+    z-index: 9998;
+}
+
+.main-slaider .bx-wrapper .bx-next {
+    background: url('../img/controls.png') no-repeat -52px 0;
+    right: 0;
+}
+
+/* Главный слайдер СЛАЙД 1*/
+
+.slide-content h2 {
+    font-family: "Adventure";
+    font-size: 57px;
+    color: #f44677;
+    text-align: center;
+    margin: 0 0 4px 0;
+}
+
+.slide-content p {
+    font-family: "Athelas";
+    font-size: 20px;
+    text-align: center;
+    line-height: 28px;
+    color: #5d5c67;
+    margin: 0 0 0 0;
+}
+
+.slide-content a.button {
+    margin-top: 33px;
+}
+
+.button {
+    display: block;
+    font-family: "Athelas";
+    font-size: 23px;
+    text-align: center;
+    color: #856aab;
+    line-height: 22px;
+    width: 222px;
+    padding: 13px 0;
+    margin: 0 auto;
+    border: 1px solid #e4d3f9;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.button:hover{
+    border: 1px solid #a692c1;
+}
+
+.button:active{
+    background-color: rgba(166, 146, 193, 0.12);
+    border: 1px solid #a692c1;
+}
+
+.slide-content {
+    width: 1250px;
+}
+
+.slide1 .slide-content {
+    margin: 120px auto 0 auto;
+}
+
+/* Главный слайдер СЛАЙД 2*/
+
+.slide2 .slide-content {
+    margin: 0px auto 0 auto;
+}
+
+.slide-item-pic {
+    float: left;
+    width: 666px;
+    height: 497px;
+    text-align: center;
+    font-size: 0;
+}
+
+.slide-item-pic:before{
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.slide-item-pic img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.slide-item-info {
+    margin: 0px 0 0 666px;
+    width: 377px;
+    padding: 66px 47px 66px 48px;
+    background-color: rgba(255, 255, 255, 0.81);
+    border-radius: 8px;
+
+    position: relative;
+    top: 55px;
+}
+
+.slide-item-info h2 {
+    font-family: "Adventure", sans-serif;
+    font-size: 43px;
+    color: #f44677;
+    text-align: center;
+    margin: 0 0 6px 0;
+}
+
+.slide-item-info p {
+    margin: 0 0 35px 0;
+}
+
+.slide3 .slide-content {
+    margin: 87px auto 0 auto;
+}
+
+.slide3 h2 {
+    margin: 0;
+}
+
+/* Главный слайдер СЛАЙД 3*/
+
+.slide3 .slider-item-piece {
+    text-align: center;
+}
+
+.slide3 .item-piece {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #ffffff;
+    width: 340px;
+    margin-right: 20px;
+}
+
+.slide3 .item-piece:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.24);
+}
+
+.slide3 .item-piece a{
+    text-decoration: none;
+}
+
+.slide3 .item-piece:last-child {
+    margin-right: 0;
+}
+
+.slide3 img {
+    float: left;
+    width: 123px;
+    border-right: 1px solid #e5e5e5;
+}
+
+.item-piece-info {
+    margin-left: 123px;
+}
+
+.item-piece-info .item-name-ru {
+    font-family: "Athelas", sans-serif;
+    font-size: 17px;
+    text-align: center;
+    color: #717171;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.item-piece-info .item-name-lat {
+    font-family: "Athelas", sans-serif;
+    font-size: 19px;
+    text-align: center;
+    color: #a4a4a3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 180px;
+    margin: 10px auto 0 auto;
+    white-space: nowrap;
+}
+
+/* фиксированный контейнер */
+
+.container {
+    width: 1250px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container-shadowed {
+    box-shadow: 0 0 90px 90px rgba(255, 255, 255, 1);
+    background-color: #ffffff;
+}
+
+/* страшный блок с продуктами и со слайдером*/
+
+.paparotnik {
+    background: url("../img/paparotnik.png") 0 0 no-repeat;
+    position: absolute;
+    width: 399px;
+    height: 268px;
+    z-index: 1;
+    top: -46px;
+    left: 345px;
+}
+
+.promo-products-decorate {
+    position: relative;
+}
+
+.promo-products {
+    height: 730px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    margin-bottom: 60px;
+}
+
+#slider-type-frame {
+    width: 100%;
+    height: 80px;
+    padding: 20px 0 10px 0;
+    position: relative;
+    background: transparent url(../img/slide-separator.png) 0 bottom no-repeat;
+    margin-bottom: 18px;
+}
+
+.slider-fader {
+    position: absolute;
+    top: 0;
+    width: 85px;
+    height: 106px;
+    z-index: 100;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.slider-fader.disabled {
+    display: none;
+}
+
+.slider-fader-left {
+    left: 0;
+    background: transparent url(../img/slider-controls.png) 0 0 no-repeat;
+}
+
+.slider-fader-right {
+    right: 0;
+    background: transparent url(../img/slider-controls.png) -82px 0 no-repeat;
+}
+
+ul.slider-type-products {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    list-style: none;
+}
+
+.slider-type-products li {
+    float: left;
+    margin: 0 5px 0 0;
+    padding: 10px;
+    height: 100%;
+    text-transform: uppercase;
+    color: #856aab;
+    font-family: 'Athelas', sans-serif;
+    font-size: 20px;
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.slider-type-products a {
+    text-decoration: none;
+}
+
+.slider-type-products li.active {
+    font-weight: bold;
+}
+
+/* Слайдер для слайда */
+
+.slider-products-content {
+    width: 1100px;
+    height: 410px;
+    margin: 35px auto 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-products-content .slider-products {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.slider-products-content .slider-products li {
+    list-style: none;
+    float: left;
+    margin: 0 30px 0 0;
+    padding: 0;
+    width: 250px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.slider-products-content .slider-products li > a {
+    text-decoration: none;
+}
+
+.slide-product .slide-product-badge {
+    background-color: #ffc937;
+    color: white;
+    font-weight: bold;
+    font-family: 'Athelas', sans-serif;
+    padding: 5px 10px 5px 8px;
+    border-radius: 18px;
+    text-align: center;
+    display: inline-block;
+    float: right;
+    font-size: 19px;
+    margin: 0 0 20px 0;
+}
+
+.slide-product .slide-product-badge:before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+    top: -3px;
+    margin-right: 4px;
+}
+
+.slide-product .slider-products-image {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    height: 254px;
+}
+
+.slide-product .slider-products-description {
+    margin: 18px auto 0 auto;
+    text-align: center;
+    font-family: 'Athelas', sans-serif;
+    color: #a4a4a3;
+    font-size: 20px;
+    width: 90%;
+}
+
+/* Ellipse для слайдера */
+.slide-product .slider-products-description > div {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.slide-product .slider-products-description .item-name-ru {
+    color: #717171;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+}
+
+.slide-product .slider-products-description .item-name-lat {
+    margin: 0 0 10px 0;
+}
+
+.slide-product .slider-products-description .item-attributes {
+
+}
+
+/* Навигация для слайдера в сдайлере */
+
+.product-type {
+    position: absolute;
+    left: -10000px;
+    /*transition: opacity 0.5s ease-in-out 0s;*/
+    /*opacity: 0;*/
+    background-color: transparent;
+}
+
+.product-type.product-type-active {
+    display: block;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    width: 100%;
+}
+
+.product-type .slider-fader {
+    top: 48%;
+}
+
+/*.promo-products .product-type {
+    position: relative;
+}*/
+
+.promo-products .product-types-list {
+    position: relative;
+    overflow: hidden;
+    height: 550px;
+}
+
+.promo-products .product-type > p {
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 28px;
+    font-size: 20px;
+}
+
+.promo-products .product-type-btn {
+    margin-top: 15px;
+    padding: 5px 0;
+    width: 194px;
+    font-size: 20px;
+}
+
+.mobile-catalog-type{
+    display: none;
+}
+
+.promo {
+    margin-bottom: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.myata {
+    background: url("../img/myata.png") 0 0 no-repeat;
+    position: absolute;
+    width: 178px;
+    height: 129px;
+    z-index: 3;
+    top: -77px;
+    right: 63px;
+}
+
+.flower {
+    background: url("../img/flower.png") 0 0 no-repeat;
+    position: absolute;
+    width: 203px;
+    height: 166px;
+    z-index: 5;
+    top: 340px;
+    left: -67px;
+}
+
+/* промо баннер спа-уход*/
+
+.spa-promo {
+    position: relative;
+    float: left;
+    height: 450px;
+    overflow: hidden;
+    width: 595px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    cursor: pointer;
+}
+
+.spa-promo img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.spa-promo .spa-promo-info {
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.55);
+    transition: background-color 0.2s linear 0s;
+}
+
+.spa-promo .spa-promo-info:hover {
+    background-color: rgba(255, 255, 255, 0.43);
+}
+
+.spa-promo-name {
+    display: block;
+    margin: 177px auto 0 auto;
+}
+
+.spa-promo-name h3 {
+    font-family: "Athelas";
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    color: #856aab;
+}
+
+.spa-promo . h3 :hover {
+    color: #4d3e64;
+}
+
+.spa-promo-name h3 a {
+    text-decoration: none;
+    border-bottom: 1px solid #dfdee0;
+}
+
+.spa-promo-name p {
+    font-family: "Athelas";
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    color: #5d5c67;
+}
+
+/* промо баннер со слайдером*/
+
+.promo-banner:before {
+    content: '';
+    background: url("../img/for-promo-banner1.png") 0 0 no-repeat;
+    width: 41px;
+    height: 33px;
+    position: absolute;
+    top: -14px;
+    left: 276px;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.promo-banner {
+    position: relative;
+    float: right;
+    height: 450px;
+    width: 595px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    text-align: center;
+    z-index: 4;
+}
+
+li.promo-slide {
+    padding: 15px 0 0 0;
+    height: 200px;
+}
+
+.promo-banner h3 {
+    font-family: "Athelas";
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+    color: #856aab;
+    margin: 25px 0 20px 0;
+}
+
+.promo-banner h3 a {
+    text-decoration: none;
+    border-bottom: 1px solid #dfdee0;
+}
+
+.promo-banner .promo-banner-menu {
+    padding: 0;
+    list-style: none;
+    margin: 0 110px 10px 110px;
+}
+
+.promo-banner .promo-banner-menu li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.promo-banner .promo-banner-menu li:after {
+    content: '·';
+    margin-left: 5px;
+}
+
+.promo-banner .promo-banner-menu li:last-child:after, .promo-banner .promo-banner-menu li:nth-child(3):after {
+    display: none;
+}
+
+.promo-banner .promo-banner-menu li a {
+    text-decoration: none;
+    font-family: "Athelas";
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: bold;
+    color: #856aab;
+    border-bottom: 1px solid #dfdee0;
+}
+
+.promo-banner .promo-banner-menu li a:hover{
+    color: #655182;
+}
+
+.promo-slider .promo-slide-info {
+    width: 375px;
+    margin: 0 auto;
+    padding: 13px 0;
+    background: url("../img/separator.png") 0 bottom no-repeat;
+}
+
+.promo-slider .promo-slide li{
+    height: 235px;
+}
+
+.promo-slider .promo-slide-info:last-child {
+    background: none;
+}
+
+
+.promo-slider .promo-slide-info .promo-ask {
+    text-decoration: none;
+    font-family: "Athelas";
+    font-size: 20px;
+    font-weight: normal;
+    color: #856aab;
+}
+
+.promo-slider .promo-slide-info .promo-ask:hover{
+    color: #655182;
+}
+
+/* Настройки слайдера */
+
+.promo-banner .bx-wrapper {
+    border: none;
+    margin: 0 auto;
+    box-shadow: none;
+}
+
+.bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager {
+    bottom: -50px;
+}
+
+.promo-banner .bx-wrapper .bx-pager.bx-default-pager a {
+    margin: 0 3px;
+    background: #ffffff;
+    border: 1px solid #a9a9a9;
+    width: 9px;
+    height: 9px;
+}
+
+.promo-banner .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus, .bx-wrapper .bx-pager.bx-default-pager a:hover {
+    background: rgba(169, 169, 169, 0.82);
+}
+
+/* Карта */
+
+.maps {
+    height: 465px;
+    margin-top: 55px;
+    background: transparent url("../img/map.jpg") 0 0 no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+}
+
+.maps-content {
+    margin-top: 50px;
+}
+
+.map-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.map-title h2 {
+    font-family: "Adventure";
+    font-size: 64px;
+    line-height: 57px;
+    color: #f44677;
+    margin: 0;
+}
+
+.map-city {
+    text-align: center;
+}
+
+.city:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.42);
+}
+
+.other-city:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.42);
+}
+
+.city {
+    display: inline-block;
+    width: 350px;
+    margin-right: 60px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    height: 225px;
+    vertical-align: top;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.map-city .city:last-child {
+    margin-right: 0;
+}
+
+.city-name {
+    font-family: "Athelas";
+    font-size: 28px;
+    color: #5d5c67;
+    font-weight: bold;
+    margin-top: 45px;
+}
+
+.city-info {
+    font-family: "Athelas";
+    font-size: 19px;
+    color: #5d5c67;
+    margin: 10px auto 0 auto;
+    width: 290px;
+    line-height: 30px;
+}
+
+.other-city {
+    display: inline-block;
+    padding: 15px;
+    background-color: #FAFAFA;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
+}
+
+.other-city .city {
+    width: 320px;
+    height: 195px;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
+}
+
+.other-city .city .city-name {
+    margin-top: 38px;
+}
+
+/* Футер */
+
+footer {
+    font-size: 0;
+    height: 178px;
+    /*overflow: hidden;*/
+    position: absolute;
+    bottom: 0;
+    z-index: 99999;
+    width: 100%;
+}
+
+.footer-decor{
+    padding-left: 160px;
+}
+
+.footer-content {
+    box-shadow: 0 78px 91px 90px rgba(255, 255, 255, 1);
+    padding: 33px 0 40px 0;
+    background-color: white;
+}
+
+.footer-menu-one {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0 20px 0 20px;
+}
+
+.footer-menu-one ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-menu-one li {
+    margin-bottom: 10px;
+}
+
+.footer-menu-one a {
+    font-family: "Athelas";
+    font-size: 20px;
+    color: #856aab;
+    line-height: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid #e6e3e1;
+}
+
+.footer-menu-two {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 15px;
+    line-height: 25px;
+    margin-right: 30px;
+
+}
+
+.footer-menu-two ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-menu-two li {
+    margin-bottom: 10px;
+}
+
+.footer-menu-two a {
+    font-family: "Athelas";
+    font-size: 20px;
+    color: #856aab;
+    line-height: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid #e6e3e1;
+}
+
+.footer-menu-one a:hover{
+    color: #362b4b;
+}
+
+.footer-menu-two a:hover{
+    color: #362b4b;
+}
+
+.footer-contacts {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 15px;
+    width: 582px;
+    border: 2px solid #f9f9f9;
+    border-radius: 8px;
+    padding: 23px 20px;
+    margin-right: 30px;
+}
+
+.footer-contacts .work-time {
+    position: absolute;
+    top: -18px;
+    left: 243px;
+    line-height: 0;
+    padding: 0 5px;
+    background-color: #ffffff;
+}
+
+.footer-contacts .work-time p{
+    font-family: "Athelas";
+    font-size: 20px;
+    font-weight: bold;
+    color: #a8a8a8;
+}
+
+.footer-contacts .footer-city {
+    color: #525252;
+    font-family: "Athelas";
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+.footer-contacts .contact-moscow {
+    display: inline-block;
+    vertical-align: top;
+
+    margin-right: 26px;
+}
+
+.footer-contacts .contact-spb {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+
+.footer-contacts .tel-number {
+    color: #525252;
+    font-family: "Athelas";
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.madein{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
+}
+
+.madein a{
+    display: block;
+    background: url("../img/logo_makeit.png") 0 0 no-repeat;
+    width: 230px;
+    height: 28px;
+}
+
+#parallax-bg {
+    margin-left: -536px;
+    left: 50%;
+    position: absolute;
+    width: 1250px;
+    height: 100%;
+    z-index: 1;
+}
+
+#parallax-bg img {
+    transition: transform 0.2s ease-in-out 0s;
+}
+
+main {
+    transition: transform 0.2s ease-in-out 0s;
+    padding-bottom: 180px;
+}
+
+/*дописано*/
+body{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;	
+	overflow: hidden;
+}
+#wrapper{
+	position: absolute;
+    width: 100%;
+    min-height: 100%;
+	-webkit-transition: all 50ms linear;
+	-moz-transition: all 50ms linear;
+	-ms-transition: all 50ms linear;
+	-o-transition: all 50ms linear;
+	transition: all 50ms linear;
+}
+.scrollbar { 
+	width: 1px;
+	height: 96%;
+	margin-top: 3%;
+	position: absolute;
+	top: 0;
+	left: 160px;
+}
+.scrollbar .handle {
+    width: 100%;
+    height: 100px; /* overriden if dynamicHandle: 1 */
+    background: rgba(125, 86, 195, 0.62);
+}
+
+#mobile-menu-switch {
+    display: none;
+    background: url('../img/control-menu-mobile.png') 0 0 no-repeat;
+    width: 39px;
+    height: 30px;
+    position: absolute;
+    left: 20px;
+    top: 35px;
+    cursor: pointer;
+}
+/*------------------------------------------------------------------------------------------------*/
+/* main catalog page */
+
+#flower-main-catalog{
+    transform: rotate(33deg);
+    background: url("../img/flower.png") 0 0 no-repeat;
+    position: absolute;
+    width: 203px;
+    height: 166px;
+    z-index: 1;
+    top: 26px;
+    left: -69px;
+}
+
+#paparotnik-main-catalog{
+    background: url("../img/paparotnik.png") 0 0 no-repeat;
+    position: absolute;
+    width: 399px;
+    height: 268px;
+    z-index: 1;
+    top: 130px;
+    right: -199px;
+    transform: rotate(-60deg);
+}
+
+.mobile-catalog{
+    display: none;
+}
+
+.main-catalog{
+    background: #fff url("../img/catalog-title.png") 255px 0 no-repeat;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    margin-top: 25px;
+    padding-bottom: 100px;
+
+    z-index: 1;
+    position: relative;
+}
+
+.main-catalog-title{
+    border-bottom: 1px solid #e5e5e5;
+
+    padding-top: 55px;
+}
+
+.main-catalog h2{
+    font-family: "Adventure";
+    font-size: 70px;
+    color: #f44677;
+    text-align: center;
+
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.main-catalog p{
+    font-family: 'Athelas', sans-serif;
+    font-size: 18px;
+    color: #5d5c67;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto 50px auto;
+
+    width: 930px;
+}
+
+.main-catalog-type {
+    margin: 0;
+    padding: 50px 0px;
+}
+
+.main-catalog-type-item {
+    float: left;
+    width: 30%;
+    padding: 0 20px;
+}
+
+.main-catalog-type-item .main-catalog-decor{
+    position: relative;
+    cursor: pointer;
+    height: 299px;
+}
+
+.main-catalog-decor{
+    box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.09);
+}
+
+.main-catalog-decor img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main-catalog-title-info{
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: background-color 0.2s linear 0s;
+}
+
+.main-catalog-title-info:hover {
+    background-color: rgba(252, 251, 251, 0.7);
+}
+
+.main-catalog-type-item:last-child {
+    margin-right: 0;
+}
+
+.main-catalog-type-item h3 {
+    font-family: "Athelas";
+    font-size: 36px;
+    color: #856aab;
+    font-style: italic;
+    line-height: 28px;
+    text-align: center;
+    margin: 100px 0 15px 0;
+}
+
+.main-catalog-type-item h3 a {
+    border-bottom: 1px solid #dfdee0;
+    text-decoration: none;
+}
+
+.main-catalog .main-catalog-type-item p {
+    font-family: "Athelas";
+    font-size: 20px;
+    text-align: center;
+    line-height: 22px;
+
+    width: 280px;
+}
+
+.main-catalog-type-item ul {
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-catalog-type-item li {
+    font-family: "Athelas";
+    font-size: 18px;
+    color: #856aab;
+    padding: 10px 5px;
+}
+
+.main-catalog-type-item li a {
+    border-bottom: 1px solid #dfdee0;
+    text-decoration: none;
+}
+
+.main-catalog-type-item li::before {
+    content: '';
+    display: block;
+    float: left;
+    position: relative;
+    top: -10px;
+    left: -8px;
+    width: 40px;
+    height: 40px;
+    background: url('../img/small-icon.png') 0 0 no-repeat;
+    margin: 0 auto;
+}
+
+.main-catalog-type-item .bottle-icon::before {
+    background-position-y: 0px;
+}
+
+.main-catalog-type-item .sauna-icon::before {
+    background-position-y: -40px;
+}
+
+.main-catalog-type-item .present-icon::before {
+    background-position-y: -80px;
+}
+
+.main-catalog-type-item .keramika-icon::before {
+    background-position-y: -120px;
+}
+
+#footer-flower-plant {
+    z-index: 1;
+    position: absolute;
+    background: transparent url("../img/plant.png") 0 0 no-repeat;
+    width: 172px;
+    height: 38px;
+    top: -33px;
+    left: 250px;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+

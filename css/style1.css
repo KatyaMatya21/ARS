@@ -1,0 +1,388 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 900px;
+    padding: 0 10px;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+    font-size: 0;
+}
+
+header{
+    background:#ccc url('../img/1.jpg') -100px -200px no-repeat;
+
+    color: #ffffff;
+}
+
+.top-header{
+
+}
+
+.logo{
+    float:left;
+    width: 200px;
+}
+
+.menu-open{
+    float: right;
+    width: 110px;
+
+    text-align: center;
+
+    margin: 20px 20px 20px 0;
+
+    background-color: rgba(0, 0, 0, 0.22);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Выпадающее меню в header */
+
+.fall-menu{
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 10000;
+
+
+    background-color: rgba(0, 0, 0, 0.88);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 900px;
+}
+
+.menu-close{
+    float: right;
+    width: 110px;
+
+    text-align: center;
+
+    margin: 20px 20px 20px 0;
+
+    background-color: rgba(253, 253, 254, 0.13);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.navigation{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation li{
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    cursor: pointer;
+}
+
+.navigation a{
+    color: #ffffff;
+    display: block;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navigation li:hover{
+    background:#ccc url('../img/1.jpg') -100px -500px no-repeat;
+    overflow: hidden;
+}
+
+.header-contacts{
+    padding: 30px 20px;
+    font-size: 0;
+
+    opacity: 0.5;
+}
+
+.contact-spb{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 15px;
+    margin-right: 50px;
+}
+
+.contact-moscow{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 15px;
+    margin-right: 100px;
+}
+
+.city{
+    font-weight: bold;
+}
+
+.vk{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.vk a{
+    color: #ffffff;
+    text-decoration: none;
+    width: 100px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.19);
+}
+
+/* Слайдер в header */
+
+.bx-wrapper{
+    background-color: transparent;
+    border: 0;
+    box-shadow: 0;
+    margin: 0;
+}
+.bx-controls-direction {
+
+}
+
+.bx-prev{
+
+}
+
+.bx-next{
+
+}
+
+.bxslider li{
+    padding: 20px 30px;
+}
+
+.bxslider li h2{
+    text-align: center;
+}
+
+.bxslider li p{
+    text-align: center;
+    width: 650px;
+    margin: 0 auto;
+}
+
+.slaid-one{
+
+}
+
+.best-buy{
+    font-size: 0;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.best-buy a{
+    text-decoration: none;
+    color: #000;
+    
+    width: 250px;
+    height: 120px;
+    margin-right: 10px;
+}
+
+.best-buy a:last-child{
+    margin-right: 0;
+}
+
+.best-buy .item-buy{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 15px;
+
+    background-color: #ffffff;
+}
+
+.item-small-pic{
+    float: left;
+    width: 100px;
+}
+
+.item-name{
+    float: right;
+    width: 100px;
+    padding: 30px 20px;
+}
+
+.slaid-two{
+
+}
+
+.services ul{
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+
+    padding: 30px 30px;
+}
+
+.services li{
+    list-style: none;
+
+    display: inline-block;
+    vertical-align: top;
+
+    font-size: 15px;
+}
+
+.service-pic{
+    float: left;
+    width: 50px;
+}
+
+.service-name{
+    float: right;
+    width: 150px;
+}
+
+.slaid-three{
+
+}
+
+.aroma-service{
+    padding: 50px 60px;
+}
+
+.aroma-service ul{
+    margin: 0;
+    font-size: 0;
+}
+
+.aroma-service li{
+    list-style: none;
+
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin-right: 35px;
+}
+
+.aroma-service a{
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 15px;
+    text-align: center;
+}
+
+.aroma-service img{
+    width: 50px;
+}
+
+.aroma-service li a p{
+    width: 120px;
+}
+
+
+footer{
+    background-color: #F9F9F9;
+    font-size: 0;
+
+}
+
+.footer-content{
+    padding: 30px 0;
+}
+
+.footer-menu-one{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 15px;
+
+    margin-right: 20px;
+}
+
+.footer-menu-one ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-menu-one li{
+
+}
+
+.footer-menu-one a{
+    color: rgba(0, 0, 0, 0.78);
+    line-height: 20px;
+}
+
+.footer-menu-two{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 15px;
+
+    margin-right: 20px;
+
+}
+
+.footer-menu-two ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-menu-two a{
+    color: rgba(0, 0, 0, 0.68);
+    line-height: 20px;
+}
+
+.footer-contacts{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 15px;
+
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 10px 10px;
+
+    margin-right: 30px;
+}
+
+.footer-contacts .work-time{
+    position: absolute;
+    top: -18px;
+    left: 180px;
+    line-height: 0px;
+    padding: 0px 5px;
+    color: rgba(0, 0, 0, 0.32);
+    background-color: #F9F9F9;
+}
+
+.footer-contacts .contact-moscow{
+    margin: 0;
+    color: rgba(0, 0, 0, 0.55);
+    margin-right: 10px;
+}
+
+.footer-contacts .contact-spb{
+    margin: 0;
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.footer-contacts .city{
+    font-weight: 600;
+}
+
+.footer-contacts .tel-number{
+    font-weight: 500;
+}
+
+.madein{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 15px;
+}
