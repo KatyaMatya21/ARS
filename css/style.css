@@ -1455,6 +1455,7 @@ body{
     border-bottom: 1px solid #e5e5e5;
 
     padding-top: 55px;
+    padding-bottom: 30px;
 }
 
 .main-catalog h2{
@@ -1473,7 +1474,7 @@ body{
     color: #5d5c67;
     text-align: center;
     padding: 0;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 30px auto;
 
     width: 930px;
 }
@@ -1609,3 +1610,186 @@ body{
 
 /*------------------------------------------------------------------------------------------------*/
 
+.title-info{
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title-info a{
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Athelas", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+
+    border-bottom: 1px solid rgba(223, 222, 224, 0.41);
+    margin-right: 20px;
+}
+
+.catalog-content{
+    padding: 40px 0 0 0;
+}
+
+.filters{
+    margin: 0 auto;
+    text-align: center;
+
+    padding-bottom: 25px;
+}
+
+.filters .filter{
+    display: inline-block;
+    vertical-align: top;
+
+    margin-right: 30px;
+}
+
+.filters .filter:last-child{
+    margin-right: 0;
+}
+
+.name-filter{
+    font-family: "Athelas", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #856aab;
+
+    border: 1px solid #eae5f0;
+    border-radius: 25px;
+
+    padding: 5px 70px;
+
+    cursor: pointer;
+}
+
+.name-filter:after{
+    content: '\25be';
+    color: #856aab;
+    font-size: 20px;
+
+    margin-left: 10px;
+}
+
+.name-filter:hover{
+    border: 1px solid #b3a3cb;
+}
+
+.hide-filter{
+    display: none;
+
+    position: absolute;
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    width: 300px;
+}
+
+.hide-filter li{
+    text-align: left;
+
+    border-top: 1px solid rgba(223, 222, 224, 0.41);
+    border-bottom: 1px solid rgba(223, 222, 224, 0.41);
+}
+
+.hide-filter li a{
+    font-family: "Athelas", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #5d5c67;
+
+    padding: 15px 0px 15px 0px;
+}
+
+.alphabet{
+    margin: 0 auto;
+    text-align: center;
+
+    padding-bottom: 40px;
+}
+
+.alphabet ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.alphabet ul li{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.alphabet ul li a{
+    font-family: "Athelas", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #5d5c67;
+
+    text-transform: uppercase;
+
+    margin-right: 5px;
+}
+
+.catalog-list{
+    padding-left: 85px;
+
+}
+
+.catalog-par{
+    background-color: #fff;
+
+    position: absolute;
+    top: 50px;
+    left: -35px;
+}
+
+.catalog-par .letter{
+    font-family: "Athelas", sans-serif;
+    font-size: 94px;
+    font-weight: normal;
+    color: #f44677;
+    text-transform: uppercase;
+
+    background-color: #fff;
+    height: 110px;
+    width: 110px;
+}
+
+.catalog-par .letter-names{
+    font-family: "Athelas", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #5d5c67;
+    text-transform: uppercase;
+
+    text-align: center;
+}
+
+.catalog-paragraph{
+    border-top: 1px solid #eae5f0;
+    border-bottom: 1px solid #eae5f0;
+    border-left: 1px solid #eae5f0;
+
+    position: relative;
+}
+
+.catalog-paragraph .slide-product{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.catalog-paragraph .slider-products-description .item-name-ru,
+.catalog-paragraph .slider-products-description .item-name-lat,
+.catalog-paragraph .slider-products-description .item-attributes
+{
+    text-decoration: none;
+}
+
+.catalog-list .slider-products{
+    padding-left: 180px;
+}
