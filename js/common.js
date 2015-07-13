@@ -91,22 +91,17 @@ $(document).ready(function(){
     });
 
     function documentOnSlide() {
-
-        var dest = this.pos.dest;
+	var dest = this.pos.dest;
         if( dest > this.pos.end ) {
             dest = this.pos.end;
-        }
+        }	
+        wrapper.style[transform] = gpuAcceleration + 'translateY(' + (this.pos.cur*(-1)) + 'px)';
 
-        wrapper.style[transform] = gpuAcceleration + 'translateY(' + (dest*(-1)) + 'px)';
-
-        if( document.getElementById('parallax-bg') ) {
-            var imgs = document.getElementById('parallax-bg').children;
-            for (var i = 0; i < imgs.length; i++) {
-                var itemDest = imgs[i].dataset['parallax'];
-                itemDest = Math.round(dest / itemDest);
-                imgs[i].style[transform] = gpuAcceleration + 'translateY(-' + itemDest + 'px)';
-            }
-        }
+	for (var i = 0; i < slyParallaxItems.length; i++) {
+		var itemDest = slyParallaxItems[i].dataset['parallax'];
+		itemDest = Math.round(dest / itemDest);
+		slyParallaxItems[i].style[transform] = gpuAcceleration + 'translateY(-' + itemDest + 'px)';
+	}
 
     }
 
@@ -115,16 +110,20 @@ $(document).ready(function(){
         var scrollMax = $( '#wrapper' ).height() - $(window).height();
 
         window.documentSlider = new Sly( scrollMax, {
-            scrollSource: document,
-            scrollBy: 100,
-			scrollBar: $('#wrapper .scrollbar'),
-			easing: 'linear',
-            dragSource: document,
-            mouseDragging: 0, // Enables dragging by mouse
-            touchDragging: 1//, // Enables dragging by touch
-            //releaseSwing: 1  // Enables release swing easing
+		scrollSource: document,
+		scrollBy: 100,
+			
+		scrollBar: $('#wrapper .scrollbar'),
+            	dragSource: document,
+            	//mouseDragging: 0, // Enables dragging by mouse
+            	//touchDragging: 1, // Enables dragging by touch
+			
+		speed: 600,
+		releaseSwing: 1,  // Enables release swing easing
+		easing: 'easeOutExpo' 
         });
-
+	slyParallaxItems = document.getElementById('parallax-bg').children;
+	
         window.documentSlider.on('load move', documentOnSlide );
 
         window.documentSlider.init();
