@@ -569,6 +569,7 @@ main {
 
 .slide3 .slider-item-piece {
     text-align: center;
+    padding-top: 50px;
 }
 
 .slide3 .item-piece {
@@ -577,6 +578,7 @@ main {
     background-color: #ffffff;
     width: 340px;
     margin-right: 20px;
+
 }
 
 .slide3 .item-piece:hover{
