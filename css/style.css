@@ -1378,13 +1378,8 @@ body{
 }
 #wrapper{
 	position: absolute;
-    width: 100%;
-    min-height: 100%;
-	-webkit-transition: all 50ms linear;
-	-moz-transition: all 50ms linear;
-	-ms-transition: all 50ms linear;
-	-o-transition: all 50ms linear;
-	transition: all 50ms linear;
+    	width: 100%;
+    	min-height: 100%;
 }
 .scrollbar { 
 	width: 1px;
