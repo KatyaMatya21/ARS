@@ -1609,6 +1609,139 @@ body{
 }
 
 /*------------------------------------------------------------------------------------------------*/
+.breadcrumbs-menu{
+    width: 1000px;
+    text-align: center;
+    margin: 20px auto 15px auto;
+
+    position: relative;
+    z-index: 2;
+}
+
+.breadcrumbs-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.breadcrumbs-menu ul li{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.breadcrumbs-menu ul li:after {
+    content: '·';
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.breadcrumbs-menu ul li:last-child:after{
+    display: none;
+}
+
+.breadcrumbs-menu ul li a{
+    text-decoration: none;
+    color: #5d5c67;
+    font-family: "Athelas", sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    text-transform: uppercase;
+
+    border-bottom: 1px solid rgba(223, 222, 224, 0.41);
+    cursor: pointer;
+}
+
+.breadcrumbs-menu ul li.active-breadcrumbs-menu a{
+    color: #ffa92f;
+    border-bottom: 1px solid rgba(223, 222, 224, 0);
+}
+
+.breadcrumbs-menu-after{
+    width: 1000px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+.breadcrumbs-menu-after ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.breadcrumbs-menu-after ul li{
+    display: inline-block;
+    vertical-align: top;
+
+    background: url("../img/catalog-menu-icon.png") 0 0 no-repeat;
+    width: 180px;
+    height: 160px;
+
+    margin-right: 80px;
+    position: relative;
+}
+
+.breadcrumbs-menu-after ul li a:hover{
+    border-radius: 10px;
+    border: 1px solid #ffe1b8;
+}
+
+.breadcrumbs-menu-after ul li.active-breadcrumbs-menu-after{
+    background-position-x: -360px;
+}
+
+.breadcrumbs-menu-after ul li.active-breadcrumbs-menu-after:hover{
+    background-position-x: -360px;
+}
+
+.breadcrumbs-menu-after ul li.active-breadcrumbs-menu-after:hover a{
+
+}
+
+.breadcrumbs-menu-after ul li:last-child{
+    margin-right: 0;
+}
+
+.breadcrumbs-menu-after ul li.sauna{
+    background-position-y: -160px;
+}
+.breadcrumbs-menu-after ul li.present{
+    background-position-y: -320px;
+}
+.breadcrumbs-menu-after ul li.keramic{
+    background-position-y: -480px;
+}
+
+.breadcrumbs-menu-after ul li.efir:hover{
+    background-position-x: -180px;
+}
+
+.breadcrumbs-menu-after ul li.sauna:hover{
+    background-position-x: -180px;
+}
+.breadcrumbs-menu-after ul li.present:hover{
+    background-position-x: -180px;
+}
+.breadcrumbs-menu-after ul li.keramic:hover{
+    background-position-x: -180px;
+}
+
+.breadcrumbs-menu-after ul li a{
+    color: #5d5c67;
+    font-family: "Athelas", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+
+    display: block;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 
 .title-info{
     width: 700px;
@@ -1729,10 +1862,19 @@ body{
     font-weight: normal;
     text-decoration: none;
     color: #5d5c67;
-
     text-transform: uppercase;
 
-    margin-right: 5px;
+
+    width: 8px;
+    height: 8px;
+    text-align: center;
+    padding: 5px 5px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.alphabet ul li a:hover{
+    border: 1px solid #ede9f3;
 }
 
 .catalog-list{
