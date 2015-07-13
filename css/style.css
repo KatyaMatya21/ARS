@@ -1736,7 +1736,7 @@ body{
 }
 
 .catalog-list{
-    padding-left: 85px;
+    margin-left: 85px;
 
 }
 
@@ -1744,8 +1744,10 @@ body{
     background-color: #fff;
 
     position: absolute;
-    top: 50px;
-    left: -35px;
+    top: 40px;
+    left: -57px;
+
+    padding: 10px 0 20px 0;
 }
 
 .catalog-par .letter{
@@ -1755,9 +1757,13 @@ body{
     color: #f44677;
     text-transform: uppercase;
 
-    background-color: #fff;
-    height: 110px;
-    width: 110px;
+    text-align: center;
+
+    height: 120px;
+    width: 120px;
+    background: #fff url("../img/border-letter.png") 5px 0 no-repeat ;
+
+    margin-bottom: 10px;
 }
 
 .catalog-par .letter-names{
@@ -1767,7 +1773,9 @@ body{
     color: #5d5c67;
     text-transform: uppercase;
 
-    text-align: center;
+    text-align: left;
+
+    width: 200px;
 }
 
 .catalog-paragraph{
@@ -1781,15 +1789,85 @@ body{
 .catalog-paragraph .slide-product{
     display: inline-block;
     vertical-align: top;
-}
 
-.catalog-paragraph .slider-products-description .item-name-ru,
-.catalog-paragraph .slider-products-description .item-name-lat,
-.catalog-paragraph .slider-products-description .item-attributes
-{
-    text-decoration: none;
+    position: relative;
 }
 
 .catalog-list .slider-products{
-    padding-left: 180px;
+    padding: 130px 0 60px 180px;
+
+    margin: 0;
+}
+
+.catalog-list li.slide-product {
+    margin-bottom: 40px;
+    min-height: 360px;
+}
+
+.catalog-list li.slide-product:hover .slider-products-description{
+    display: none;
+}
+
+.catalog-list li.slide-product:hover .slider-products-image img{
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.catalog-list li.slide-product:hover .btn-look{
+    display: block;
+}
+
+.slide-product .btn-look{
+    display: none;
+}
+
+.slide-product .btn-look a{
+    text-decoration: none;
+    font-family: "Athelas", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: italic;
+    color: #5d5c67;
+
+    position: absolute;
+    top: 110px;
+    right: 40px;
+    text-align: center;
+    z-index: 2;
+
+    border: 1px solid #eae5f0;
+    border-radius: 20px;
+
+    background-color: rgba(255, 255, 255, 0.78);
+    padding: 8px 30px;
+}
+
+#myata-main-catalog{
+    background: url("../img/myata.png") 0 0 no-repeat;
+    position: absolute;
+    width: 178px;
+    height: 129px;
+    z-index: 1;
+    top: 1022px;
+    right: 1156px;
+}
+
+#pink-flower-main-catalog{
+    background: url("../img/pink-flower.png") 0 0 no-repeat;
+    position: absolute;
+    width: 182px;
+    height: 254px;
+    z-index: 1;
+    top: 1729px;
+    right: -111px;;
+}
+
+#avocode-main-catalog{
+    background: url("../img/avocode.png") 0 0 no-repeat;
+    position: absolute;
+    width: 451px;
+    height: 360px;
+    z-index: 1;
+    top: 2629px;
+    right: -111px;
 }
