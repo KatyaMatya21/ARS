@@ -2303,6 +2303,8 @@ body{
     font-style: italic;
     border-bottom: 1px solid #eae5f0;
     text-decoration: none;
+
+    width: 210px;
 }
 
 .part-questions{
@@ -2406,7 +2408,7 @@ body{
 
 .receipt-part{
     border-bottom: 1px solid #eae5f0;
-    padding: 55px 40px 50px 40px;
+    padding: 55px 30px 50px 30px;
 }
 
 .receipt-part h3{
@@ -2430,6 +2432,11 @@ body{
     width: 1000px;
 }
 
+.receipt-type
+{
+    background: url("../img/slide-separator-left.png") 0 bottom no-repeat;
+}
+
 .receipt-type li{
     display: inline-block;
     vertical-align: top;
@@ -2437,8 +2444,13 @@ body{
     width: 200px;
     text-align: center;
 
-    margin: 0 50px;
+    margin: 0 43px;
 
+    padding-bottom: 20px;
+}
+
+.receipt-type li.active-receipt-tab .receipt-name{
+    font-weight: bold;
 }
 
 .receipt-tab{
@@ -2464,18 +2476,150 @@ body{
     font-family: "Athelas", sans-serif;
     font-size: 20px;
     color: #856aab;
-    font-weight: bold;
+    font-weight: normal;
     text-transform: uppercase;
-
     position: relative;
-    top: 0px;
+    top: 0;
 }
 
+.receipt-content ul{
+    padding: 0;
+    list-style: none;
+    margin: 40px 0 40px 0;
 
-.receipt-type-content{
-    display: none;
+    width: 1172px;
+}
+
+.receipt-content ul li{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+
+    color: #5d5c67;
+    font-size: 20px;
+    font-family: "Athelas", sans-serif;
+    font-weight: normal;
+
+    border: 1px solid #ececec;
+    border-radius: 8px;
+
+    padding: 18px 10px;
+
+    height: 45px;
+
+    max-width: 210px;
+    margin-right: 20px;
+}
+
+.receipt-content ul li:last-child{
+    margin-right: 0;
+}
+
+.receipt-content ul li.active-receipt-button{
+    color: #856aab;
+
+    border: 2px solid #eee9f3;
+}
+
+.receipt-item{
+    text-align: center;
+}
+
+.receipt-description{
+    color: #5d5c67;
+    font-size: 22px;
+    font-family: "Athelas", sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 70px;
+}
+
+.receipt-illustration{
+
+}
+
+.receipt-illustration ul{
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.receipt-illustration ul li{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.receipt-illustration .slider-products-image {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    height: 254px;
+}
+
+.receipt-illustration .slider-products-description {
+    margin: 15px auto 0 auto;
+    text-align: center;
+    font-family: 'Athelas', sans-serif;
+    color: #717171;
+    font-size: 20px;
+    width: 90%;
+}
+
+.receipt-illustration .slider-products-description {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.receipt-illustration .slider-products-description .item-name-ru{
+    font-size: 17px;
+    color: #717171;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+
+    text-decoration: none;
+}
+
+.receipt-illustration .slider-products-description  .item-name-lat{
+    font-size: 19px;
+    color: #a4a4a3;
+    width: 180px;
+    margin: 10px auto 0 auto;
+
+    text-decoration: none;
+}
+
+.receipt-illustration .slider-products-description .item-attributes{
+    color: #a4a4a3;
+    text-decoration: none;
+}
+
+.bottle-template{
+    position: relative;
+    margin-right: 110px;
+}
+
+.plus{
+    background: url("../img/plus.png")0 0 no-repeat;
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    left: 217px;
+    top: 90px;
 }
 
 .same-part{
-    display: none;
+    padding: 50px 40px;
+}
+
+.same-part h3{
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-family: "Athelas", sans-serif;
+    font-size: 35px;
+    color: #f44677;
+    font-weight: bold;
+    font-style: italic;
 }

@@ -272,44 +272,93 @@
                     <h3>Рецепты</h3>
 
                     <div class="receipt-type">
+
                         <ul class="receipt-tab">
 
-                        <li class="receipt-tab" data-target="tab1">
+                            <li class="receipt-tab active-receipt-tab" data-target="tab1">
 
-                            <div class="receipt-icon aroma-icon"></div>
-                            <div class="receipt-name">Для аромалампы</div>
+                                <div class="receipt-icon aroma-icon"></div>
+                                <div class="receipt-name">Для аромалампы</div>
 
-                        </li>
+                            </li>
 
-                        <li class="receipt-tab" data-target="tab2">
+                            <li class="receipt-tab" data-target="tab2">
 
-                            <div class="receipt-icon oil-icon"></div>
-                            <div class="receipt-name">Для массажа</div>
+                                <div class="receipt-icon oil-icon"></div>
+                                <div class="receipt-name">Для массажа</div>
 
-                        </li>
+                            </li>
 
-                        <li class="receipt-tab" data-target="tab3">
+                            <li class="receipt-tab" data-target="tab3">
 
-                            <div class="receipt-icon skin-icon"></div>
-                            <div class="receipt-name">Для ухода за кожей лица</div>
+                                <div class="receipt-icon skin-icon"></div>
+                                <div class="receipt-name">Для ухода за кожей лица</div>
 
-                        </li>
+                            </li>
 
-                    </ul>
+                        </ul>
+
                     </div>
 
-                    <div class="receipt-type-content">
 
-                        <div class="receipt-content" id="tab1">
+                    <div class="receipt-content" id="tab1">
 
-                            <ul class="receipt-content-buttons">
-                                <li>Смесь снимающаянапряжение в конце дня</li>
-                                <li>Для снятия стресса</li>
-                                <li>Для облегчениязасыпания</li>
-                                <li>Для улучшениянастроения</li>
-                                <li>При головной боли</li>
+                        <ul class="receipt-content-buttons">
+                                <li data-target="tab1-tab1" class="active-receipt-button">Смесь снимающая напряжение в конце дня</li>
+                                <li data-target="tab1-tab2">Для снятия стресса</li>
+                                <li data-target="tab1-tab3">Для облегчения засыпания</li>
+                                <li data-target="tab1-tab4">Для улучшения настроения</li>
+                                <li data-target="tab1-tab5">При головной боли</li>
+                        </ul>
+
+                    </div>
+
+
+                    <div class="receipt-item" id="tab1-tab1">
+
+                        <div class="receipt-description">Эфирное масло кедра – 3 капли, Эфирное масло апельсина – 2 капли, Эфирное масло лаванды – 1 капля</div>
+
+                        <div class="receipt-illustration">
+
+                            <ul>
+
+                                <li class="receipt-piece bottle-template">
+                                        <div class="slider-products-image">
+                                            <img src="img/bottle-template.png"/>
+                                        </div>
+                                        <div class="slider-products-description">
+                                            <div class="item-name-ru">Апельсин</div>
+                                            <div class="item-name-lat">Citrus sinensis L.</div>
+                                            <div class="item-attributes">10 мл; 1,5м</div>
+                                        </div>
+
+                                    <div class="plus"></div>
+
+                                </li>
+
+                                <li class="receipt-piece">
+                                        <div class="slider-products-image">
+                                            <img src="img/item-small-pic.jpg"/>
+                                        </div>
+                                        <div class="slider-products-description">
+                                            <div class="item-name-ru">Апельсин</div>
+                                            <div class="item-name-lat">Citrus sinensis L.</div>
+                                            <div class="item-attributes">10 мл; 1,5м</div>
+                                        </div>
+                                </li>
+
+                                <li class="receipt-piece">
+                                        <div class="slider-products-image">
+                                            <img src="img/item-small-pic.jpg"/>
+                                        </div>
+                                        <div class="slider-products-description">
+                                            <div class="item-name-ru">Апельсин</div>
+                                            <div class="item-name-lat">Citrus sinensis L.</div>
+                                            <div class="item-attributes">10 мл; 1,5м</div>
+                                        </div>
+                                </li>
+
                             </ul>
-
                         </div>
 
                     </div>
@@ -350,19 +399,6 @@
                                         </div>
                                         <div class="slider-products-description">
                                             <div itemprop="name" class="item-name-ru">Апельсин</div>
-                                            <div class="item-name-lat">Citrus sinensis L.</div>
-                                            <div class="item-attributes">10 мл; 1,5м</div>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li class="slide-product">
-                                    <a href="#">
-                                        <div class="slider-products-image">
-                                            <img src="img/item-small-pic.jpg"/>
-                                        </div>
-                                        <div class="slider-products-description">
-                                            <div class="item-name-ru">Апельсин</div>
                                             <div class="item-name-lat">Citrus sinensis L.</div>
                                             <div class="item-attributes">10 мл; 1,5м</div>
                                         </div>
