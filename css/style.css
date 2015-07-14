@@ -1795,6 +1795,7 @@ body{
     vertical-align: top;
 
     margin-right: 30px;
+    position: relative;
 }
 
 .filters .filter:last-child{
@@ -1814,8 +1815,11 @@ body{
     width: 300px;
 
     cursor: pointer;
-    z-index: 10;
     position: relative;
+}
+
+.bigZ{
+    z-index: 100;
 }
 
 .name-filter:after{
@@ -1836,26 +1840,20 @@ body{
     position: absolute;
     list-style: none;
     z-index: 9;
-    top: 338px;
+    top: 0;
 
 
     margin: 0;
     padding: 0;
-
-    width: 300px;
     border: 1px solid #b3a3cb;
+    width: 300px;
     border-radius: 25px;
-    background-color: #fff;
-    overflow: hidden;
 
-    padding-top: 43px;
+    padding-top: 42px;
 }
 
 .hide-filter li{
     text-align: left;
-
-    border-top: 1px solid rgba(223, 222, 224, 0.41);
-    border-bottom: 1px solid rgba(223, 222, 224, 0.41);
 }
 
 .hide-filter li a{
@@ -1865,11 +1863,19 @@ body{
     font-weight: normal;
     text-decoration: none;
     color: #5d5c67;
+    background-color: #fff;
 
     padding: 15px 10px 15px 20px;
+    border-top: 1px solid rgba(223, 222, 224, 1);
+    border-bottom: 1px solid rgba(223, 222, 224, 1);
 }
 
-.hide-filter li:hover{
+.hide-filter li:last-child a{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.hide-filter li a:hover{
     background-color: #fafafa;
 }
 
