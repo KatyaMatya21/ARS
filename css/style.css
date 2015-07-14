@@ -2076,3 +2076,209 @@ body{
 
 /* catalog-item */
 
+.breadcrumbs{
+    margin: 25px auto;
+    width: 800px;
+    text-align: center;
+}
+
+.breadcrumbs ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.breadcrumbs ul li{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.breadcrumbs ul li a{
+    font-family: "Athelas", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #5d5c67;
+
+    border-bottom: 1px solid #eae5f0;
+}
+
+.breadcrumbs ul li::after{
+    content: '\2192';
+
+    font-size: 17px;
+    color: #5d5c67;
+
+    margin: 0 10px;
+}
+
+.breadcrumbs ul li:last-child::after{
+    content: '\2193';
+
+    font-size: 17px;
+    color: #ffc937 ;
+
+    margin-left: 10px;
+}
+
+
+.item-page-content{
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+
+    padding: 70px 30px;
+}
+
+.item-page-description{
+    border-bottom: 1px solid #eae5f0;
+}
+
+.item-image{
+    float: left;
+    width: 570px;
+
+    margin-bottom: 80px;
+}
+
+.item-image img{
+    width: 524px;
+    height: 524px;
+    margin: 0 auto;
+}
+
+.item-description{
+    margin-left: 570px;
+}
+
+.item-description h2{
+    font-family: "Adventure", sans-serif;
+    font-size: 71px;
+    color: #f44677;
+    font-weight: normal;
+    line-height: 55px;
+
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+}
+
+.item-description h2 span{
+    font-family: "Athelas", sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    color: #acacac;
+
+    margin-left: 10px;
+}
+
+.item-artcle{
+    font-family: "Athelas", sans-serif;
+    font-size: 19px;
+    font-weight: normal;
+    color: #a6a6a6;
+
+    margin: 0 0 20px 0;
+    padding-left: 15px;
+}
+
+.item-info{
+    border: 2px dotted #b8a9ce;
+    border-radius: 20px;
+    width: 460px;
+
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.item-info .info-more{
+    margin-bottom: 10px;
+}
+
+.item-info .info-more:last-child{
+    margin-bottom: 0px;
+}
+
+.item-info .info-more span{
+    font-family: "Athelas", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #5d5c67;
+}
+
+.item-info .info-more {
+    font-family: "Athelas", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #525252;
+}
+
+.item-info .info-more a{
+    text-decoration: none;
+    color:#856aab;
+}
+
+.item-effect{
+    padding-left: 25px;
+}
+
+.item-effect span{
+    font-family: "Athelas", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #5d5c67;
+
+    margin-bottom: 20px;
+}
+
+.item-effect ul{
+    margin: 10px 0 30px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.item-effect ul li{
+    margin-bottom: 8px;
+    margin-left: 15px;
+}
+
+.item-effect ul li a{
+    border-bottom: 1px solid #eae5f0;
+    color: #856aab;
+    font-family: "Athelas", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.item-effect ul li a:before{
+    content: '·';
+    color: #856aab;
+    margin-right: 5px;
+}
+
+.btn-buy{
+    display: block;
+    text-decoration: none;
+    color: #856aab;
+    font-family: "Athelas", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+
+    border-radius: 28px;
+    border: 1px solid #d3c9e1;
+
+    width: 148px;
+    padding: 10px 5px;
+    text-align: center;
+
+    margin-left: 30px;
+}
+
+.description{
+    margin-bottom: 40px;
+}
+
+.encyclopedy-part{
+    border-bottom: 1px solid #eae5f0;
+}
