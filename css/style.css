@@ -2080,6 +2080,8 @@ body{
     margin: 25px auto;
     width: 800px;
     text-align: center;
+
+    z-index: 10;
 }
 
 .breadcrumbs ul{
@@ -2127,11 +2129,14 @@ body{
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 
-    padding: 70px 30px;
+    padding: 70px 0px;
+
+    z-index: 10;
 }
 
 .item-page-description{
     border-bottom: 1px solid #eae5f0;
+    padding: 0 30px;
 }
 
 .item-image{
@@ -2281,4 +2286,196 @@ body{
 
 .encyclopedy-part{
     border-bottom: 1px solid #eae5f0;
+    padding: 0 40px 50px 40px;
+}
+
+.encyclopedy-part h3{
+    margin: 40px 0 30px 0;
+    padding: 0;
+}
+
+.encyclopedy-part h3 a{
+    display: block;
+    font-family: "Athelas", sans-serif;
+    font-size: 35px;
+    color: #f44677;
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 1px solid #eae5f0;
+    text-decoration: none;
+}
+
+.part-questions{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    float: left;
+    width: 666px;
+
+    border: 1px solid red;
+    padding: 40px 30px;
+
+    margin-right: 35px;
+}
+
+.part-questions .question{
+    font-family: "Athelas", sans-serif;
+    font-size: 20px;
+    color: #5d5c67;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.part-questions .answer{
+    font-family: "Athelas", sans-serif;
+    font-size: 17px;
+    color: #5d5c67;
+    font-weight: normal;
+
+    margin-bottom: 25px;
+}
+
+.part-questions .view-more a{
+    font-family: "Athelas", sans-serif;
+    font-size: 17px;
+    color: #5d5c67;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.part-questions .view-more:after{
+    content: '\2192';
+
+    font-size: 17px;
+    color: #5d5c67;
+
+    margin: 0 10px;
+}
+
+.part-useful{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    float: right;
+    width: 405px;
+
+    position: relative;
+    border: 1px solid #b8a9ce;
+
+    padding: 40px 0 40px 0;
+}
+
+.part-useful ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+
+    width: 250px;
+}
+
+.part-useful ul li{
+     margin-bottom: 10px;
+ }
+
+.part-useful ul li:last-child{
+    margin-bottom: 0px;
+}
+
+.part-useful ul li a{
+    border-bottom: 1px solid #eae5f0;
+    color: #856aab;
+    font-family: "Athelas", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.part-name{
+    position: absolute;
+    top: -9px;
+    left: 86px;
+
+    color: #acacac;
+    font-family: "Athelas", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    background-color: #fff;
+    padding: 0 10px;
+}
+
+.receipt-part{
+    border-bottom: 1px solid #eae5f0;
+    padding: 55px 40px 50px 40px;
+}
+
+.receipt-part h3{
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-family: "Athelas", sans-serif;
+    font-size: 35px;
+    color: #f44677;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.receipt-part ul{
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+
+    text-align: center;
+
+    width: 1000px;
+}
+
+.receipt-type li{
+    display: inline-block;
+    vertical-align: top;
+
+    width: 200px;
+    text-align: center;
+
+    margin: 0 50px;
+
+}
+
+.receipt-tab{
+    cursor: pointer;
+}
+
+.receipt-icon{
+    background: url("../img/logo-item.png") 0 0 no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.receipt-tab .oil-icon{
+    background-position-y: -100px;
+}
+
+.receipt-tab .skin-icon{
+    background-position-y: -200px;
+}
+
+.receipt-name{
+    font-family: "Athelas", sans-serif;
+    font-size: 20px;
+    color: #856aab;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    position: relative;
+    top: 0px;
+}
+
+
+.receipt-type-content{
+    display: none;
+}
+
+.same-part{
+    display: none;
 }
