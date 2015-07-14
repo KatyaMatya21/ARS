@@ -1658,7 +1658,7 @@ body{
 
 .breadcrumbs-menu-after{
     width: 1000px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 15px auto;
     text-align: center;
 
     position: relative;
@@ -1675,57 +1675,13 @@ body{
     display: inline-block;
     vertical-align: top;
 
-    background: url("../img/catalog-menu-icon.png") 0 0 no-repeat;
-    width: 180px;
-    height: 160px;
-
-    margin-right: 80px;
     position: relative;
-}
 
-.breadcrumbs-menu-after ul li a:hover{
-    border-radius: 10px;
-    border: 1px solid #ffe1b8;
-}
-
-.breadcrumbs-menu-after ul li.active-breadcrumbs-menu-after{
-    background-position-x: -360px;
-}
-
-.breadcrumbs-menu-after ul li.active-breadcrumbs-menu-after:hover{
-    background-position-x: -360px;
-}
-
-.breadcrumbs-menu-after ul li.active-breadcrumbs-menu-after:hover a{
-
+    margin-right: 30px;
 }
 
 .breadcrumbs-menu-after ul li:last-child{
     margin-right: 0;
-}
-
-.breadcrumbs-menu-after ul li.sauna{
-    background-position-y: -160px;
-}
-.breadcrumbs-menu-after ul li.present{
-    background-position-y: -320px;
-}
-.breadcrumbs-menu-after ul li.keramic{
-    background-position-y: -480px;
-}
-
-.breadcrumbs-menu-after ul li.efir:hover{
-    background-position-x: -180px;
-}
-
-.breadcrumbs-menu-after ul li.sauna:hover{
-    background-position-x: -180px;
-}
-.breadcrumbs-menu-after ul li.present:hover{
-    background-position-x: -180px;
-}
-.breadcrumbs-menu-after ul li.keramic:hover{
-    background-position-x: -180px;
 }
 
 .breadcrumbs-menu-after ul li a{
@@ -1735,13 +1691,76 @@ body{
     font-size: 20px;
     text-decoration: none;
     cursor: pointer;
-
     display: block;
-
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
+
+.breadcrumbs-name{
+    border: 1px solid #fff;
+    border-radius: 15px;
+    padding: 3px 0;
+
+    position: relative;
+    top: -20px;
+}
+
+.breadcrumbs-name:before{
+    content: '·';
+    margin-right: 5px;
+    color: #fff;
+}
+
+.breadcrumbs-name:after{
+    content: '·';
+    margin-left: 5px;
+    color: #fff;
+}
+
+.breadcrumbs-icon{
+    background: url("../img/catalog-menu-icon.png") 0 0 no-repeat;
+    width: 180px;
+    margin: 0 auto;
+    height: 160px;
+}
+
+
+.breadcrumbs-menu-after ul li a .efir{
+    background-position-y: 0px;
+}
+
+.breadcrumbs-menu-after ul li a .sauna{
+    background-position-y: -160px;
+}
+
+.breadcrumbs-menu-after ul li a .present{
+    background-position-y: -320px;
+}
+
+.breadcrumbs-menu-after ul li a .keramic{
+    background-position-y: -480px;
+}
+
+.breadcrumbs-menu-after ul li a:hover .breadcrumbs-icon{
+    background-position-x: -180px;
+}
+
+.breadcrumbs-menu-after ul li.active-breadcrumbs-menu-after a .breadcrumbs-name{
+    border: 1px solid #ffd69d;
+    font-weight: bold;
+}
+
+.breadcrumbs-menu-after ul li.active-breadcrumbs-menu-after a .breadcrumbs-name:after{
+    color: #ffd69d;
+}
+.breadcrumbs-menu-after ul li.active-breadcrumbs-menu-after a .breadcrumbs-name:before{
+    color: #ffd69d;
+}
+
+.breadcrumbs-menu-after ul li.active-breadcrumbs-menu-after a .breadcrumbs-icon{
+    background-position-x: -360px;
+}
+
+
 
 .title-info{
     width: 700px;
@@ -2031,4 +2050,13 @@ body{
     z-index: 1;
     top: 2629px;
     right: -111px;
+}
+
+.flower-catalog{
+    top: 234px !important;
+}
+
+.paparotnik-catalog{
+    top: 399px !important;
+    right: -216px !important;
 }
