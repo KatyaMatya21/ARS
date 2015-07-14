@@ -13,10 +13,20 @@ $(document).ready(function(){
         $(this).next().toggle();
     });
 
-    $('.hide-filter').bind('mouseleave',function(e){
-        $(this).hide();
-        $(this).prev().removeClass("bigZ");
+    //-----------------------------------------------------------------------------------
+
+     $('.breadcrumbs-menu').bind('click',function(e){
+        $(this).toggleClass('menu-open');
     });
+
+    $('.breadcrumbs-menu').bind('mouseleave',function(e){
+        $(this).removeClass('menu-open');
+    });
+
+
+
+
+    //--------------------------------------------------------------------------------------
 
     function onViewportResize() {
         var win = $(this);
@@ -26,7 +36,7 @@ $(document).ready(function(){
 
 
             // Handle mobile-only mid slider
-            window.mobileMidSlider = new Sly($('#mobile-mid-slider'), {
+            window.mobileMidSlider = new Sly( $('#mobile-mid-slider'), {
                 mouseDragging: 1,
                 touchDragging: 1,
                 horizontal: 1,
