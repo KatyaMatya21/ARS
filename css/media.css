@@ -999,6 +999,10 @@
         background-size: 368%;
     }
 
+    .flower-catalog{
+        top: 288px !important;
+    }
+
     .paparotnik-catalog{
         top: 751px !important;
     }
@@ -1009,6 +1013,20 @@
         font-size: 20px;
 
         margin-left: 10px;
+    }
+
+    .breadcrumbs-menu-after ul{
+        width: 1000px;
+        height: 200px;
+    }
+
+    .breadcrumbs-menu-after ul li{
+        display: block;
+        float: left;
+
+        margin-right: 30px;
+
+        padding: 0 15px;
     }
 
 

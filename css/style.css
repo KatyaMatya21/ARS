@@ -1696,7 +1696,7 @@ body{
 }
 
 .breadcrumbs-name{
-    border: 1px solid #fff;
+    border: 1px solid rgba(255, 255, 255, 0);
     border-radius: 15px;
     padding: 3px 0;
 
@@ -1707,13 +1707,13 @@ body{
 .breadcrumbs-name:before{
     content: '·';
     margin-right: 5px;
-    color: #fff;
+    color: rgba(255, 255, 255, 0);
 }
 
 .breadcrumbs-name:after{
     content: '·';
     margin-left: 5px;
-    color: #fff;
+    color: rgba(255, 255, 255, 0);
 }
 
 .breadcrumbs-icon{
