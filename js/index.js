@@ -65,14 +65,27 @@ $(document).ready(function(){
 
     //-------------------------------------------------------------------------------------------------------------------
 
+    //$('.slide-type-product').each( function(i,element){
+
+    //    var text = $(element).text();
+    //    var words = text.split(' ');
+   //     var firstWord = words.shift();
+    //    var resultText = firstWord + '<br/>' + words.join(' ');
+
+   //     $(element).html( resultText );
+
+   // });
+
     $('.slide-type-product').each( function(i,element){
 
         var text = $(element).text();
+        var tL = text.length;
         var words = text.split(' ');
-        var firstWord = words.shift();
-        var resultText = firstWord + '<br/>' + words.join(' ');
-
-        $(element).html( resultText );
+        var br = '<br/>';
+        var index = 1;
+        if(tL > 30){index = 3;}else if(tL > 20){index = 2;}
+        words.splice(index, 0, br);
+        $(element).html(words.join(' '));
 
     });
 
