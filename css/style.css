@@ -1770,6 +1770,7 @@ body{
     text-align: center;
 
     padding-bottom: 25px;
+
 }
 
 .filters .filter{
@@ -1792,9 +1793,12 @@ body{
     border: 1px solid #eae5f0;
     border-radius: 25px;
 
-    padding: 5px 70px;
+    padding: 5px 0px;
+    width: 300px;
 
     cursor: pointer;
+    z-index: 10;
+    position: relative;
 }
 
 .name-filter:after{
@@ -1814,11 +1818,20 @@ body{
 
     position: absolute;
     list-style: none;
+    z-index: 9;
+    top: 338px;
+
 
     margin: 0;
     padding: 0;
 
     width: 300px;
+    border: 1px solid #b3a3cb;
+    border-radius: 25px;
+    background-color: #fff;
+    overflow: hidden;
+
+    padding-top: 43px;
 }
 
 .hide-filter li{
@@ -1829,13 +1842,18 @@ body{
 }
 
 .hide-filter li a{
+    display: block;
     font-family: "Athelas", sans-serif;
     font-size: 20px;
     font-weight: normal;
     text-decoration: none;
     color: #5d5c67;
 
-    padding: 15px 0px 15px 0px;
+    padding: 15px 10px 15px 20px;
+}
+
+.hide-filter li:hover{
+    background-color: #fafafa;
 }
 
 .alphabet{
@@ -1857,6 +1875,8 @@ body{
 }
 
 .alphabet ul li a{
+    display: inline-block;
+    vertical-align: top;
     font-family: "Athelas", sans-serif;
     font-size: 20px;
     font-weight: normal;
@@ -1865,10 +1885,9 @@ body{
     text-transform: uppercase;
 
 
-    width: 8px;
-    height: 8px;
+    width: 27px;
     text-align: center;
-    padding: 5px 5px;
+    padding: 2px 0;
     border: 1px solid #fff;
     border-radius: 50%;
 }
