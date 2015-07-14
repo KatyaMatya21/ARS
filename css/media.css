@@ -40,7 +40,6 @@
         margin: 0px 25px 0 0;
     }
 
-
     .spa-promo{
         width: 480px;
         height: 447px;
@@ -87,6 +86,14 @@
 
     footer{
         height: 220px;
+    }
+
+    .footer-menu-one{
+        margin: 0 35px 0 20px;
+    }
+
+    .footer-menu-two{
+        margin-right: 50px;
     }
 
     /*------------------------------------------------------------------------------------------------*/
@@ -886,6 +893,125 @@
         right: -184px;
     }
     /*------------------------------------------------------------------------------------------------*/
+
+    .catalog-page{
+        display: block;
+        padding-top: 35px
+    }
+
+    .catalog-page h2{
+        font-size: 43px;
+        text-align: center;
+        padding: 0 20px;
+        margin: 0 auto 10px auto;
+    }
+
+    .catalog-page p{
+        display: none;
+    }
+
+    .catalog-page .title-info{
+        width: 250px;
+    }
+
+    .catalog-page .title-info a{
+        display: block;
+        margin: 0 auto;
+
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+
+    .catalog-content{
+        padding: 30px 0 0 0;
+    }
+
+    .filters{
+        padding: 0 1px 20px 15px;
+    }
+
+    .name-filter{
+        width: 260px;
+        margin-bottom: 20px;
+    }
+
+    .hide-filter{
+        width: 260px;
+    }
+
+    .alphabet{
+        padding: 0 10px 0px 10px;
+        margin-bottom: 50px;
+    }
+
+    .alphabet ul li a{
+        font-size: 19px;
+    }
+
+    .catalog-list{
+        margin: 0 15px 0 15px;
+    }
+
+    .catalog-paragraph{
+        border: 1px solid #eae5f0;
+    }
+
+    .catalog-par{
+        top: -46px;
+        left: 67px;
+    }
+
+    .catalog-par .letter-names{
+        display: none;
+    }
+
+    .catalog-list .slider-products{
+        padding: 130px 0 40px 0px;
+    }
+
+    .catalog-list li.slide-product{
+        min-height: 201px;
+    }
+
+    .slide-product .slider-products-image{
+        height: 126px;
+    }
+
+    .slide-product .slider-products-image img{
+        width: auto;
+        height: 100%;
+    }
+
+    .slide-product .slider-products-description{
+        font-size: 13px;
+        width: 77%;
+    }
+
+    .slide-product .btn-look a{
+        top: 43px;
+        right: 11px;
+        font-size: 13px;
+        padding: 8px 15px;
+    }
+
+    .catalog-page-main{
+        background: #FFF url("../img/catalog-title.png") -311px -2px no-repeat;
+        background-size: 368%;
+    }
+
+    .paparotnik-catalog{
+        top: 751px !important;
+    }
+
+    .breadcrumbs-menu ul li:after{
+        content: '\25be';
+        color: #ffa92f;
+        font-size: 20px;
+
+        margin-left: 10px;
+    }
+
+
 
 
 }
