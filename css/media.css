@@ -1018,6 +1018,7 @@
 
     .breadcrumbs-menu-after ul{
         height: 100%;
+        overflow: hidden;
     }
 
     .breadcrumbs-menu-after ul li{
