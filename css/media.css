@@ -1288,12 +1288,13 @@
         margin-bottom: 20px;
     }
 
-    .receipt-content, .active-super-tab, .super-tab, .receipt-item, .receipt-content .receipt-content-buttons-frame{
-        display: none;
+    .receipt-content, .receipt-item, .receipt-content .receipt-content-buttons-frame{
+        display: block;
     }
 
     .receipt-type{
         background: none;
+        display: none;
     }
 
     .receipt-part ul{
@@ -1320,6 +1321,70 @@
         width: 215px;
         margin: 0 auto;
     }
+
+    .receipt-content .control-btn {
+        display: block;
+    }
+
+    .receipt-content-buttons-frame{
+        padding: 0 15px;
+        height: 125px;
+
+    }
+
+    .receipt-content .receipt-content-buttons-frame > ul > li {
+        width: 152px;
+        height: 92px;
+        padding: 13px 10px 14px 10px;
+        vertical-align: middle;
+    }
+
+    .receipt-description{
+        padding: 0 15px;
+    }
+
+    .receipt-part ul li{
+        width: 260px;
+        height: 117px;
+
+        margin-bottom: 25px;
+    }
+
+    .receipt-illustration .slider-products-image{
+        height: 117px;
+        width: 92px;
+
+        float: left;
+        border-right: 1px solid #ececec;
+    }
+
+    .receipt-illustration .slider-products-image img{
+        width: auto;
+        height: 75%;
+    }
+
+    .receipt-illustration .slider-products-description {
+
+        float: right;
+        width: 165px;
+        margin: 0px auto 0 auto;
+        padding: 21px 0;
+    }
+
+    .receipt-piece{
+        border: 1px solid #ececec;
+    }
+
+    .receipt-illustration .slider-products-description .item-attributes{
+        display: none;
+    }
+
+    .plus{
+        left: 106px;
+        top: 124px;
+    }
+
+
 
     .same-part{
         padding: 40px 15px;
@@ -1350,6 +1415,8 @@
     .item-page-content{
         padding-bottom: 0px;
     }
+
+
 
 }
 
