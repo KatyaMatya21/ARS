@@ -2318,7 +2318,7 @@ body{
     width: 162px;
     height: 223px;
     z-index: 1;
-    top: 37px;
+    top: 43px;
     left: 520px;
 }
 
@@ -2498,16 +2498,30 @@ body{
     top: 0;
 }
 
+.receipt-content{
+    position: relative;
+}
+
 .receipt-content ul{
     padding: 0;
     list-style: none;
-    margin: 40px 0 40px 0;
-
-    width: 100%;
 }
 
-.receipt-content > ul > li{
-    display: inline-block;
+.receipt-content-buttons-frame{
+    margin: 40px 0 40px 0;
+    width: 100%;
+    height: 92px;
+}
+
+.receipt-content-buttons-frame ul{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.receipt-content .receipt-content-buttons-frame > ul > li{
+
+    float: left;
     vertical-align: top;
     text-align: center;
 
@@ -2524,9 +2538,13 @@ body{
     height: 45px;
 
     max-width: 210px;
-    margin-right: 20px;
+    margin: 0 20px 0 0;
 
     cursor: pointer;
+}
+
+.receipt-content .control-btn{
+    display: none;
 }
 
 .receipt-content ul li:last-child{
@@ -2536,7 +2554,7 @@ body{
 .receipt-content ul li.active-receipt-button{
     color: #856aab;
 
-    border: 2px solid #eee9f3;
+    border: 1px solid #e3d6f3;
 }
 
 .receipt-item{
