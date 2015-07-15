@@ -2131,6 +2131,7 @@ body{
 
     padding: 70px 0px;
 
+    position: relative;
     z-index: 10;
 }
 
@@ -2287,6 +2288,9 @@ body{
 .encyclopedy-part{
     border-bottom: 1px solid #eae5f0;
     padding: 0 40px 50px 40px;
+
+    position: relative;
+
 }
 
 .encyclopedy-part h3{
@@ -2307,15 +2311,26 @@ body{
     width: 210px;
 }
 
+.flo{
+    background: url("../img/d-enc-flower.png") 0 0 no-repeat;
+    position: absolute;
+    width: 162px;
+    height: 223px;
+    z-index: 1;
+    top: 37px;
+    left: 520px;
+}
+
 .part-questions{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     float: left;
-    width: 666px;
-
-    border: 1px solid red;
-    padding: 40px 30px;
-
+    width: 645px;
+    padding: 45px 29px 45px 23px;
     margin-right: 35px;
+    z-index: 5;
+    position: relative;
+    background-color: #fff;
+    border-image: url("../img/border-round-big.png") 11 round round;
+    border-width: 12px;
 }
 
 .part-questions .question{
@@ -2355,14 +2370,13 @@ body{
 }
 
 .part-useful{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     float: right;
-    width: 405px;
-
+    width: 389px;
+    background-color: #fff;
     position: relative;
-    border: 1px solid #b8a9ce;
-
-    padding: 40px 0 40px 0;
+    padding: 39px 0 51px 0;
+    border-image: url("../img/border-round-big.png") 11 round round;
+    border-width: 12px;
 }
 
 .part-useful ul {
@@ -2393,14 +2407,15 @@ body{
 
 .part-name{
     position: absolute;
-    top: -9px;
-    left: 86px;
+    top: -18px;
+    left: 78px;
 
     color: #acacac;
     font-family: "Athelas", sans-serif;
-    font-size: 17px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: normal;
     text-transform: uppercase;
+    letter-spacing: 1px;
 
     background-color: #fff;
     padding: 0 10px;
@@ -2610,6 +2625,7 @@ body{
 }
 
 .same-part{
+    position: relative;
     padding: 50px 40px;
 }
 
@@ -2622,4 +2638,12 @@ body{
     color: #f44677;
     font-weight: bold;
     font-style: italic;
+}
+
+.same-part .slider-products-content{
+    height: 356px;
+}
+
+.same-part .slider-fader{
+    top: 222px;
 }
