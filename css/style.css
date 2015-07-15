@@ -2081,6 +2081,7 @@ body{
     width: 800px;
     text-align: center;
 
+    position: relative;
     z-index: 10;
 }
 
@@ -2502,10 +2503,10 @@ body{
     list-style: none;
     margin: 40px 0 40px 0;
 
-    width: 1172px;
+    width: 100%;
 }
 
-.receipt-content ul li{
+.receipt-content > ul > li{
     display: inline-block;
     vertical-align: top;
     text-align: center;
@@ -2524,6 +2525,8 @@ body{
 
     max-width: 210px;
     margin-right: 20px;
+
+    cursor: pointer;
 }
 
 .receipt-content ul li:last-child{
@@ -2547,10 +2550,6 @@ body{
     font-weight: normal;
     font-style: italic;
     margin-bottom: 70px;
-}
-
-.receipt-illustration{
-
 }
 
 .receipt-illustration ul{
@@ -2646,4 +2645,21 @@ body{
 
 .same-part .slider-fader{
     top: 222px;
+}
+
+
+.active-super-tab{
+    display: block !important;
+}
+
+.super-tab{
+    display: none;
+}
+
+.tab-tab{
+    display: none;
+}
+
+.active-tab-tab{
+    display: block;
 }
