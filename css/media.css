@@ -1145,6 +1145,207 @@
     /*--------------------------------------------------------------------------------------*/
     /* catalog item */
 
+    .breadcrumbs{
+        display: none;
+    }
+
+    .mobile-breadcrumbs{
+        display: block;
+        margin: 30px auto;
+        text-align: center;
+
+        position: relative;
+        z-index: 10;
+    }
+
+    .mobile-breadcrumbs a{
+        display: block;
+        font-family: "Athelas", sans-serif;
+        font-size: 22px;
+        font-weight: normal;
+        text-decoration: none;
+        color: #ffa92f;
+    }
+
+    .mobile-breadcrumbs a:before{
+        content: '\2190';
+
+        font-size: 23px;
+        color: #ffa92f;
+
+        margin-right: 10px;
+        display: inline-block;
+    }
+
+    .mobile-item-description {
+        display: block;
+
+        text-align: center;
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .mobile-item-description h2{
+        font-family: "Adventure", sans-serif;
+        font-size: 43px;
+        color: #f44677;
+        font-weight: normal;
+        line-height: 38px;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    .mobile-item-description span{
+        font-family: "Athelas", sans-serif;
+        font-size: 22px;
+        font-weight: normal;
+        color: #acacac;
+    }
+
+    .item-page-description{
+        padding: 0;
+    }
+
+    .item-image{
+        width: 290px;
+        margin: 30px 0;
+    }
+
+    .item-image img{
+        width: 97%;
+    }
+
+    .item-description{
+        margin: 0;
+    }
+
+    .item-description h2{
+        display: none;
+    }
+
+    .item-artcle{
+     padding-left: 0px;
+     text-align: center;
+    }
+
+    .item-info{
+        width: 247px;
+        border-radius: 7px;
+    }
+
+    .item-effect ul li{
+        width: 250px;
+    }
+
+    .btn-buy{
+        margin-left: 63px;
+    }
+
+    .encyclopedy-part h3{
+        margin: 40px 0 50px 36px;
+    }
+
+    .flo{
+        left: 66px;
+        top: 70px;
+    }
+
+    .encyclopedy-part{
+        padding: 0;
+        padding-bottom: 40px;
+    }
+
+    .part-questions{
+        width: 236px;
+        padding: 20px 15px 20px 15px;
+
+        margin-bottom: 40px;
+    }
+
+    .part-useful{
+        padding: 40px 0 35px 0;
+        width: 266px;
+    }
+
+    .part-name{
+        width: 239px;
+        top: -21px;
+        left: 6px;
+        padding: 0 5px;
+    }
+
+    .receipt-part{
+        padding: 35px 0 0 0;
+    }
+
+    .receipt-part h3{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .receipt-content, .active-super-tab, .super-tab, .receipt-item, .receipt-content .receipt-content-buttons-frame{
+        display: none;
+    }
+
+    .receipt-type{
+        background: none;
+    }
+
+    .receipt-part ul{
+        width: 290px;
+        text-align: center;
+    }
+
+    .receipt-part ul li{
+        width: 260px;
+        height: 180px;
+        margin: 0 auto;
+        padding: 20px 0 0 0;
+    }
+
+    .receipt-part ul li:nth-child(2), .receipt-part ul li:nth-child(3){
+        background: url("../img/border.png") 0 0 no-repeat;
+    }
+
+    .receipt-type li.active-receipt-tab .receipt-name{
+        font-weight: normal;
+    }
+
+    .receipt-type li .receipt-name{
+        width: 215px;
+        margin: 0 auto;
+    }
+
+    .same-part{
+        padding: 40px 15px;
+    }
+
+    .same-part h3{
+        width: 250px;
+        text-align: center;
+    }
+
+    .same-part .slider-products-content{
+        width: 260px;
+        height: 390px;
+    }
+
+    .slide-product .slider-products-image{
+        height: 250px;
+    }
+
+    .same-part .slider-fader{
+        top: 250px;
+    }
+
+    .slide-product .slider-products-description{
+        font-size: 20px;
+    }
+
+    .item-page-content{
+        padding-bottom: 0px;
+    }
 
 }
 

@@ -2681,3 +2681,11 @@ body{
 .active-tab-tab{
     display: block;
 }
+
+.mobile-breadcrumbs{
+    display: none;
+}
+
+.mobile-item-description{
+    display: none;
+}
