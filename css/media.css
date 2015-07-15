@@ -157,6 +157,10 @@
         width: 210px;
     }
 
+    .receipt-type{
+        background: url("../img/slide-separator-left.png") -87px bottom no-repeat;
+    }
+
 
 }
 
