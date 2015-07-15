@@ -161,6 +161,12 @@
         background: url("../img/slide-separator-left.png") -87px bottom no-repeat;
     }
 
+    /*---------------------------------------------------------------------------------------*/
+    /* 404 */
+
+    .myata404{
+        right: -2px;
+    }
 
 }
 
@@ -1415,8 +1421,35 @@
     .item-page-content{
         padding-bottom: 0px;
     }
+    /*---------------------------------------------------------------------------------------*/
+    /* 404 */
 
+    .content-404{
+        padding: 88px 0 55px 0;
+    }
 
+    .background404{
+        background: url("../img/small404.jpg") 0 0 no-repeat;
+        width: 290px;
+        height: 139px;
+    }
+
+    .myata404{
+        right: -109px;
+        top: 176px;
+        background-size: 42%;
+    }
+
+    .not-found{
+        font-size: 24px;
+        top: 0px;
+        left: 5px;
+    }
+
+    .not-found-description{
+        width: 280px;
+        margin-bottom: 30px;
+    }
 
 }
 

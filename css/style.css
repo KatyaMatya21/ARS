@@ -2691,3 +2691,63 @@ body{
     display: none;
 }
 
+/*---------------------------------------------------------------------------------------*/
+/* 404 */
+
+.content-404{
+    padding: 200px 0 100px 0;
+    z-index: 10;
+    position: relative;
+}
+
+.background404{
+    margin: 0 auto;
+    text-align: center;
+
+    background: url("../img/404.jpg") 0 0 no-repeat;
+    width: 1021px;
+    height: 469px;
+}
+
+.myata404{
+    background: url("../img/myata.png") 0 0 no-repeat;
+    background-size: 79%;
+    position: absolute;
+    top: 176px;
+    right: 107px;
+    width: 176px;
+    height: 124px;
+}
+
+.not-found{
+    font-size: 35px;
+    font-style: italic;
+    font-family: "Athelas", sans-serif;
+    font-weight: normal;
+    color: #c7b7f6;
+    text-align: center;
+
+    position: relative;
+    top: -65px;
+}
+
+.not-found-description{
+    font-size: 22px;
+    font-family: "Athelas", sans-serif;
+    font-weight: normal;
+    color: #5d5c67;
+    text-align: center;
+
+
+    width: 600px;
+    margin: 40px auto 100px auto;
+
+}
+
+.not-found-description a{
+    text-decoration: none;
+
+    color: #856aab;
+}
+
+
