@@ -2190,9 +2190,10 @@ body{
 }
 
 .item-info{
-    border: 2px dotted #b8a9ce;
+    border-image: url("../img/dotted.png") 11 round round;
+    border-width: 12px;
     border-radius: 20px;
-    width: 460px;
+    width: 438px;
 
     padding: 15px 20px;
     margin-bottom: 20px;
