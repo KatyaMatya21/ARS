@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    window.slyTown = null;
+
     var gpuAcceleration = Modernizr.csstransforms3d ? 'translateZ(0) ' : '';
     var transform = Modernizr.prefixed('transform');
 
@@ -43,15 +45,16 @@ $(document).ready(function(){
         scrollBy: 1
     };
 
-    var slideeSly = new Sly(
+    window.slyTown = new Sly(
         $slideeFrame,
         $slideeOptions
     );
 
-    slideeSly.init();
+    window.slyTown.init();
 
     $('.town-point').bind('click',function(){
         $(this).toggleClass('town-point-switch');
+        window.slyTown.reload();
     });
 
 
