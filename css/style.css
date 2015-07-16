@@ -2691,6 +2691,19 @@ body{
     display: none;
 }
 
+.back-receipt{
+    color: #5d5c67;
+    font-size: 19px;
+    font-weight: normal;
+    font-family: "Athelas", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: none;
+
+    width: 120px;
+    margin: 0 auto;
+}
+
 /*---------------------------------------------------------------------------------------*/
 /* 404 */
 

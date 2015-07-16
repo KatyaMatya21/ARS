@@ -161,6 +161,14 @@
         background: url("../img/slide-separator-left.png") -108px bottom no-repeat;
     }
 
+    .back-receipt{
+        display: none;
+    }
+
+    .back-receipt:before{
+        display: none;
+    }
+
     /*---------------------------------------------------------------------------------------*/
     /* 404 */
 
@@ -1162,6 +1170,22 @@
 
     /*--------------------------------------------------------------------------------------*/
     /* catalog item */
+
+    .back-receipt{
+        display: block;
+    }
+    .back-receipt:before{
+        content: '\2190';
+        font-size: 23px;
+        color: #5d5c67;
+        margin-right: 10px;
+        display: inline-block;
+
+    }
+
+    .receipt-content .control-btn .slider-fader{
+        top: 72px !important;
+    }
 
     .breadcrumbs{
         display: none;
