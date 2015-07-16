@@ -1501,7 +1501,7 @@
         padding: 10px 0 30px 0px;
     }
 
-    .town-list > ul > li{
+    .town-list > ul > li.town-point{
         background: url("../img/right-town.png") 259px 21px no-repeat;
         padding: 25px 0 25px 19px;
         border-top: 1px solid #ebebeb;
@@ -1518,7 +1518,16 @@
 
     .map-paporotnik{
         display: block;
+        left: -131px
     }
+
+    .map-menu-decor{
+        top:0;
+        left: 0;
+        margin: 0 auto;
+        width: 290px;
+    }
+
 
 }
 
