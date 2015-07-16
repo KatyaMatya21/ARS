@@ -1209,10 +1209,12 @@ footer {
     bottom: 0;
     z-index: 99999;
     width: 100%;
+
 }
 
 .footer-decor{
     padding-left: 160px;
+
 }
 
 .footer-content {
@@ -2445,8 +2447,6 @@ body{
     margin: 0 auto;
 
     text-align: center;
-
-    width: 1000px;
 }
 
 .receipt-type
@@ -2751,3 +2751,191 @@ body{
 }
 
 
+/*---------------------------------------------------------------------------------------*/
+/* Где купить? */
+
+.map-title{
+    margin: 20px auto;
+    text-align: center;
+}
+
+.map-title h3{
+    font-family: "Adventure", sans-serif;
+    font-size: 85px;
+    color: #f44677;
+    font-weight: normal;
+
+    margin: 0;
+    padding: 0;
+}
+
+.map-page-content{
+    z-index: 10;
+    position: relative;
+
+    width: 100%;
+    height: 1010px;
+    background-color: rgba(101, 81, 130, 0.18);
+}
+
+.map-container{
+
+}
+
+.map-menu-content{
+    position: absolute;
+    z-index: 11;
+    top: 80px;
+    left: 90px;
+
+    width: 378px;
+    height: 676px;
+
+    background-color: rgba(255, 255, 255, 0.69);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+
+    overflow: hidden;
+}
+
+.map-menu{
+
+}
+
+.map-menu-head{
+    background-color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.map-menu-point{
+    display: inline-block;
+
+    padding: 30px 0 30px 30px;
+}
+
+
+.map-menu-point a{
+    font-size: 22px;
+    color: #856aab;
+    font-family: "Athelas", sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+
+    border-bottom: 1px dashed rgba(133, 106, 171, 0.44);
+
+
+    /*-moz-border-image: url("../img/dashed.png") 0 0 27 0 round round;*/
+}
+
+.active-map-menu-point a {
+    /*-moz-border-image: none;*/
+    font-weight: bold;
+    border-bottom: none;
+}
+
+.town-list{
+    display: block;
+}
+
+.town-list > ul{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.town-list > ul > li{
+    background: url("../img/right-town.png") 342px 20px no-repeat;
+
+    padding: 25px 0 25px 37px;
+
+    text-transform: uppercase;
+    font-family: "Athelas", sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    color: #000000;
+
+    border-bottom: 1px solid #ebebeb;
+}
+
+.town-list > ul > li:hover{
+    background-color: #fff;
+    background-image: none;
+}
+
+.town-addresses{
+    display: none;
+}
+
+.town-addresses > ul{
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.town-addresses > ul > li{
+    font-family: "Athelas", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #000000;
+    text-transform: none;
+}
+
+.town-store-name{
+    font-weight: bold;
+}
+
+.online-store{
+    display: none;
+    margin: 0 35px;
+}
+
+.online-store ul{
+    margin: 30px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.online-store ul li{
+    margin-bottom: 20px;
+
+    font-family: "Athelas", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: none;
+}
+
+.url-store{
+    font-weight: normal;
+    color: #856aab;
+    text-decoration: none;
+
+    border-bottom: 1px solid #eae5ee;
+}
+
+.tel-store{
+    font-weight: normal;
+}
+
+.info-store{
+    font-family: "Athelas", sans-serif;
+    font-weight: bold;
+    color: #000000;
+    text-transform: none;
+    font-size: 17px;
+
+    margin-bottom: 10px;
+}
+
+.store-towns{
+    font-size: 17px;
+    font-weight: normal;
+    font-family: "Athelas", sans-serif;
+    color: #000000;
+    text-transform: none;
+
+}
