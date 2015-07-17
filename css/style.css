@@ -3033,6 +3033,7 @@ main h2.title-ency {
 .answers-title span.tab-question{
     border-bottom: 1px dashed #f44677;
     color: #f44677;
+    cursor: pointer;
 }
 
 .answers-title span.active-tab-question{
@@ -3110,4 +3111,31 @@ main h2.title-ency {
 .content-block-answers > ul > .question-switch-active > .answer-block{
     display: block !important;
 }
+
+.decor-content{
+    position: relative;
+
+}
+
+.myata-answer{
+    background: url("../img/myata.png") 0 0 no-repeat;
+    position: absolute;
+    width: 178px;
+    height: 129px;
+    z-index: 2;
+    top: 59px;
+    right: 186px;
+}
+
+.flower-answer{
+    background: url("../img/flower.png") 0 0 no-repeat;
+    position: absolute;
+    width: 203px;
+    height: 166px;
+    z-index: 3;
+    top: 725px;
+    left: 271px;
+    transform: rotate(-14deg);
+}
+
 
