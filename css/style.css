@@ -1761,7 +1761,7 @@ body{
     color: #ffd69d;
 }
 
-.breadcrumbs-menu-after ul li.active-breadcrumbs-menu-after a .breadcrumbs-icon{
+.breadcrumbs-menu-after ul li.active-breadcrumbs-menu-after a div.breadcrumbs-icon{
     background-position-x: -360px;
 }
 
@@ -2993,4 +2993,121 @@ body{
 }
 
 /*---------------------------------------------------------------------------------------*/
-/* 404 */
+/* Энциклопедия Ответы на вопросы */
+
+
+main h2.title-ency {
+    text-align: center;
+    color:#f44677;
+    font-size: 85px;
+    font-weight: normal;
+    font-family: "Adventure", sans-serif;
+
+    margin: 30px auto 0 auto;
+    padding: 0;
+
+}
+
+.answers-content-page{
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    padding-bottom: 50px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.answers-title{
+    text-align: center;
+    color: #f44677;
+    font-size: 42px;
+    font-weight: normal;
+    font-family: "Adventure", sans-serif;
+
+    width: 575px;
+    margin: 0px auto 0px auto;
+    padding: 60px 0 40px 0;
+}
+
+.answers-title span.tab-question{
+    border-bottom: 1px dashed #f44677;
+    color: #f44677;
+}
+
+.answers-title span.active-tab-question{
+    color: #856aab;
+    border-bottom:none;
+}
+
+.content-block-answers-active{
+    display: block !important;
+}
+
+.content-block-answers{
+    display: none;
+    border: 1px solid #e2e2e2;
+    border-radius: 15px;
+
+    width: 850px;
+
+    margin: 0 auto 50px auto;
+
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.content-block-answers ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.content-block-answers ul li {
+    border: 1px solid #e2e2e2;
+
+
+    font-family: 'Athelas', sans-serif;
+
+    font-size: 23px;
+    color: #5d5c67;
+
+    padding-bottom: 45px;
+
+    cursor: pointer;
+}
+
+.question-block{
+    font-weight: bold;
+
+    padding: 45px 60px 0px 70px;
+}
+
+.question-block:before {
+    content: '';
+    display: inline-block;
+    background: url("../img/plus-minus.png") 0 0 no-repeat;
+    width: 20px;
+    height: 20px;
+
+    position: relative;
+    z-index: 20;
+    left: -20px;
+    bottom: -2px;
+}
+
+.answer-block{
+    display: none;
+    font-weight: normal;
+
+    padding: 20px 80px 0px 90px;
+}
+
+.content-block-answers > ul > .question-switch-active > .question-block:before{
+   background-position-y: -20px;
+}
+
+.content-block-answers > ul > .question-switch-active > .answer-block{
+    display: block !important;
+}
+
