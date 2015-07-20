@@ -3512,21 +3512,18 @@ main h2.title-ency {
 }
 
 .work-slider .slider-fader{
-    top: 127px
-}
-
-.work-slider .slider-fader{
+    top: 127px;
     width: 26px;
     height: 121px;
 }
 
 .work-slider .slider-fader-left {
-    left: 0;
+    left: 95px;
     background: transparent url('../img/slider-controls-transp1.png') 0 0 no-repeat;
 }
 
 .work-slider .slider-fader-right {
-    right: 0;
+    right: 95px;
     background: transparent url('../img/slider-controls-transp1.png') -32px 0 no-repeat;
 }
 
