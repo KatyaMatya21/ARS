@@ -1188,7 +1188,7 @@
     }
 
     .catalog-list li.slide-product{
-        min-height: 201px;
+        min-height: 360px;
     }
 
     .slide-product .slider-products-image{
@@ -1206,8 +1206,8 @@
     }
 
     .slide-product .btn-look a{
-        top: 43px;
-        right: 11px;
+        top: 125px;
+        right: 70px;
         font-size: 13px;
         padding: 8px 15px;
     }

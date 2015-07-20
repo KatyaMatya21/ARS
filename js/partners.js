@@ -17,12 +17,12 @@ $(document).ready(function(){
         nextPage: $slideeFrame.parent().find('.slider-fader-right').get(0)
     };
 
-    var slideeSly = new Sly(
+    window.workSlider = new Sly(
         $slideeFrame,
         $slideeOptions
     );
 
-    slideeSly.init();
+    window.workSlider.init();
 
 
     $('a[data-section]').click(function(e){
@@ -43,6 +43,10 @@ $(document).ready(function(){
     function onViewportResize() {
         var win = $(this);
 
+        if(window.workSlider) {
+            window.workSlider.reload();
+        }
+
         if( win.width() <= 1450 ) {
             var $slideeFrame = $('.sert-slider');
             var $slideeOptions = {
@@ -59,12 +63,20 @@ $(document).ready(function(){
                 nextPage: $slideeFrame.parent().find('.slider-fader-right').get(0)
             };
 
-            var slideeSly = new Sly(
+            window.sertSlider = new Sly(
                 $slideeFrame,
                 $slideeOptions
             );
 
-            slideeSly.init();
+            window.sertSlider.init();
+
+        }
+        else{
+
+            if(window.sertSlider){
+                window.sertSlider.destroy();
+            }
+
         }
 
     }

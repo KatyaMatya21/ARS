@@ -24,7 +24,17 @@ $(document).ready(function(){
     });
 
 
+    $('li[data-section]').click(function(e){
 
+        var section = $(this).data('section');
+        var CurrentSection = $('#'+section);
+        var offset = CurrentSection.position().top;
+
+        window.documentSlider.slideTo(offset);
+
+        e.preventDefault();
+        return false;
+    });
 
     //--------------------------------------------------------------------------------------
 
