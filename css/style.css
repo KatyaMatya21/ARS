@@ -3301,8 +3301,7 @@ main h2.title-ency {
 .features{
     margin: 40px 0;
 
-    background: url("../img/lines.png") 290px 70px no-repeat;
-
+    background: url("../img/lines.png") 290px 180px no-repeat;
 }
 
 .features ul{
@@ -3315,26 +3314,61 @@ main h2.title-ency {
     display: inline-block;
     vertical-align: top;
 
+    width: 297px;
+    height: 188px;
+    margin-right: 140px;
+
+    margin-bottom: 50px;
+}
+
+.features ul li .features-name{
     font-family: "Athelas", sans-serif;
     color: #5d5c67;
     font-weight: normal;
     font-size: 19px;
     text-align: center;
-
-    width: 297px;
-    height: 188px;
-    margin-right: 140px;
 }
 
-.features ul li:nth-child(3n){
- margin-right: 0;
+.features ul li:nth-child(3n) {
+    margin-right: 0;
 }
 
-.features ul li:nth-child(5){
+.features ul li:nth-child(4), .features ul li:nth-child(5), .features ul li:nth-child(6) {
+    margin-bottom: 20px;
+}
+
+.features ul li:nth-child(5) .features-name{
     font-family: "Adventure", sans-serif;
     color: #f44677;
     font-weight: normal;
     font-size: 42px;
+
+    position: relative;
+    top: 35px;
+}
+
+
+.features-icon{
+    background: url("../img/red-icons.png") 0 0 no-repeat;
+    width: 105px;
+    margin: 0 auto;
+    height: 115px;
+}
+
+.features ul li .ekeramika-feature{
+    background-position-y: 0px;
+}
+
+.features ul li .bottle-feature{
+    background-position-y: -115px;
+}
+
+.features ul li .present-feature{
+    background-position-y: -230px;
+}
+
+.features ul li .sauna-feature{
+    background-position-y: -345px;
 }
 
 /*---------------------------------------------------------------------------------------*/
