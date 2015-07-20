@@ -7,18 +7,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="keywords"
+          content="ароматерапия, эфирные масла купить, эфирные масла спб, жирные масла, масло жожоба, массажное масло, базовые масла, натуральная косметика">
+    <meta name="description"
+          content="ARS - Aroma Royal Systems Aroma - мир ароматов натуральных масел Royal -  высокие требования компании к качеству продукции Systems - единство компании и интересные для покупателя.">
 
-    <title>Партнерам</title>
+    <title>ARS - Aroma Royal Systems</title>
 
     <meta property="og:title" content=""/>
     <meta property="og:url" content=""/>
     <meta property="og:image" content=""/>
     <meta property="og:description" content=""/>
 
+    <link rel="shortcut icon" href="img/ars.png" type="image/png">
+
     <link href="css/normalize.min.css" rel="stylesheet">
+
+    <!-- bxSlider CSS file -->
+    <link href="js/jquery.bxslider.min.css" rel="stylesheet"/>
+
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" media="screen" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media
     queries -->
@@ -29,9 +38,340 @@
 
 </head>
 
-<body>
+<body itemscope itemtype="http://schema.org/WebPage">
+
+<!-- Целевая аудитория -->
+
+<div itemprop="audience" itemscope itemtype="http://schema.org/PeopleAudience">
+    <meta itemprop="suggestedGender" content="female">
+    <meta itemprop="suggestedMinAge" content="22">
+    <meta itemprop="suggestedMaxAge" content="55">
+</div>
+
+<!-- Меню начало -->
+
+<header itemscope itemtype="http://schema.org/WPHeader">
+
+    <div class="head-container">
+        <div class="logo">
+            <div id="mobile-menu-switch"></div>
+            <a href="index.html">
+                <img src="img/logo.png" width="147" height="113" alt="Логотип ARS" title=""/>
+            </a>
+        </div>
+
+        <nav itemscope itemtype="http://schema.org/SiteNavigationElement" id="header-sub-nav">
+            <ul class="menu">
+                <li>
+                    <a itemprop="url" href="catalog.html" class="menu-catalog">
+                        <div class="menu-item">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Каталог</div>
+                        </div>
+                    </a>
+
+                    <div class="hide-menu">
+
+                        <h2>Каталог</h2>
+
+                        <p>
+                            — это пахучие вещества, которые вырабатываются эфиромасличными растениями и обусловливают их
+                            запах и практическую ценность. Эфирные масла могут содержаться в любой части растения — в
+                            семенах,
+                            корнях, листьях, плодах, древесине, цветах.
+                        </p>
+
+                        <div id="catalog-back">Назад</div>
+
+                        <div class="catalog-type">
+
+                            <div class="catalog-type-item">
+                                <h3><a href="catalog-aroma.html">Ароматерапия</a></h3>
+
+                                <p>Небольшой поясняющий текст об ароматерапии</p>
+                                <ul>
+                                    <li class="bottle-icon"><a href="#">Эфирные масла</a></li>
+                                    <li class="sauna-icon"><a href="#">Наборы для бани и сауны</a></li>
+                                    <li class="present-icon"><a href="#">Подарочные наборы</a></li>
+                                    <li class="keramika-icon"><a href="#">Аромакерамика</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="catalog-type-item">
+                                <h3><a href="#">Уход за телом и волосами</a></h3>
+
+                                <p>Небольшой поясняющий текст об уходе за телом и волосами</p>
+                                <ul>
+                                    <li class="bottle-icon"><a href="#">Масла для ухода за телом и волосами</a></li>
+                                    <li class="sauna-icon"><a href="#">Смеси масел для красоты</a></li>
+                                    <li class="present-icon"><a href="#">Массаж</a></li>
+                                    <li class="keramika-icon"><a href="#">SPA-уход</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="catalog-type-item">
+                                <h3><a href="#">Премиум уход</a></h3>
+
+                                <p>Небольшой поясняющий текст о премиум уходе</p>
+                                <ul>
+                                    <li class="bottle-icon"><a href="#">Эфирные масла Premium</a></li>
+                                    <li class="sauna-icon"><a href="#">Масла для ухода за телом и волосами Premium</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </li>
+                <li>
+                    <a itemprop="url" href="encyclopedia-answers.html" class="menu-encyclopedia">
+                        <div class="menu-item">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Энциклопедия</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="active-menu">
+                    <a itemprop="url" href="partners.html" class="menu-partner">
+                        <div class="menu-item">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Партнерам</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a itemprop="url" href="company.html" class="menu-company">
+                        <div class="menu-item">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">О компании</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a itemprop="url" href="map.html" class="menu-map">
+                        <div class="menu-item">
+                            <div class="menu-icon"></div>
+                            <div class="menu-name">Где купить?</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+            <a href="#" class="vk">Мы Вконтакте</a>
+
+            <a href="#" id="upBtn" class="up">Наверх</a>
+
+        </nav>
+
+    </div>
+
+    </div>
+
+</header>
+
+<!-- Меню конец -->
+
+<div id='wrapper' class="frame">
+
+    <!-- Начало основного контента страницы -->
+
+    <main id='main' class="slidee">
+
+        <!-- <div id="parallax-bg">
+
+            <img data-parallax="10" src="img/para-leave2.png" style="position: absolute;top: 231px;left: 92px;"/>
+
+        </div>
+
+        -->
+
+        <div class="container-shadowed">
+
+            <h2 class="title-ency">Партнерам</h2>
+
+            <div class="partners-menu">
+
+                <ul>
+
+                    <li class="active-partners-menu"><a href="#">Контрактное производство</a></li>
+
+                    <li><a href="#">Преимущества сотрудничества</a></li>
+
+                    <li><a href="#">Принципы работы</a></li>
+
+                    <li><a href="#">Сертификаты</a></li>
+
+                    <li><a href="#">Наши партнеры</a></li>
+
+                    <li><a href="#">Контакты</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="container partners-page-content">
+
+                <div class="production-content">
+
+                    <h3>Контрактное производство</h3>
+
+                    <div class="production-description">Компания "Арома Роял Системс" предлагает услуги по контрактному производству Private Label широкого спектра эфирно-масляничной продукциина основе 100% натуральных компонентов. Может быть изготовлена продукция по индивидуальной рецептуре.</div>
+
+                    <div class="production-info clearfix">
+
+                        <div class="production-image">
+                            <img src="img/production.png" alt="Производство">
+                        </div>
+                        
+                        <div class="production-services">
+                            <ul>
+                                <li class="bottle-icon">Приготовление, розлив, упаковка;</li>
+                                <li class="sauna-icon">Разработка рецептур;</li>
+                                <li class="present-icon">Разработка и печать упаковки;</li>
+                                <li class="keramika-icon">Хранение комплектующих и готовойпродукции;</li>
+                                <li class="bottle-icon">Разработка и печать рекламныхматериалов к продукции.</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="features-work">
+
+                    <div class="features">
+                        
+                        <ul>
+                            <li>Широкий ассортимент 100% натуральной продукции</li>
+                            <li>2 склада (в Москве и Санкт-Петербурге)</li>
+                            <li>Входящий и исходящий контроль качества продукции, сертификаты</li>
+                            <li>Гибкая ценовая политика</li>
+                            <li>Преимущества сотрудничества</li>
+                            <li>Упаковка на европаллеты</li>
+                            <li>Подготовка товара к отгрузке в соответствии с Вашими индивидуальными требованиями (упаковка, маркировка, документация)</li>
+                            <li>Оперативное введение сезонной продукции и (или) продукции на период рекламной кампании</li>
+                            <li>Маркетинговая поддержка (обучение сотрудников, буклеты, акции для конечного потребителя, акции для сети, акции для сотрудников, реклама в СМИ и т.д.)</li>
+                        </ul>
+                        
+                    </div>
+                    
+
+                    <div class="work"></div>
+
+                </div>
 
 
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+</div>
+
+
+
+<!-- Конец основного контента страницы -->
+
+<!-- Начало футера -->
+
+<footer itemscope itemtype="http://schema.org/WPFooter">
+
+    <div class="footer-decor container">
+
+        <div id="footer-flower-plant"></div>
+
+        <div class="footer-content">
+
+            <div class="footer-menu-one">
+                <ul>
+                    <li>
+                        <a href="catalog.html">Каталог</a>
+                    </li>
+                    <li>
+                        <a href="encyclopedia-answers.html">Энциклопедия</a>
+                    </li>
+                    <li>
+                        <a href="partners.html">Партнерам</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-menu-two">
+                <ul>
+                    <li>
+                        <a href="company.html">О компании</a>
+                    </li>
+                    <li>
+                        <a href="map.html">Где купить</a>
+                    </li>
+                    <li>
+                        <a href="#">Мы Вконтакте</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div itemscope itemtype="http://schema.org/PostalAddress" class="footer-contacts">
+
+                <div class="work-time">
+                    <p>с 9.00 до 18.00</p>
+                </div>
+
+                <div class="footer-city">
+                    <div class="contact-moscow">
+                        <div itemprop="addressLocality" class="footer-city">Москва</div>
+                        <div itemprop="telephone" class="tel-number">тел./факс: +7(495) 980 02 78</div>
+                    </div>
+                    <div class="contact-spb">
+                        <div itemprop="addressLocality" class="footer-city">Санкт-Петербург</div>
+                        <div itemprop="telephone" class="tel-number">тел.: +7(812) 347 73 57; +8(800) 3333 006</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="madein">
+                <a href="http://makeit-da.ru/"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Конец футера -->
+<div class="scrollbar">
+    <div class="handle"></div>
+</div>
+
+
+</div>
+
+<!-- Google map-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEZPGYh87bPzjm4kaHSnAjZQ709zXZgOM"></script>
+
+<!-- jQuery library (served from Google) -->
+<script src="js/jquery.min.js"></script>
+
+<!-- Modernizr -->
+<script src="js/modernizr.js"></script>
+
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.min.js"></script>
+
+<!-- Sly -->
+<script src="js/sly.min.js"></script>
+
+<!-- Lodash -->
+<script src="js/lodash.js"></script>
+
+<!-- EASING -->
+<script src="js/easing.js"></script>
+
+<!-- Custom -->
+<script src="js/common.js"></script>
+<script src="js/partners.js"></script>
 
 </body>
 

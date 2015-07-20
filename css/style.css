@@ -3003,7 +3003,7 @@ main h2.title-ency {
     font-weight: normal;
     font-family: "Adventure", sans-serif;
 
-    margin: 30px auto 0 auto;
+    margin: 20px auto 0 auto;
     padding: 0;
 
 }
@@ -3138,4 +3138,216 @@ main h2.title-ency {
     transform: rotate(-14deg);
 }
 
+/*---------------------------------------------------------------------------------------*/
+/* Партнерам */
 
+.partners-menu{
+ margin: 40px 0;
+}
+
+.partners-menu ul{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.partners-menu ul li{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    cursor: pointer;
+
+    width: 170px;
+
+    margin-right: 40px;
+}
+
+/*
+.partners-menu ul li:after{
+    content: '·';
+    display: inline-block;
+    color: #5d5c67;
+    font-size: 23px;
+    margin-left: 20px;
+}
+*/
+
+.partners-menu ul li:last-child{
+    margin-right: 0;
+
+}
+
+.partners-menu ul li a{
+    font-family: "Athelas", sans-serif;
+    color: #5d5c67;
+    font-weight: normal;
+    font-size: 23px;
+    text-decoration: none;
+
+    border-bottom: 1px solid rgba(223, 222, 224, 0.42);
+}
+
+
+.partners-menu ul li.active-partners-menu a{
+    color: #ffa92f;
+    border-bottom: none;
+}
+
+.partners-page-content{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.production-content{
+    padding: 30px 30px 0 30px ;
+}
+
+.production-content h3{
+    font-family: "Adventure", sans-serif;
+    color: #f44677;
+    font-weight: normal;
+    font-size: 42px;
+    text-align: center;
+
+    margin: 0px 0 20px 0;
+    padding: 0;
+
+}
+
+.production-description{
+    width: 800px;
+    margin: 0 auto 30px auto;
+
+    font-family: "Athelas", sans-serif;
+    color: #5d5c67;
+    font-weight: normal;
+    line-height: 30px;
+    font-size: 23px;
+    text-align: center;
+}
+
+.production-image{
+    width: 738px;
+    height: 365px;
+
+    float: left;
+}
+
+.production-image img{
+    height: auto;
+    width: 100%;
+}
+
+.production-services{
+
+    margin-left: 750px;
+}
+
+.production-services ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.production-services ul li{
+    font-family: "Athelas", sans-serif;
+    color: #5d5c67;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 22px;
+
+    padding: 20px 0;
+
+    margin-bottom: 10px;
+
+}
+
+.production-services li::before {
+    content: '';
+    display: block;
+    float: left;
+    position: relative;
+    top: -25px;
+    left: -10px;
+    width: 80px;
+    height: 70px;
+    background: url('../img/partners-icons.png') 0 0 no-repeat;
+    margin: 0 auto;
+
+    background-size: 100%;
+}
+
+.production-services .bottle-icon::before {
+    background-position-y: 0px;
+}
+
+.production-services .sauna-icon::before {
+    background-position-y: -70px;
+}
+
+.production-services .present-icon::before {
+    background-position-y: -140px;
+}
+
+.production-services .keramika-icon::before {
+    background-position-y: -210px;
+    top: -12px;
+}
+
+.features-work{
+    padding: 0 30px;
+}
+
+.features{
+    margin: 40px 0;
+
+    background: url("../img/lines.png") 290px 70px no-repeat;
+
+}
+
+.features ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.features ul li{
+    display: inline-block;
+    vertical-align: top;
+
+    font-family: "Athelas", sans-serif;
+    color: #5d5c67;
+    font-weight: normal;
+    font-size: 19px;
+    text-align: center;
+
+    width: 297px;
+    height: 188px;
+    margin-right: 140px;
+}
+
+.features ul li:nth-child(3n){
+ margin-right: 0;
+}
+
+.features ul li:nth-child(5){
+    font-family: "Adventure", sans-serif;
+    color: #f44677;
+    font-weight: normal;
+    font-size: 42px;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*  */
+
+
+/*---------------------------------------------------------------------------------------*/
+/*  */
+
+
+/*---------------------------------------------------------------------------------------*/
+/*  */
+
+
+/*---------------------------------------------------------------------------------------*/
+/*  */
