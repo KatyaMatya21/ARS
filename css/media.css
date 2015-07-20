@@ -190,6 +190,7 @@
 
     /*---------------------------------------------------------------------------------------*/
     /* Партнерам */
+
     .partners-menu ul li{
         width: 148px;
         padding-right: 18px;
@@ -1713,6 +1714,177 @@
     .myata-answer{
         top: 59px;
         right: -55px;
+    }
+
+
+    /*---------------------------------------------------------------------------------------*/
+    /* Партнерам */
+
+    .partners-menu ul li{
+        display: block;
+        padding: 0;
+        margin-bottom: 20px;
+        width: 163px;
+    }
+
+    .partners-menu ul li:last-child{
+        margin-bottom: 0px;
+
+    }
+
+    .partners-menu ul li a{
+        color: #ffa92f;
+    }
+
+    .production-content{
+        padding: 30px 15px;
+    }
+
+    .production-description{
+        width: 260px;
+        text-align: left;
+    }
+
+    .production-image{
+        width: 260px;
+        height: 129px;
+    }
+
+    .production-services ul{
+        margin: 20px 0 0 0;
+    }
+    .production-services ul li {
+        width: 252px;
+    }
+
+    .features h3{
+        display: block;
+    }
+
+    .features-work{
+        padding: 20px 10px;
+    }
+
+    .features{
+        background: none;
+    }
+
+    .features ul li{
+        width: 260px;
+        margin: 0 auto;
+    }
+
+    .features ul li:nth-child(5){
+        display: none;
+    }
+
+    .features ul li:nth-child(4), .features ul li:nth-child(5), .features ul li:nth-child(6){
+        margin: 0 auto;
+    }
+
+    .features ul li:nth-child(7), .features ul li:nth-child(8), .features ul li:nth-child(9){
+        margin: 0 auto 55px auto;
+    }
+
+    .work{
+        height: 553px;
+    }
+
+    .work-slider ul li.work-slide{
+        width: 290px;
+        height: 490px;
+        padding: 20px 10px;
+    }
+
+    .work-slide-title{
+        padding: 0;
+    }
+
+    .slide-description{
+        width: 260px;
+        margin: 0 auto;
+    }
+
+    .slide-pic-partners{
+        left: 5px;
+        top: 146px;
+    }
+
+    .work-slider .slider-fader{
+        display: none;
+    }
+
+    .myata-partners{
+        display: none;
+    }
+
+    .sertification{
+        padding: 0 15px;
+    }
+
+    .sert-slider{
+        height: 435px;
+    }
+
+    .sert-slider::before{
+        display: none;
+    }
+
+    .sert-slider ul li{
+        width: 243px;
+        height: 342px;
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .our-partners ul li{
+        width: 112px;
+        height: auto;
+        margin: 0 0 20px 0;
+    }
+
+    .our-partners ul li a img{
+        width: 100%;
+        height: auto;
+    }
+
+    .our-partners ul li:nth-child(4){
+        margin: 0;
+    }
+
+    .our-partners ul li:nth-child(5){
+        margin: 0 0 0 50px;
+    }
+
+    .partners-page-content{
+        padding-bottom: 45px;
+    }
+
+    .piter-flower, .moscow-leave{
+        display: none;
+    }
+
+    .contacts-parnters{
+        padding: 0 15px;
+    }
+
+    .partner-moscow{
+        width: 260px;
+        padding: 50px 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+        background: url("../img/moscow-pic-mobile.png") 0 0 no-repeat;
+    }
+
+    .partner-piter{
+        width: 260px;
+        padding: 50px 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+        background: url("../img/piter-pic-mobile.png") 0 0 no-repeat;
+    }
+
+    .partner-contact{
+        width: 260px;
     }
 
 }

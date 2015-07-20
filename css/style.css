@@ -3342,6 +3342,19 @@ main h2.title-ency {
     background: url("../img/lines.png") 290px 180px no-repeat;
 }
 
+.features h3{
+    display: none;
+
+    font-family: "Adventure", sans-serif;
+    color: #f44677;
+    font-weight: normal;
+    font-size: 42px;
+    text-align: center;
+
+    margin: 0 0 50px 0;
+    padding: 0;
+}
+
 .features-back{
     background: url("../img/features-back.png") 0 0 no-repeat;
     position: absolute;
