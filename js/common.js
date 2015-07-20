@@ -76,6 +76,7 @@ $(document).ready(function(){
             $('#header-sub-nav').removeAttr('style');
 
         }
+
     }
 
     $('[data-href]').live('click', function () {
@@ -110,6 +111,9 @@ $(document).ready(function(){
     function parallaxMainSly() {
 
         var scrollMax = $( '#wrapper' ).height() - $(window).height();
+        console.log($(window).height());
+        console.log($( '#wrapper' ).height());
+        console.log(scrollMax);
 
         window.documentSlider = new Sly( scrollMax, {
 		scrollSource: document,

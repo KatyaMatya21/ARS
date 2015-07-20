@@ -1888,6 +1888,9 @@ body{
     margin: 0 auto;
     text-align: center;
 
+    height: 29px;
+    overflow: hidden;
+
     padding-bottom: 40px;
 }
 
