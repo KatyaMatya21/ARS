@@ -3295,7 +3295,7 @@ main h2.title-ency {
 }
 
 .features-work{
-    padding: 0 30px;
+    padding: 0 30px 300px 30px;
 }
 
 .features{
@@ -3355,7 +3355,7 @@ main h2.title-ency {
     height: 115px;
 }
 
-.features ul li .ekeramika-feature{
+.features ul li .keramika-feature{
     background-position-y: 0px;
 }
 
@@ -3369,6 +3369,79 @@ main h2.title-ency {
 
 .features ul li .sauna-feature{
     background-position-y: -345px;
+}
+
+.work{
+    padding: 40px 0;
+}
+
+.work-title{
+    font-size: 19px;
+    font-weight: normal;
+    font-family: "Athelas", sans-serif;
+    color: rgba(93, 92, 103, 0.4);
+    text-transform: uppercase;
+
+    text-align: center;
+    position: relative;
+    top: 15px;
+}
+
+.work-slider{
+    position: relative;
+    background: url("../img/work-frame.png") center 0 no-repeat;
+}
+
+.work-slider ul{
+    padding: 0;
+    list-style: none;
+
+    overflow: hidden;
+    width: 880px;
+
+}
+
+.work-slider ul li.work-slide{
+    float: left;
+
+    padding: 40px 117px 40px 117px;
+    height: 238px;
+    width: 646px;
+
+    margin-right: 160px;
+}
+
+.work-slide-title{
+    color: #5d5c67;
+    font-family: "Athelas", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+
+    margin: 10px 0 20px 0;
+
+}
+
+.slide-description{
+    width: 666px;
+    color: #5d5c67;
+    font-family: "Athelas", sans-serif;
+    font-size: 19px;
+    line-height: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.work-slider .slider-fader{
+    top: 100px;
+}
+
+.work-slider .slider-fader-left{
+    left: 80px;
+}
+
+.work-slider .slider-fader-right{
+    right: 80px;
 }
 
 /*---------------------------------------------------------------------------------------*/
