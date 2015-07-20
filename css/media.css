@@ -299,6 +299,17 @@
         left: 285px;
     }
 
+    .big-flo{
+        top: 1328px;
+    }
+
+    .small-flo{
+        z-index: 3;
+        top: 2873px;
+        right: -205px;
+    }
+
+
 }
 
 
@@ -1762,7 +1773,7 @@
     }
 
     .features-work{
-        padding: 20px 10px;
+        padding: 0;
     }
 
     .features{
@@ -1772,6 +1783,10 @@
     .features ul li{
         width: 260px;
         margin: 0 auto;
+
+    }
+    .features ul{
+        padding: 0 10px;
     }
 
     .features ul li:nth-child(5){
@@ -1819,7 +1834,7 @@
     }
 
     .sertification{
-        padding: 0 15px;
+        padding: 0 25px;
     }
 
     .sert-slider{
@@ -1834,6 +1849,14 @@
         width: 243px;
         height: 342px;
         box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .sertification .slider-fader-right{
+        right: -4px;
+    }
+
+    .sertification .slider-fader-left{
+        left: 0px;
     }
 
     .our-partners ul li{
@@ -1886,6 +1909,29 @@
     .partner-contact{
         width: 260px;
     }
+
+    .big-flo{
+        top: 2410px;
+        right: -284px;
+        background-size: 71%;
+    }
+
+    .small-flo{
+        display: none;
+    }
+
+    .pages{
+        top: -10px;
+    }
+
+    .work-slider{
+        background: url("../img/work-frame-mobile.png") 0 0 no-repeat;
+    }
+
+    .work-slider ul li.work-slide{
+        padding: 0;
+    }
+
 
 }
 

@@ -3768,6 +3768,57 @@ main h2.title-ency {
     background: transparent url('../img/slider-controls-transp1.png') -32px 0 no-repeat;
 }
 
+.big-flo{
+    background: url("../img/big-flo-partners.png") 0 0 no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 475px;
+    height: 457px;
+    z-index: 2;
+    top: 1037px;
+    right: -210px;
+}
+
+.small-flo{
+    background: url("../img/big-flo-partners.png") 0 0 no-repeat;
+    background-size: 50%;
+    position: absolute;
+    width: 475px;
+    height: 457px;
+    z-index: 2;
+    top: 2588px;
+    right: -293px;
+}
+
+/* Pages */
+.pages {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    top: -14px;
+}
+.pages li {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: 0 4px;
+    text-indent: -999px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: inset 0 0 0 1px #dfdee0;
+
+}
+.pages li:hover {
+    background: #dfdee0;
+}
+.pages li.active {
+    background: #dfdee0;
+}
+
 
 /*---------------------------------------------------------------------------------------*/
 /*  */
