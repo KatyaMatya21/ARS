@@ -188,6 +188,115 @@
     /*---------------------------------------------------------------------------------------*/
     /* Энкицклопедия Вопросы*/
 
+    /*---------------------------------------------------------------------------------------*/
+    /* Партнерам */
+    .partners-menu ul li{
+        width: 148px;
+        padding-right: 18px;
+    }
+    .production-image{
+        float: none;
+        margin: 0 auto;
+    }
+
+    .production-services{
+        margin-left: 0;
+    }
+
+    .production-services ul{
+        margin: 20px 0px 0 118px;
+    }
+
+    .production-services ul li{
+        display: inline-block;
+        vertical-align: top;
+        width: 364px;
+        padding: 10px 0 0 0;
+    }
+
+    .pic-kiparis{
+        top: -24px;
+        left: 23px;
+        background-size: 76%;
+    }
+
+    .features ul li{
+        width: 223px;
+    }
+
+    .features{
+        background: url("../img/lines.png") 223px 209px no-repeat;
+        background-size: 52%;
+    }
+
+    .features ul li:nth-child(5) .features-name{
+        left: -20px;
+    }
+
+    .myata-partners{
+        top: -82px;
+    }
+
+    .slide-pic-partners{
+        left: 333px;
+    }
+
+    .work-slider .slider-fader-right{
+        right: 0px;
+    }
+
+    .work-slider .slider-fader-left{
+        left: 0px;
+    }
+
+    .our-partners ul li{
+        width: 259px;
+        margin-right: 31px;
+        margin-left: 27px;
+    }
+
+    .our-partners ul li:nth-child(4){
+        margin-left: 220px;
+    }
+
+    .partner-moscow{
+        width: 450px;
+    }
+
+    .partner-piter{
+        width: 450px;
+        background: url("../img/piter-pic.png") -130px 0 no-repeat;
+    }
+
+    .piter-flower{
+        right: -12px;
+    }
+
+    .sertification  .slider-fader{
+        display: block;
+        top: 228px;
+    }
+
+    .sertification .slider-fader-left{
+        left: -14px;
+    }
+
+    .sertification .slider-fader-right{
+        right: -14px;
+    }
+    
+    .sertification
+
+    .sert-slider ul li{
+        display: block;
+        float: left;
+
+        margin-right: 30px;
+    }
+
+    .coffee-sert{
+        left: 285px;
+    }
 
 }
 

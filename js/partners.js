@@ -35,6 +35,37 @@ $(document).ready(function(){
         return false;
     });
 
+    var lazyResize = _.debounce( onViewportResize, 300 );
+    $(window).on('resize load', lazyResize);
+
+    function onViewportResize() {
+        var win = $(this);
+
+        if( win.width() <= 1450 ) {
+            var $slideeFrame = $('.sert-slider');
+            var $slideeOptions = {
+                horizontal: 1,
+                itemNav: 'forceCentered',
+                smart: 1,
+                activateOn: 'click',
+                speed: 500,
+                mouseDragging: 1,
+                touchDragging: 1,
+                easing: 'swing',
+                itemSelector: '.sert-slider ul li',
+                prevPage: $slideeFrame.parent().find('.slider-fader-left').get(0),
+                nextPage: $slideeFrame.parent().find('.slider-fader-right').get(0)
+            };
+
+            var slideeSly = new Sly(
+                $slideeFrame,
+                $slideeOptions
+            );
+
+            slideeSly.init();
+        }
+
+    }
 
 
 });

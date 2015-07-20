@@ -3148,6 +3148,7 @@ main h2.title-ency {
 }
 
 .partners-menu ul{
+    display: table;
     margin: 0 auto;
     padding: 0;
     list-style: none;
@@ -3155,16 +3156,17 @@ main h2.title-ency {
 }
 
 .partners-menu ul li{
-    display: inline-block;
-    vertical-align: top;
+    display: table-cell;
+    vertical-align: middle;
     text-align: center;
     cursor: pointer;
 
+    position: relative;
+
     width: 170px;
 
-    margin-right: 40px;
+    padding-right: 40px;
 }
-
 /*
 .partners-menu ul li:after{
     content: '·';
@@ -3172,11 +3174,14 @@ main h2.title-ency {
     color: #5d5c67;
     font-size: 23px;
     margin-left: 20px;
-}
-*/
+
+    position: absolute;
+    top: 15px;
+    right: -20px;
+}*/
 
 .partners-menu ul li:last-child{
-    margin-right: 0;
+    padding-right: 0;
 
 }
 
@@ -3191,7 +3196,7 @@ main h2.title-ency {
 }
 
 
-.partners-menu ul li.current a{
+.partners-menu ul li a:active{
     color: #ffa92f;
     border-bottom: none;
 }
@@ -3217,7 +3222,7 @@ main h2.title-ency {
     font-size: 42px;
     text-align: center;
 
-    margin: 0px 0 20px 0;
+    margin: 0 0 20px 0;
     padding: 0;
 
 }
@@ -3226,7 +3231,7 @@ main h2.title-ency {
     background: url("../img/kiparis.png") 0 0 no-repeat;
     position: absolute;
     top: -31px;
-    left: 0px;
+    left: 0;
     width: 1175px;
     height: 809px;
     background-size: 95%;
@@ -3318,6 +3323,16 @@ main h2.title-ency {
 
 .features-work{
     padding: 0 30px 50px 30px;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6e2bd+1,f3d8c1+13,ffe9c9+35,ffedcb+57,ffedcb+100&amp;0+0,0.42+13,0.42+35,0.42+35,0.12+57,0+100 */
+    background: -moz-linear-gradient(top,  rgba(246,226,189,0) 0%, rgba(246,226,189,0.03) 1%, rgba(243,216,193,0.42) 13%, rgba(255,233,201,0.42) 35%, rgba(255,237,203,0.12) 57%, rgba(255,237,203,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(246,226,189,0)), color-stop(1%,rgba(246,226,189,0.03)), color-stop(13%,rgba(243,216,193,0.42)), color-stop(35%,rgba(255,233,201,0.42)), color-stop(57%,rgba(255,237,203,0.12)), color-stop(100%,rgba(255,237,203,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(246,226,189,0) 0%,rgba(246,226,189,0.03) 1%,rgba(243,216,193,0.42) 13%,rgba(255,233,201,0.42) 35%,rgba(255,237,203,0.12) 57%,rgba(255,237,203,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(246,226,189,0) 0%,rgba(246,226,189,0.03) 1%,rgba(243,216,193,0.42) 13%,rgba(255,233,201,0.42) 35%,rgba(255,237,203,0.12) 57%,rgba(255,237,203,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(246,226,189,0) 0%,rgba(246,226,189,0.03) 1%,rgba(243,216,193,0.42) 13%,rgba(255,233,201,0.42) 35%,rgba(255,237,203,0.12) 57%,rgba(255,237,203,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(246,226,189,0) 0%,rgba(246,226,189,0.03) 1%,rgba(243,216,193,0.42) 13%,rgba(255,233,201,0.42) 35%,rgba(255,237,203,0.12) 57%,rgba(255,237,203,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f6e2bd', endColorstr='#00ffedcb',GradientType=0 ); /* IE6-9 */
+
 }
 
 .features{
@@ -3481,16 +3496,24 @@ main h2.title-ency {
 }
 
 .work-slider .slider-fader{
-    top: 100px;
+    top: 127px
 }
 
-.work-slider .slider-fader-left{
-    left: 80px;
+.work-slider .slider-fader{
+    width: 26px;
+    height: 121px;
 }
 
-.work-slider .slider-fader-right{
-    right: 80px;
+.work-slider .slider-fader-left {
+    left: 0;
+    background: transparent url('../img/slider-controls-transp1.png') 0 0 no-repeat;
 }
+
+.work-slider .slider-fader-right {
+    right: 0;
+    background: transparent url('../img/slider-controls-transp1.png') -32px 0 no-repeat;
+}
+
 
 .sertification{
     padding: 0 30px 100px 30px;
@@ -3715,6 +3738,23 @@ main h2.title-ency {
     top: -135px;
     left: -56px;
 }
+
+.sertification .slider-fader{
+    display: none;
+    width: 26px;
+    height: 121px;
+}
+
+.sertification .slider-fader-left {
+    left: 0;
+    background: transparent url('../img/slider-controls-transp1.png') 0 0 no-repeat;
+}
+
+.sertification .slider-fader-right {
+    right: 0;
+    background: transparent url('../img/slider-controls-transp1.png') -32px 0 no-repeat;
+}
+
 
 /*---------------------------------------------------------------------------------------*/
 /*  */
