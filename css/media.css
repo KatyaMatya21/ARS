@@ -184,6 +184,11 @@
         padding-bottom: 220px;
         overflow: hidden;
     }
+
+    /*---------------------------------------------------------------------------------------*/
+    /* Энкицклопедия Вопросы*/
+
+
 }
 
 
@@ -1556,6 +1561,50 @@
         width: 290px;
     }
 
+    /*---------------------------------------------------------------------------------------*/
+    /* Энкицклопедия Вопросы*/
+
+    main h2.title-ency{
+        display: none;
+    }
+
+    .encyclopedy-breadcrumbs{
+        padding-top: 25px;
+    }
+
+    .answers-title{
+        width: 243px;
+    }
+
+    .content-block-answers{
+        width: 290px;
+    }
+
+    .content-block-answers ul li{
+        padding-bottom: 25px;
+    }
+
+    .question-block{
+        padding: 25px 20px 0px 35px;
+    }
+
+    .answer-block{
+        padding: 25px 20px 0px 35px;
+        font-size: 20px;
+        width: 235px;
+        margin: 0 auto;
+    }
+
+    .flower-answer{
+        z-index: -1;
+        top: 651px;
+        left: -90px;
+    }
+
+    .myata-answer{
+        top: 59px;
+        right: -55px;
+    }
 
 }
 
