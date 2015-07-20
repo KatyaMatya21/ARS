@@ -3142,7 +3142,9 @@ main h2.title-ency {
 /* Партнерам */
 
 .partners-menu{
- margin: 40px 0;
+    margin: 40px 0;
+    z-index: 2;
+    position: relative;
 }
 
 .partners-menu ul{
@@ -3189,7 +3191,7 @@ main h2.title-ency {
 }
 
 
-.partners-menu ul li.active-partners-menu a{
+.partners-menu ul li.current a{
     color: #ffa92f;
     border-bottom: none;
 }
@@ -3197,6 +3199,8 @@ main h2.title-ency {
 .partners-page-content{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     padding-bottom: 100px;
+    z-index: 2;
+    position: relative;
 }
 
 .production-content{

@@ -84,7 +84,7 @@ $(document).ready(function(){
 
     $('#upBtn').click(function(e){
 
-        //TODO: fixme
+        window.documentSlider.slideTo(0);
 
         e.preventDefault();
         return false;
@@ -137,5 +137,6 @@ $(document).ready(function(){
     }
 
     parallaxMainSly();
+
 
 });
