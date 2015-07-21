@@ -3786,17 +3786,6 @@ main h2.title-ency {
     background: transparent url('../img/slider-controls-transp1.png') -32px 0 no-repeat;
 }
 
-.big-flo{
-    background: url("../img/big-flo-partners.png") 0 0 no-repeat;
-    background-size: 100%;
-    position: absolute;
-    width: 475px;
-    height: 457px;
-    z-index: 2;
-    top: 1037px;
-    right: -210px;
-}
-
 .small-flo{
     background: url("../img/big-flo-partners.png") 0 0 no-repeat;
     background-size: 50%;
@@ -3849,6 +3838,7 @@ main h2.title-ency {
 
 .history-content{
     padding: 40px 0;
+    position: relative;
 }
 
 .history-content h3{
@@ -4115,7 +4105,8 @@ main h2.title-ency {
 }
 
 .company-work{
-    padding: 100px 30px 0 30px;
+    padding: 120px 30px 0 30px;
+    position: relative;
 }
 
 .company-work h3{
@@ -4246,9 +4237,38 @@ main h2.title-ency {
     background-color: #fff;
 }
 
+.myata-history{
+    background: url("../img/myata.png") 0 0 no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 178px;
+    height: 129px;
+    z-index: 3;
+    top: 36px;
+    left: 34px;
+}
 
+.paporotnik-history{
+    background: url("../img/paparotnik.png") 0 0 no-repeat;
+    background-size: 83%;
+    position: absolute;
+    width: 399px;
+    height: 268px;
+    z-index: 1;
+    top: 251px;
+    right: -120px;
+    transform: rotate(-35deg);
+}
 
-
+.evkalipt{
+    background: url("../img/evkalipt.png") 0 0 no-repeat;
+    width: 269px;
+    height: 218px;
+    z-index: 1;
+    position: absolute;
+    top: -105px;
+    left: 527px;
+}
 
 
 /*---------------------------------------------------------------------------------------*/
