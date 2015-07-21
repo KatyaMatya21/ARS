@@ -4065,6 +4065,7 @@ main h2.title-ency {
 .event-picture{
     width: 300px;
     height: 219px;
+    cursor: pointer;
 }
 
 .event-picture img{
@@ -4082,8 +4083,13 @@ main h2.title-ency {
     font-size: 22px;
     color: #5d5c67;
     font-weight: normal;
+    cursor: pointer;
 
     height: 140px;
+}
+
+.event-slider ul li.event-slide:active .event-info{
+    background-color: rgba(249, 248, 247, 0.32);
 }
 
 .event-data{
