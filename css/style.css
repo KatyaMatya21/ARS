@@ -3199,16 +3199,35 @@ main h2.title-ency {
 }
 
 
+.partners-menu ul li.current a{
+     color: #ffa92f;
+     border-bottom: none;
+ }
+
+.partners-menu ul li.current a:hover{
+    color: #ffa92f;
+    border-bottom: none;
+}
+
+.partners-menu ul li a:hover{
+    color: rgba(93, 92, 103, 0.82);
+    border-bottom: none;
+}
+
+
 .partners-menu ul li a:active{
     color: #ffa92f;
     border-bottom: none;
 }
+
 
 .partners-page-content{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     padding-bottom: 100px;
     z-index: 2;
     position: relative;
+
+    background-color: #fff;
 }
 
 .production-content{
@@ -3227,7 +3246,6 @@ main h2.title-ency {
 
     margin: 0 0 20px 0;
     padding: 0;
-
 }
 
 .pic-kiparis{
@@ -3815,13 +3833,212 @@ main h2.title-ency {
 .pages li:hover {
     background: #dfdee0;
 }
+
 .pages li.active {
     background: #dfdee0;
 }
 
 
 /*---------------------------------------------------------------------------------------*/
-/*  */
+/* О компании */
+
+.company-menu ul li{
+    width: 235px;
+    padding-right: 50px;
+}
+
+.history-content{
+    padding: 40px 0 0 0;
+}
+
+.history-content h3{
+    font-family: "Adventure", sans-serif;
+    color: #f44677;
+    font-weight: normal;
+    font-size: 42px;
+    text-align: center;
+
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.history-description{
+    text-align: center;
+    width: 760px;
+    margin: 0 auto;
+    line-height: 30px;
+
+    color: #5d5c67;
+    font-size: 22px;
+    font-weight: normal;
+    font-family: "Athelas", sans-serif;
+}
+
+.history-description span{
+    text-decoration: underline;
+}
+
+.company-decor-menu{
+    height: 360px;
+    width: 150%;
+    margin-left: -200px;
+    position: relative;
+    z-index:5;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e3efaf+0,fffebb+26,c8f5e9+66,b8f2ef+100 */
+    background: rgb(227,239,175); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(227,239,175,1) 0%, rgba(255,254,187,1) 26%, rgba(200,245,233,1) 66%, rgba(184,242,239,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(227,239,175,1)), color-stop(26%,rgba(255,254,187,1)), color-stop(66%,rgba(200,245,233,1)), color-stop(100%,rgba(184,242,239,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(227,239,175,1) 0%,rgba(255,254,187,1) 26%,rgba(200,245,233,1) 66%,rgba(184,242,239,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(227,239,175,1) 0%,rgba(255,254,187,1) 26%,rgba(200,245,233,1) 66%,rgba(184,242,239,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(227,239,175,1) 0%,rgba(255,254,187,1) 26%,rgba(200,245,233,1) 66%,rgba(184,242,239,1) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(227,239,175,1) 0%,rgba(255,254,187,1) 26%,rgba(200,245,233,1) 66%,rgba(184,242,239,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3efaf', endColorstr='#b8f2ef',GradientType=1 ); /* IE6-9 */
+
+    transform: rotate(-3deg);
+
+    margin-top: -67px;
+    margin-bottom: -31px;
+}
+
+.company-decor-content{
+    width: 1065px;
+    margin: 0 auto;
+
+    transform: rotate(3deg);
+    padding-top: 75px;
+}
+
+.company-decor-content ul{
+    margin: 0;
+    padding: 0;
+
+    color: #5d5c67;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 30px;
+    font-family: "Athelas", sans-serif;
+
+    list-style: none;
+}
+
+.company-decor-content ul:first-child{
+    float: left;
+}
+
+.company-decor-content ul:last-child{
+    margin-left: 420px;
+}
+
+.company-decor-content ul:first-child li{
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.company-decor-content ul:last-child li{
+    margin-bottom: 15px;
+    position: relative;
+    width: 300px;
+}
+
+.company-decor-content ul li:before{
+    content: '─';
+    color: #76765f;
+    position: absolute;
+    left: -23px;
+}
+
+.history-info{
+    padding: 120px 30px 0 30px;
+
+}
+
+.ars-logo-info{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ars-logo-info li{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+
+    width: 320px;
+    margin-right: 50px;
+}
+
+.ars-logo-info li:first-child{
+    margin-left: 60px;
+}
+
+.letter-info{
+    position: relative;
+    top: -55px;
+
+    font-family: 'Athelas', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    color: #a39d95;
+    font-weight: normal;
+}
+
+.letter-description{
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.philosophy{
+    font-family: 'Athelas', sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+    color: #5d5c67;
+    font-weight: normal;
+}
+
+.philosophy-info{
+    width: 740px;
+    float: left;
+    margin-top: 30px;
+}
+
+.philosophy-ars{
+    position: relative;
+    margin-left: 766px;
+    width: 394px;
+    height: 204px;
+    background: url("../img/frame-phy.png") -11px 0px no-repeat;
+    font-style: italic;
+    padding: 35px 0px 0px 35px;
+}
+
+.philosophy-ars-content{
+    width: 253px;
+}
+
+.phy-flow{
+    background: url("../img/flower-ars-phy.png") 0 0 no-repeat;
+    position: absolute;
+    width: 77px;
+    height: 125px;
+    z-index: 2;
+    top: 37px;
+    right: 46px;
+}
+
+.company-events{
+    height: 594px;
+    width: 100%;
+    position: relative;
+    z-index:5;
+    background: url("../img/event-bg.png") 0 0 repeat-x;
+
+    margin-top: -95px;
+}
+
+
 
 
 /*---------------------------------------------------------------------------------------*/
