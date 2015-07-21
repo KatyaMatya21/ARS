@@ -105,4 +105,33 @@ $(document).ready(function(){
 
     });
 
+    var lazyResize = _.debounce( onViewportResize, 300 );
+    $(window).on('resize load', lazyResize);
+
+    function onViewportResize() {
+        var win = $(this);
+
+        // media breakpoint for 480px
+        if( win.width() <= 480 ) {
+
+            $('.company-work-feature-slider').sly({
+                horizontal: 1,
+                speed: 600,
+                scrollBy: 100,
+                itemNav: 'forceCentered',
+                itemSelector: '.company-work-feature-slide',
+                nextPage: $('.company-work-feature-slider').find('.slider-fader-right'),
+                prevPage: $('.company-work-feature-slider').find('.slider-fader-left'),
+                smart: 1
+            });
+
+        }else{
+
+            $('.company-work-feature-slider').sly(false);
+
+        }
+
+    }
+
+
 });

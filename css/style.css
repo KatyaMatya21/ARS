@@ -4098,15 +4098,15 @@ main h2.title-ency {
     margin-bottom: 5px;
 }
 
-.event-slider .slider-fader{
+.company-events .slider-fader{
     top: 270px;
 }
 
-.event-slider .slider-fader-left{
+.company-events .slider-fader-left{
     left: 320px;
 }
 
-.event-slider .slider-fader-right{
+.company-events .slider-fader-right{
     right: 320px;
 }
 
@@ -4140,6 +4140,7 @@ main h2.title-ency {
 
 .company-work-feature-slider{
     margin-top: 20px;
+    position: relative;
 }
 
 .company-work-feature-slider ul{
@@ -4469,7 +4470,33 @@ main h2.title-ency {
 
 }
 
+.specially-for-mobile-popup{
+    display: none;
+}
 
+.specially-for-mobile-popup ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.specially-for-mobile-popup ul li{
+    margin-bottom: 17px;
+}
+
+.specially-for-mobile-popup .another{
+    margin: 30px 15px 20px 15px;
+
+    font-family: 'Athelas', sans-serif;
+    color: #a39d95;
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.specially-for-mobile-popup ul li .popup-event-name{
+    width: 260px;
+}
 
 /*---------------------------------------------------------------------------------------*/
 /*  */
