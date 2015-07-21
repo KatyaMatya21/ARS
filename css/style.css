@@ -3848,7 +3848,7 @@ main h2.title-ency {
 }
 
 .history-content{
-    padding: 40px 0 0 0;
+    padding: 40px 0;
 }
 
 .history-content h3{
@@ -3897,7 +3897,7 @@ main h2.title-ency {
 
     transform: rotate(-3deg);
 
-    margin-top: -67px;
+    margin-top: -44px;
     margin-bottom: -31px;
 }
 
@@ -4036,7 +4036,217 @@ main h2.title-ency {
     background: url("../img/event-bg.png") 0 0 repeat-x;
 
     margin-top: -95px;
+    margin-bottom: -90px;
+    padding: 60px 0 0 0;
 }
+
+.company-events h3{
+    font-family: "Adventure", sans-serif;
+    color: #f44677;
+    font-weight: normal;
+    font-size: 42px;
+    text-align: center;
+
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.event-slider{
+    overflow: hidden;
+    margin: 0 auto;
+    width: 960px;
+}
+
+.event-slider ul{
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.event-slider ul li.event-slide{
+    width: 300px;
+    height: 359px;
+
+    float: left;
+
+    margin-right: 15px;
+}
+
+.event-picture{
+    width: 300px;
+    height: 219px;
+}
+
+.event-picture img{
+    width: 100%;
+    height: auto;
+}
+
+.event-info{
+    background-color: #f9f8f7;
+
+    padding: 10px 20px;
+    text-align: left;
+
+    font-family: "Athelas", sans-serif;
+    font-size: 22px;
+    color: #5d5c67;
+    font-weight: normal;
+
+    height: 140px;
+}
+
+.event-data{
+    color: #a39d95;
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+
+.event-slider .slider-fader{
+    top: 200px;
+}
+
+.event-slider .slider-fader-left{
+    left: 240px;
+}
+
+.event-slider .slider-fader-right{
+    right: 240px;
+}
+
+.company-work{
+    padding: 100px 30px 0 30px;
+}
+
+.company-work h3{
+    font-family: "Adventure", sans-serif;
+    color: #f44677;
+    font-weight: normal;
+    font-size: 42px;
+    text-align: center;
+
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.company-work-info{
+    font-family: "Athelas", sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+    color: #5d5c67;
+    font-weight: normal;
+    text-align: center;
+    
+    width: 750px;
+    margin: 0 auto;
+}
+
+.company-work-feature-slider{
+    margin-top: 20px;
+}
+
+.company-work-feature-slider ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.company-work-feature-slider ul li{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 34px 0 0;
+    padding: 0;
+
+    font-family: "Athelas", sans-serif;
+    color: #5d5c67;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 19px;
+
+    text-align: center;
+}
+
+.company-work-feature-slider .features-name{
+    width: 200px;
+    margin-top: 10px;
+}
+
+
+.company-work-feature-slider ul li .features-icon{
+    background: url("../img/red-icons.png") 0 0 no-repeat;
+    width: 105px;
+    margin: 0 auto;
+    height: 115px;
+}
+
+.company-work-feature-slider ul li .keramika-feature{
+    background-position-y: 0px;
+}
+
+.company-work-feature-slider ul li .sauna-feature{
+    background-position-y: -115px;
+}
+
+.company-work-feature-slider ul li .present-feature{
+    background-position-y: -230px;
+}
+
+.company-work-feature-slider ul li .bottle-feature{
+    background-position-y: -345px;
+}
+
+.company-work-feature-slider .slider-fader{
+    display: none;
+}
+
+
+.company-work-contact{
+    background: url("../img/company-work-frame.png") 0 0 no-repeat;
+    
+    width: 520px;
+    height: 210px;
+    margin: 65px auto 0 auto;
+
+    text-align: center;
+    font-family: 'Athelas', sans-serif;
+
+    padding: 40px 0 0 0;
+}
+
+.tel-number-work{
+    color:#7b766e;
+    font-weight: bold;
+    font-size: 35px;
+
+    margin-bottom: 5px;
+}
+
+.name-manager{
+    color: #5d5c67;
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.otdel-person{
+    color: #5d5c67;
+    font-size: 20px;
+    font-weight: normal;
+
+    width: 458px;
+    margin: 0 auto;
+}
+
+.company-page-content{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    padding-bottom: 50px;
+    z-index: 2;
+    position: relative;
+    background-color: #fff;
+}
+
+
 
 
 
