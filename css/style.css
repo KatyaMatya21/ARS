@@ -1682,7 +1682,7 @@ body{
 
     position: relative;
 
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 .breadcrumbs-menu-after ul li:last-child{
@@ -2055,7 +2055,7 @@ body{
     height: 254px;
     z-index: 1;
     top: 1729px;
-    right: -111px;;
+    right: -111px;
 }
 
 #avocode-main-catalog{
@@ -3019,6 +3019,7 @@ main h2.title-ency {
 
     position: relative;
     z-index: 2;
+    border-radius: 8px;
 }
 
 .answers-title{
@@ -3117,7 +3118,6 @@ main h2.title-ency {
 
 .decor-content{
     position: relative;
-
 }
 
 .myata-answer{
@@ -4499,7 +4499,282 @@ main h2.title-ency {
 }
 
 /*---------------------------------------------------------------------------------------*/
-/*  */
+/* Энциклопедия Польза */
+
+.benefit-content-page{
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    padding-bottom: 50px;
+
+    position: relative;
+    z-index: 2;
+    border-radius: 8px;
+}
+
+.active-tab-benefit{
+    display: block !important;
+}
+
+.greasy-list{
+    display: none;
+}
+
+.type-oil-description{
+    width: 888px;
+    margin: 0 auto 35px auto;
+
+    color:#5d5c67;
+    font-family: 'Athelas', sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.type-oil{
+    margin: 50px auto 0 auto;
+    width: 1000px;
+}
+
+.type-oil-left{
+    width: 492px;
+    float: left;
+
+    text-align: right;
+}
+
+.type-oil-right{
+    width: 485px;
+    margin-left: 513px;
+
+    text-align: left;
+}
+
+.type-name{
+    color:#5d5c67;
+    font-family: 'Athelas', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.type-items{
+    color:#5d5c67;
+    font-family: 'Athelas', sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.type-oil-left::after{
+    content: '';
+    display: inline-block;
+    background: url("../img/type-oil-left.png") 0 0 no-repeat;
+    width: 99px;
+    height: 176px;
+
+    border-right: 1px solid #e5e5e5;
+    padding-right: 18px;
+}
+
+.type-oil-left .type-info{
+    width: 360px;
+    float: left;
+}
+
+.type-oil-right::after{
+    content: '';
+    display: inline-block;
+    background: url("../img/type-oil-right.png") 0 0 no-repeat;
+    width: 99px;
+    height: 176px;
+}
+
+.type-oil-right .type-info{
+    width: 375px;
+    float: right;
+}
+
+.get-method{
+    margin: 40px 0 0 0 ;
+}
+
+.title-oil{
+    color: #f44677;
+    font-family: "Athelas", sans-serif;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.method{
+    color:#5d5c67;
+    font-family: 'Athelas', sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 30px;
+
+    width: 888px;
+    margin: 0 auto 35px auto;
+}
+
+.method span{
+   font-weight: bold;
+}
+
+.for-beauty{
+    background: url("../img/oil-frame.png") 0 top no-repeat;
+    margin-top: 80px;
+}
+
+.beauty-title{
+    position: relative;
+    top:-10px;
+}
+
+.oil-blocks{
+    margin: 0 auto;
+    width: 1100px;
+}
+
+.oil-block{
+    margin: 0 0 10px 0;
+    background-color: #fafafa;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px 25px;
+}
+
+.type-skin{
+    color:#5d5c67;
+    font-family: 'Athelas', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 30px;
+
+    margin-bottom: 15px;
+}
+
+.type-oil-skin{
+    color:#856aab;
+    font-family: 'Athelas', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.type-oil-skin a{
+    color:#856aab;
+    font-family: 'Athelas', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 30px;
+    text-decoration: none;
+
+    border-bottom: 1px solid rgba(223, 222, 224, 0.42);
+}
+
+.leave-benefit{
+    background: url("../img/para-leave2.png") 0 0 no-repeat;
+    width: 134px;
+    height: 183px;
+    background-size: 80%;
+    position: absolute;
+    top: 15px;
+    left: 50px;
+}
+
+.benefit-paporotnik{
+    background: url("../img/paparotnik.png") 0 0 no-repeat;
+    position: absolute;
+    width: 399px;
+    height: 268px;
+    z-index: 1;
+    top: 651px;
+    left: 179px;
+    transform: rotate(-77deg);
+}
+
+.benefit-myata{
+    background: url("../img/myata.png") 0 0 no-repeat;
+    position: absolute;
+    width: 178px;
+    height: 129px;
+    z-index: 1;
+    top: 0px;
+    right: 266px;
+}
+
+.benefit-flower{
+    background: url("../img/flower.png") 0 0 no-repeat;
+    position: absolute;
+    width: 203px;
+    height: 166px;
+    z-index: 1;
+    top: 900px;
+    right: 244px;
+    transform: rotate(76deg);
+}
+
+.benefit-pink-flower{
+    background: url("../img/pink-flower.png") 0 0 no-repeat;
+    position: absolute;
+    width: 182px;
+    height: 254px;
+    z-index: 1;
+    top: 1480px;
+    left: 214px;
+    transform: rotate(-172deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*---------------------------------------------------------------------------------------*/
