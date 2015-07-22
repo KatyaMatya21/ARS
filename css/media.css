@@ -373,6 +373,40 @@
     /*---------------------------------------------------------------------------------------*/
     /* Энциклопедия Польза */
 
+    .type-oil{
+        width: 955px;
+    }
+
+    .type-oil-left{
+        width: 477px;
+    }
+
+    .type-oil-left .type-info{
+        width: 349px;
+    }
+
+    .type-oil-right{
+        width: 477px;
+        margin-left: 499px;
+    }
+
+    .type-oil-right .type-info{
+        width: 375px;
+    }
+
+    .method{
+        width: 945px;
+    }
+
+    .type-oil-description{
+        width: 945px;
+    }
+
+    .for-beauty{
+        margin-top: 60px;
+        background: url("../img/oil-frame.png") -104px 13px no-repeat;
+    }
+
 
 }
 
@@ -2231,6 +2265,104 @@
     /*---------------------------------------------------------------------------------------*/
     /* Энциклопедия Польза */
 
+    .leave-benefit, .benefit-myata, .benefit-pink-flower{
+        display: none;
+    }
+
+    .type-oil-description{
+        width: 260px;
+        padding: 0 15px;
+        margin: 0 auto 15px auto;
+    }
+
+    .benefit-flower{
+        z-index: 3;
+        top: 435px;
+        right: -133px;
+        transform: rotate(-17deg);
+    }
+
+    .benefit-paporotnik{
+        top: 1700px;
+        left: -106px;
+    }
+
+    .type-oil{
+        width: 260px;
+    }
+
+    .type-oil-left{
+        padding-bottom: 25px;
+    }
+
+    .type-oil-left{
+        float: none;
+        text-align: center;
+        height: 340px;
+        width: 260px;
+        margin: 0 auto;
+    }
+
+    .type-oil-right{
+        float: none;
+        text-align: center;
+        height: 215px;
+        width: 260px;
+        margin: 0 auto;
+    }
+
+    .type-oil-left .type-info, .type-oil-right .type-info{
+        width: 260px;
+    }
+
+    .type-oil-left::after, .type-oil-right::after{
+        display: none;
+    }
+
+    .type-oil-left::before{
+        content: '';
+        display: block;
+        background: url("../img/type-oil-left-mobile.png") 0 0 no-repeat;
+        width: 264px;
+        height: 101px;
+    }
+
+    .type-oil-right::before{
+        content: '';
+        display: block;
+        background: url("../img/type-oil-right-mobile.png") 0 0 no-repeat;
+        width: 264px;
+        height: 101px;
+
+        border-top: 1px solid #e5e5e5;
+        padding-top: 20px;
+    }
+
+    .get-method{
+        display: none;
+    }
+
+    .for-beauty{
+        background: none;
+    }
+
+    .title-oil{
+        width: 240px;
+        margin: 0 auto 20px auto;
+        line-height: 34px;
+    }
+
+    .oil-blocks{
+        padding-top: 20px;
+
+        border-image: url("../img/work-frame-mobile.png") 5 round round;
+
+        width: 284px;
+    }
+
+    .oil-block{
+
+    }
 
 
 }
