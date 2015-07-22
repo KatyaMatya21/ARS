@@ -13,26 +13,30 @@ $(document).ready(function(){
         var targetTab = $(this).data('target'); // tab1
         var tab = $('#'+targetTab); // #tab1
 
+        $('.active-tab-benefit .oil-blocks').masonry('destroy');
+
         $('.active-tab-benefit').removeClass('active-tab-benefit');
         tab.addClass('active-tab-benefit');
 
         $('.active-tab-question').removeClass('active-tab-question');
         $(this).addClass('active-tab-question');
 
-        $('.oil-blocks').masonry({
+        $('.active-tab-benefit .oil-blocks').masonry({
             itemSelector: '.oil-block',
-            columnWidth: 360,
+            //columnWidth: 360,
             percentPosition: true,
-            isOriginLeft: false
+            isOriginLeft: true,
+            gutter: 10
         });
 
     });
 
-    $('.oil-blocks').masonry({
+    $('.active-tab-benefit .oil-blocks').masonry({
         itemSelector: '.oil-block',
-        columnWidth: 360,
+        //columnWidth: 360,
         percentPosition: true,
-        isOriginLeft: false
+        isOriginLeft: true,
+        gutter: 10
     });
 
     //--------------------------------------------------------------------------------------
@@ -57,12 +61,22 @@ $(document).ready(function(){
 
             window.mobileMidSlider.init();
 
+            $('.active-tab-benefit .oil-blocks').masonry('destroy');
+
         }else{
 
 
             if( window.mobileMidSlider != undefined && window.mobileMidSlider != null ) {
                 window.mobileMidSlider.destroy();
             }
+
+            $('.active-tab-benefit .oil-blocks').masonry({
+                itemSelector: '.oil-block',
+                //columnWidth: 360,
+                percentPosition: true,
+                isOriginLeft: true,
+                gutter: 10
+            });
 
         }
     }

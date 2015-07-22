@@ -407,6 +407,32 @@
         background: url("../img/oil-frame.png") -104px 13px no-repeat;
     }
 
+    .benefit-paporotnik{
+        top: 650px;
+        left: -85px;
+    }
+
+    .benefit-myata{
+        top: 0px;
+        right: -32px;
+    }
+
+    .benefit-flower{
+        right: -50px;
+    }
+
+    .benefit-pink-flower{
+        left: -27px;
+    }
+
+    .oil-blocks {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .oil-block {
+        width: 275px;
+    }
 
 }
 
@@ -2361,7 +2387,7 @@
     }
 
     .oil-block{
-
+        width: auto;
     }
 
 
