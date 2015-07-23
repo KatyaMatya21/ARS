@@ -2561,25 +2561,10 @@
         left: 255px;
     }
 
-    #parallax-bg img:first-child{
-        top: 319px !important;
-        left: 38px !important;
+    .breadcrumbs-menu-after ul li a .breadcrumbs-name::after, .breadcrumbs-menu-after ul li a .breadcrumbs-name::before{
+        display: none;
     }
 
-    #parallax-bg img:nth-child(3){
-        top: 1200px !important;
-        left: 0 !important;
-    }
-
-    #parallax-bg img:nth-child(4){
-        top: 600px !important;
-        right: -218px !important;
-    }
-
-    #parallax-bg img:nth-child(2){
-        top: 2145px !important;
-        right: 0 !important;
-    }
 
 
 }
