@@ -4961,37 +4961,125 @@ main h2.title-ency {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*---------------------------------------------------------------------------------------*/
-/*  */
+/* Энциклопедия Рецепты */
+
+.receipt-content-page{
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    padding-bottom: 50px;
+
+    position: relative;
+    z-index: 2;
+    border-radius: 8px;
+}
+
+.receipt-content-page .receipt-type{
+    background: none;
+
+}
+
+.receipt-content-page .receipt-type ul{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.receipt-content-page .receipt-type li{
+    margin: 0 60px;
+    width: 225px;
+}
+
+.receipt-content-page .receipt-type li .receipt-icon{
+    margin: 0 auto 15px auto;
+}
+
+.list{
+    margin: 0 auto;
+    width: 1112px;
+}
+
+.receipt-list{
+    width: 350px;
+    padding: 0 10px;
+
+
+    position: relative;
+    float: left;
+}
+
+.receipt-list:nth-child(2){
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+}
+
+.receipt-list ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.receipt-list ul li{
+    width: 300px;
+    padding: 25px 25px;
+
+    background-color: #fafafa;
+    color: #5d5c67;
+    font-family: "Athelas", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+
+    border-radius: 8px;
+
+    margin-bottom: 10px;
+}
+
+.receipt-list ul li:hover{
+    background-color: #f6f6f6;
+}
+
+.receipt-list ul li .receipt-title{
+    font-weight: bold;
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+.receipt-list ul li .receipt-description-info{
+    font-style: italic;
+    font-size: 20px;
+}
+
+
+.receipt-paporotnik{
+    background: url("../img/paparotnik.png") 0 0 no-repeat;
+    position: absolute;
+    width: 399px;
+    height: 268px;
+    z-index: -1;
+    bottom: -88px;
+    left: 22px;
+    transform: rotate(-343deg);
+}
+
+.receipt-myata{
+    background: url("../img/myata.png") 0 0 no-repeat;
+    position: absolute;
+    width: 178px;
+    height: 129px;
+    z-index: 1;
+    top: 0px;
+    right: 243px;
+}
+
+.receipt-flower{
+    background: url("../img/flower.png") 0 0 no-repeat;
+    position: absolute;
+    width: 203px;
+    height: 166px;
+    z-index: 1;
+    top: 632px;
+    left: 224px;
+    transform: rotate(-69deg);
+}
+
