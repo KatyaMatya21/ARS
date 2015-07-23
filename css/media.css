@@ -1446,6 +1446,10 @@
         margin-left: 5px;
     }
 
+    .breadcrumbs-menu-after ul li.active-breadcrumbs-menu-after a .breadcrumbs-name{
+        color: #ffa92f;
+    }
+
     .breadcrumbs-menu ul li{
         padding: 18px 40px;
     }
