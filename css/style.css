@@ -4734,51 +4734,246 @@ main h2.title-ency {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*---------------------------------------------------------------------------------------*/
-/*  */
+/* Энциклопедия Способы применения */
+
+
+.use-paporotnik{
+    background: url("../img/paparotnik.png") 0 0 no-repeat;
+    position: absolute;
+    width: 399px;
+    height: 268px;
+    z-index: 1;
+    top: 1151px;
+    left: 151px;
+    transform: rotate(-77deg);
+}
+
+.use-myata{
+    background: url("../img/myata.png") 0 0 no-repeat;
+    position: absolute;
+    width: 178px;
+    height: 129px;
+    z-index: 1;
+    top: 0px;
+    right: 243px;
+}
+
+.use-flower{
+    background: url("../img/flower.png") 0 0 no-repeat;
+    position: absolute;
+    width: 203px;
+    height: 166px;
+    z-index: 1;
+    top: 1200px;
+    right: 224px;
+    transform: rotate(76deg);
+}
+
+.use-pink-flower{
+    background: url("../img/pink-flower.png") 0 0 no-repeat;
+    position: absolute;
+    width: 182px;
+    height: 254px;
+    z-index: 1;
+    top: 357px;
+    left: 228px;
+    transform: rotate(-172deg);
+}
+
+
+.use-content-page{
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    padding-bottom: 50px;
+
+    position: relative;
+    z-index: 2;
+    border-radius: 8px;
+}
+
+.use-content-page .answers-title{
+    width: 500px;
+}
+
+.answers-title-mobile{
+    display: none;
+}
+
+.tab-uses ul{
+    margin: 0 auto 50px auto;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.tab-uses ul li{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+
+    width: 160px;
+
+    font-family: "Athelas", sans-serif;
+    font-size: 17px;
+    color: #856aab;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 30px;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    margin: 0 50px 0 0;
+}
+
+.tab-uses ul li a{
+    text-decoration: none;
+}
+
+.tab-uses ul li:first-child{
+    width: 250px;
+}
+
+.tab-uses ul li:last-child{
+    margin: 0 0px 0 0;
+}
+
+.active-use-list{
+    display: block !important;
+}
+
+.active-tab-uses{
+    color: #7f5bab;
+}
+
+.use-list{
+    display: none;
+
+    position: relative;
+}
+
+.use-list .leave-benefit{
+    background-size: 65%;
+    top: 305px;
+    left: 369px;
+    z-index: 2;
+}
+
+.use-blocks{
+    margin: 0 auto;
+    width: 1100px;
+}
+
+.use-block{
+    width: 300px;
+    padding: 30px 25px;
+    margin: 0 10px 10px 0;
+
+    background-color: #fafafa;
+    border-radius: 8px;
+
+    color: #5d5c67;
+    font-family: "Athelas", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: left;
+}
+
+.type-use{
+    font-size: 28px;
+    font-weight: bold;
+
+    text-align: center;
+
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.type-use::before{
+    content: '';
+    background-color: #e1e1e1;
+    display: inline-block;
+    width: 30px;
+    height: 1px;
+
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.type-use::after{
+    content: '';
+    background-color: #e1e1e1;
+    display: inline-block;
+    width: 30px;
+    height: 1px;
+
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.use-block:nth-child(5) .type-use::before{
+    top: 30px;
+    left: -20px;
+}
+
+
+.use-block:nth-child(5) .type-use::after{
+    top: 30px;
+    right: -20px;
+}
+
+.type-use-description{
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+.use-method{
+    line-height: 30px;
+}
+
+.use-method span{
+    font-weight: bold;
+}
+
+.back-use, .look-use{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*---------------------------------------------------------------------------------------*/

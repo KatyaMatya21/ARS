@@ -434,6 +434,63 @@
         width: 275px;
     }
 
+
+    /*---------------------------------------------------------------------------------------*/
+    /* Энциклопедия Способы применения */
+
+    .use-blocks{
+        width: 980px;
+    }
+
+    .use-block{
+        width: 270px;
+        margin-right: 0;
+    }
+
+    .use-list .leave-benefit{
+        top: 211px;
+        left: 280px;
+    }
+
+    .use-paporotnik{
+        left: -19px;
+        top: 1351px;
+    }
+
+    .use-myata{
+        right: 29px;
+    }
+
+    .use-flower{
+        top: 1022px;
+        right: 21px;
+    }
+
+
+    .use-pink-flower{
+        left: 16px;
+    }
+
+    #parallax-bg img:first-child{
+        top: 319px !important;
+        left: 38px !important;
+    }
+
+    #parallax-bg img:nth-child(3){
+        top: 1200px !important;
+        left: 0 !important;
+    }
+
+    #parallax-bg img:nth-child(4){
+        top: 600px !important;
+        right: -218px !important;
+    }
+
+    #parallax-bg img:nth-child(2){
+        top: 2145px !important;
+        right: 0 !important;
+    }
+
 }
 
 
@@ -2388,6 +2445,140 @@
 
     .oil-block{
         width: auto;
+    }
+
+
+    /*---------------------------------------------------------------------------------------*/
+    /* Энциклопедия Способы применения */
+
+    .use-content-page .answers-title{
+        display: none;
+    }
+
+    .use-content-page .answers-title-mobile{
+        display: block;
+        width: 250px;
+    }
+
+    .tab-uses ul{
+        margin-bottom: 30px;
+    }
+
+    .tab-uses ul li{
+        width: 260px;
+        margin: 0 auto 15px auto;
+        text-align: center;
+    }
+
+    .tab-uses ul li a{
+        border-bottom: 1px dashed rgba(101, 81, 130, 0.2);
+    }
+
+    .tab-uses ul li.active-tab-uses a{
+        border-bottom: none;
+    }
+
+    .use-blocks{
+        width: 290px;
+    }
+
+    .use-block{
+        width: 240px;
+        padding: 30px 25px 0 25px;
+    }
+
+    .type-use::before{
+        left: 0px;
+    }
+
+    .type-use::after{
+        right: 0;
+    }
+
+    .use-method{
+        display: none;
+    }
+
+    .use-method-active{
+        display: block;
+    }
+
+    .look-use{
+        display: block;
+    }
+
+    .look-use{
+        color: #856aab;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+
+        border: 1px solid #ede9f3;
+        border-radius: 15px;
+
+        width: 290px;
+        margin-left: -26px;
+
+        padding: 15px 0;
+        cursor: pointer;
+    }
+
+    .back-use{
+        margin-top: 20px;
+        text-align: center;
+        font-style: italic;
+        font-size: 20px;
+        cursor: pointer;
+        font-weight: bold;
+        padding-bottom: 30px;
+    }
+
+    .back-use::before{
+        content: '∧';
+        display: block;
+        color: #bababe;
+        font-style: normal;
+        font-size: 15px;
+    }
+
+    .use-paporotnik{
+        left: -121px;
+        top: 2300px;
+    }
+
+    .use-myata{
+        top: 253px;
+        right: -35px;
+    }
+
+    .use-flower{
+        top: 961px;
+        left: -123px;
+    }
+
+    .use-pink-flower{
+        top: 1500px;
+        left: 255px;
+    }
+
+    #parallax-bg img:first-child{
+        top: 319px !important;
+        left: 38px !important;
+    }
+
+    #parallax-bg img:nth-child(3){
+        top: 1200px !important;
+        left: 0 !important;
+    }
+
+    #parallax-bg img:nth-child(4){
+        top: 600px !important;
+        right: -218px !important;
+    }
+
+    #parallax-bg img:nth-child(2){
+        top: 2145px !important;
+        right: 0 !important;
     }
 
 
