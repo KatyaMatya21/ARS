@@ -4803,9 +4803,12 @@ main h2.title-ency {
 
 .tab-uses ul{
     margin: 0 auto 50px auto;
-    padding: 0;
     list-style: none;
     text-align: center;
+    width: 945px;
+    padding: 0 0 40px 0;
+
+    border-bottom: 1px solid #e6e7e6;
 }
 
 .tab-uses ul li{
@@ -4826,6 +4829,8 @@ main h2.title-ency {
     cursor: pointer;
 
     margin: 0 50px 0 0;
+
+    position: relative;
 }
 
 .tab-uses ul li a{
@@ -4846,6 +4851,18 @@ main h2.title-ency {
 
 .active-tab-uses{
     color: #7f5bab;
+}
+
+.tab-uses li.active-tab-uses::after{
+    content: '';
+    background: url("../img/use-pointer.png") 0 0 no-repeat;
+    width: 29px;
+    height: 19px;
+
+    position: absolute;
+    top: 82px;
+    left: 50% ;
+    margin-left: -15px;
 }
 
 .use-list{

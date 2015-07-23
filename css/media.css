@@ -2466,6 +2466,9 @@
 
     .tab-uses ul{
         margin-bottom: 30px;
+        width: 290px;
+
+        border: none;
     }
 
     .tab-uses ul li{
@@ -2480,6 +2483,10 @@
 
     .tab-uses ul li.active-tab-uses a{
         border-bottom: none;
+    }
+
+    .tab-uses ul li.active-tab-uses::after{
+        display: none;
     }
 
     .use-blocks{
