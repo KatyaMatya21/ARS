@@ -31,7 +31,7 @@ $(document).ready(function(){
 
     });
 
-    $('.active-tab-benefit .oil-blocks').masonry({
+    var $mans = $('.active-tab-benefit .oil-blocks').masonry({
         itemSelector: '.oil-block',
         //columnWidth: 360,
         percentPosition: true,
@@ -62,6 +62,7 @@ $(document).ready(function(){
             window.mobileMidSlider.init();
 
             $('.active-tab-benefit .oil-blocks').masonry('destroy');
+            window.parallaxMainSly();
 
         }else{
 

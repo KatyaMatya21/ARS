@@ -77,6 +77,8 @@ $(document).ready(function(){
 
         }
 
+        window.parallaxMainSly();
+
     }
 
     $('[data-href]').live('click', function () {
@@ -108,12 +110,16 @@ $(document).ready(function(){
 
     }
 
-    function parallaxMainSly() {
+    window.parallaxMainSly = function() {
+
+        if( window.documentSlider ) {
+            window.documentSlider.destroy();
+        }
 
         var scrollMax = $( '#wrapper' ).height() - $(window).height();
-        console.log($(window).height());
-        console.log($( '#wrapper' ).height());
-        console.log(scrollMax);
+        console.log('Window height: '+$(window).height());
+        console.log('Wrapper height: '+$( '#wrapper' ).height());
+        console.log('Scroll height: '+scrollMax);
 
         window.documentSlider = new Sly( scrollMax, {
 		scrollSource: document,
@@ -138,9 +144,9 @@ $(document).ready(function(){
 
         window.documentSlider.init();
 
-    }
+    };
 
-    parallaxMainSly();
+    //window.parallaxMainSly();
 
 
 });
