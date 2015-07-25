@@ -52,6 +52,7 @@ $(document).ready(function(){
 
     window.slyTown.init();
 
+
     $('.town-point').bind('click',function(){
         $(this).toggleClass('town-point-switch');
         window.slyTown.reload();
