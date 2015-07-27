@@ -1682,7 +1682,7 @@ body{
 
     position: relative;
 
-    margin-right: 50px;
+    margin-right: 40px;
 }
 
 .breadcrumbs-menu-after ul li:last-child{
@@ -1850,9 +1850,12 @@ body{
 
     margin: 0;
     padding: 0;
-    border: 1px solid #b3a3cb;
+    border: 1px solid #eae5f0;
     width: 300px;
-    border-radius: 25px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 28px;
+    border-bottom-left-radius: 28px;
 
     padding-top: 42px;
 }
@@ -1873,6 +1876,10 @@ body{
     padding: 15px 10px 15px 20px;
     border-top: 1px solid rgba(223, 222, 224, 1);
     border-bottom: 1px solid rgba(223, 222, 224, 1);
+}
+
+.hide-filter li a:first-child{
+    border-top: none;
 }
 
 .hide-filter li:last-child a{

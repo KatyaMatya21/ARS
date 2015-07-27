@@ -1368,7 +1368,7 @@
     }
 
     .catalog-list li.slide-product {
-        min-height: 300px;
+        min-height: 245px;
         width: 126px;
     }
 
@@ -1409,11 +1409,12 @@
 
     .breadcrumbs-menu-after {
         height: 200px;
-        width: 110%;
+        width: 100%;
 
         padding-top: 70px;
 
         margin: 0 auto 15px auto;
+
     }
 
     .breadcrumbs-menu-after ul {
