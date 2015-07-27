@@ -60,9 +60,10 @@ $(document).ready(function(){
             });
 
             window.mobileMidSlider.init();
+            window.mobileMidSlider.activate( $('.active-breadcrumbs-menu-after') );
 
             $('.active-tab-benefit .oil-blocks').masonry('destroy');
-            window.parallaxMainSly();
+            window.updateDocumentHeight();
 
         }else{
 

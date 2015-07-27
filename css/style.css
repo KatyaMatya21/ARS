@@ -682,10 +682,18 @@ main {
 
 #slider-type-frame {
     width: 100%;
-    height: 80px;
-    padding: 10px 0 10px 0;
+    height: 81px;
     position: relative;
-    background: transparent url(../img/slide-separator.png) 0 bottom no-repeat;
+    padding-top: 10px;
+
+    /*background: transparent url(../img/slide-separator.png) 0 bottom no-repeat;*/
+}
+
+#slider-type-frame > ul {
+    border-bottom: 1px solid #e6e7e6;
+}
+
+.slider-type-frame-decor {
     margin-bottom: 18px;
 }
 
@@ -716,15 +724,15 @@ main {
 ul.slider-type-products {
     padding: 0;
     margin: 0;
-    height: 100%;
+    height: 80px;
     list-style: none;
 }
 
 .slider-type-products li {
     float: left;
     margin: 0 5px 0 0;
-    padding: 10px;
-    height: 100%;
+    padding: 0 10px 0 0;
+    height: 81px;
     text-transform: uppercase;
     color: #856aab;
     font-family: 'Athelas', sans-serif;
@@ -738,6 +746,18 @@ ul.slider-type-products {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    position: relative;
+}
+
+.slider-type-products li.active::after {
+    content: '';
+    background: url("../img/use-pointer.png") 0 0 no-repeat;
+    width: 29px;
+    height: 19px;
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    margin-left: -15px;
 }
 
 .slider-type-products a {
@@ -1233,18 +1253,18 @@ footer {
     bottom: 0;
     z-index: 99999;
     width: 100%;
+    background-color: white;
 
 }
 
 .footer-decor{
     padding-left: 160px;
-
+    background: white url("../img/footer-shadow.png") center 0 no-repeat;
 }
 
 .footer-content {
-    box-shadow: 0 78px 91px 90px rgba(255, 255, 255, 1);
+    /*box-shadow: 0 78px 91px 90px rgba(255, 255, 255, 1);*/
     padding: 33px 0 40px 0;
-    background-color: white;
 }
 
 .footer-menu-one {
@@ -1413,7 +1433,7 @@ footer {
 
 main {
     transition: transform 0.2s ease-in-out 0s;
-    padding-bottom: 180px;
+    padding-bottom: 170px;
 }
 
 /*дописано*/
@@ -1651,7 +1671,7 @@ body{
     background: transparent url("../img/plant.png") 0 0 no-repeat;
     width: 172px;
     height: 38px;
-    top: -33px;
+    top: -20px;
     left: 250px;
 }
 
@@ -2041,7 +2061,6 @@ body{
 
 .catalog-list .slider-products{
     padding: 130px 0 60px 180px;
-
     margin: 0;
 }
 
@@ -2052,6 +2071,10 @@ body{
 
 .catalog-list li.slide-product:hover .slider-products-description{
     display: none;
+}
+
+.catalog-list li.slide-product:hover .slider-products-image img {
+    transition: all 0.2s;
 }
 
 .catalog-list li.slide-product:hover .slider-products-image img{
@@ -3162,20 +3185,20 @@ main h2.title-ency {
 
 .question-block{
     font-weight: bold;
-
+    position: relative;
     padding: 45px 60px 0px 70px;
 }
 
-.question-block:before {
+.question-block::before {
+    position: absolute;
     content: '';
     display: inline-block;
     background: url("../img/plus-minus.png") 0 0 no-repeat;
     width: 20px;
     height: 20px;
-
-    position: relative;
     z-index: 20;
-    left: -20px;
+    left: 40px;
+    top: 50px;
     bottom: -2px;
 }
 
@@ -3653,7 +3676,8 @@ main h2.title-ency {
 }
 
 .sert-slider {
-    height: 300px;
+    height: 315px;
+    padding-top: 15px;
     overflow: hidden;
     position: relative;
 }
@@ -3682,6 +3706,10 @@ main h2.title-ency {
     list-style: none;
 }
 
+.sertification .slider-fader.disabled {
+    display: none;
+}
+
 .sert-slider ul li{
     display: inline-block;
     vertical-align: top;
@@ -3692,7 +3720,12 @@ main h2.title-ency {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
     margin-right: 20px;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
 
+.sert-slider ul li:hover {
+    transform: translateY(-15px);
 }
 
 .sert-slider ul li:last-child{
@@ -3743,7 +3776,7 @@ main h2.title-ency {
 .contacts-parnters{
     padding: 0 30px;
 
-    position: relative;
+    /*position: relative;*/
 }
 
 .contacts-title{
@@ -4122,13 +4155,20 @@ main h2.title-ency {
 .event-slider{
     overflow: hidden;
     margin: 0 auto;
-    width: 960px;
+    width: 930px;
+}
+
+.event-slider-decor {
+    width: 930px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .event-slider ul{
     list-style: none;
     margin: 0 auto;
     padding: 0;
+    height: 100%;
 }
 
 .event-slider ul li.event-slide{
@@ -4177,15 +4217,15 @@ main h2.title-ency {
 }
 
 .company-events .slider-fader{
-    top: 270px;
+    top: 120px;
 }
 
 .company-events .slider-fader-left{
-    left: 320px;
+    left: -80px;
 }
 
 .company-events .slider-fader-right{
-    right: 320px;
+    right: -80px;
 }
 
 .company-work{
@@ -5082,7 +5122,7 @@ main h2.title-ency {
     padding: 0 10px;
 
 
-    position: relative;
+    /*position: relative;*/
     float: left;
 }
 
@@ -5161,3 +5201,81 @@ main h2.title-ency {
     transform: rotate(-69deg);
 }
 
+.container-fluid {
+    margin: 0 auto;
+    width: 1250px;
+}
+
+.receipt-list {
+    padding: 0 15px;
+}
+
+.receipt-list > ul > li {
+    cursor: pointer;
+    /*position: relative;*/
+}
+
+.receipt-content-page .list {
+    position: relative;
+}
+
+.receipt-list > ul > li.active {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.receipt-list > ul > li.active .receipt-popup {
+    display: block;
+}
+
+.receipt-popup .receipt-popup-content::before {
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 350px;
+    background-color: white;
+    z-index: 11;
+    top: -6px;
+    left: 0;
+}
+
+.list .receipt-list:first-child {
+    padding-left: 0;
+}
+
+.list .receipt-list:last-child {
+    padding-right: 0;
+}
+
+.receipt-popup {
+    position: absolute;
+    /*width: 100%;*/
+    /*min-height: 300px;*/
+    display: none;
+    width: 1112px;
+    left: 0;
+    z-index: 9;
+}
+
+.receipt-popup .receipt-popup-tube {
+    height: 100px;
+    background-color: white;
+    width: 350px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 9;
+}
+
+.receipt-popup .receipt-popup-content {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0 10px 10px;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    z-index: 10;
+}
+
+.receipt-content-page .receipt-type {
+    border: 0;
+}

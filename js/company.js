@@ -3,7 +3,7 @@ $(document).ready(function(){
     var $slideeFrame = $('.event-slider');
     var $slideeOptions = {
         horizontal: 1,
-        itemNav: 'forceCentered',
+        itemNav: 'basic',
         smart: 1,
         activateOn: 'click',
         activatePageOn: 'click',

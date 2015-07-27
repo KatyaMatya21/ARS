@@ -8,8 +8,6 @@ $(document).ready(function(){
     var lazyResize = _.debounce( onViewportResize, 300 );
     $(window).on('resize load', lazyResize);
 
-
-
     $('.tab-question').bind('click',function(){
 
         var targetTab = $(this).data('target'); // tab1
@@ -24,6 +22,7 @@ $(document).ready(function(){
 
     $('.question-switch').bind('click',function(){
         $(this).toggleClass('question-switch-active');
+        updateDocumentHeight();
     });
 
 
@@ -34,7 +33,6 @@ $(document).ready(function(){
 
         // media breakpoint for 480px
         if( win.width() <= 480 ) {
-
 
             // Handle mobile-only mid slider
             window.mobileMidSlider = new Sly( $('#mobile-mid-slider'), {
@@ -48,6 +46,7 @@ $(document).ready(function(){
             });
 
             window.mobileMidSlider.init();
+            window.mobileMidSlider.activate( $('.active-breadcrumbs-menu-after') );
 
         }else{
 

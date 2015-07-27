@@ -66,6 +66,7 @@ $(document).ready(function(){
             });
 
             window.mobileMidSlider.init();
+            window.mobileMidSlider.activate( $('.active-breadcrumbs-menu-after') );
 
             $('.active-use-list .use-blocks').masonry('destroy');
 

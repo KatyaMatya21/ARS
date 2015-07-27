@@ -51,7 +51,7 @@ $(document).ready(function(){
             var $slideeFrame = $('.sert-slider');
             var $slideeOptions = {
                 horizontal: 1,
-                itemNav: 'forceCentered',
+                itemNav: 'basic',
                 smart: 1,
                 activateOn: 'click',
                 speed: 500,
