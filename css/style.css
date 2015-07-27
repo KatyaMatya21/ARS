@@ -2485,7 +2485,8 @@ body{
 
 .receipt-type
 {
-    background: url("../img/slide-separator-left.png") 0 bottom no-repeat;
+    /*background: url("../img/slide-separator-left.png") 0 bottom no-repeat;*/
+    border-bottom: 1px solid #e6e7e6;
 }
 
 .receipt-type li{
@@ -2572,14 +2573,14 @@ body{
 
     height: 45px;
 
-    max-width: 210px;
+    width: 210px;
     margin: 0 20px 0 0;
 
     cursor: pointer;
 }
 
 .receipt-content .control-btn{
-    display: none;
+    /*display: none;*/
 }
 
 .receipt-content ul li:last-child{
@@ -2588,8 +2589,26 @@ body{
 
 .receipt-content ul li.active-receipt-button{
     color: #856aab;
-
     border: 1px solid #fcdde6;
+}
+
+.receipt-type li.receipt-tab {
+    position: relative;
+}
+
+.receipt-type li.active-receipt-tab::after {
+    content: '';
+    background: url("../img/use-pointer.png") 0 0 no-repeat;
+    width: 29px;
+    height: 19px;
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    margin-left: -15px;
+}
+
+.receipt-type li.active-receipt-tab:last-child::after {
+    bottom: -1px;
 }
 
 .receipt-item{

@@ -162,10 +162,6 @@
         width: 210px;
     }
 
-    .receipt-type{
-        background: url("../img/slide-separator-left.png") -108px bottom no-repeat;
-    }
-
     .back-receipt{
         display: none;
     }
@@ -1640,12 +1636,26 @@
     }
 
     .receipt-content, .receipt-item, .receipt-content .receipt-content-buttons-frame {
-        display: block;
+        /*display: block;*/
+    }
+
+    .receipt-content .back-receipt {
+        margin-top: 15px;
+        cursor: pointer;
     }
 
     .receipt-type {
         background: none;
+        display: block;
+        padding-bottom: 30px;
+    }
+
+    .receipt-tab.active-receipt-tab::after {
         display: none;
+    }
+
+    .receipt-part div.receipt-content.active-super-tab {
+        /*display: none !important;*/
     }
 
     .receipt-part ul {
@@ -1674,11 +1684,11 @@
     }
 
     .receipt-content .control-btn {
-        display: block;
+        display: none;
     }
 
     .receipt-content-buttons-frame {
-        padding: 0 15px;
+        padding: 0;
         height: 125px;
 
     }

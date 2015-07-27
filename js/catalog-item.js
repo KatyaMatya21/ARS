@@ -5,15 +5,21 @@ $(document).ready(function(){
             var targetTab = $(this).data('target'); // tab1
             var tab = $('#'+targetTab); // #tab1
 
+            console.log('Destroyed slider');
             DestroySly( $('.active-super-tab .receipt-content-buttons-frame') );
 
             $('.active-super-tab').removeClass('active-super-tab');
             tab.addClass('active-super-tab');
 
-            TabSly( $('.active-super-tab .receipt-content-buttons-frame') );
+            console.log('Created slider');
+            TabSly($('.active-super-tab .receipt-content-buttons-frame'));
 
             $('.active-receipt-tab').removeClass('active-receipt-tab');
             $(this).addClass('active-receipt-tab');
+
+            if( $(window).width() <= 450  ) {
+                $('.receipt-type').hide();
+            }
 
         });
 
@@ -61,10 +67,15 @@ $(document).ready(function(){
 
 
 
-        function TabSly( $slideeFrame ){
+        function TabSly( $slideeFrame, centered ){
 
             if( $slideeFrame.data('sly-ref') ) {
                 return;
+            }
+
+            var type = 'basic';
+            if( centered != undefined ) {
+                type = 'forceCentered';
             }
 
             var $slideeOptions = {
@@ -102,13 +113,32 @@ $(document).ready(function(){
         function onViewportResize() {
             var win = $(this);
 
-            if( win.width() <= 1450 ) {
+            /*if( win.width() <= 1450 ) {
                 TabSly( $('.active-super-tab .receipt-content-buttons-frame') );
             }
             else{
                 DestroySly( $('.active-super-tab .receipt-content-buttons-frame') );
+            }*/
+
+            if( win.width() <= 450 ) {
+                $('.active-super-tab').removeClass('active-super-tab');
+            }else{
+                $('.receipt-type').show();
+                $($('.receipt-part .super-tab').get(0)).addClass('active-super-tab');
+                DestroySly( $('.active-super-tab .receipt-content-buttons-frame') );
+                setTimeout(function() {
+                    TabSly($('.active-super-tab .receipt-content-buttons-frame'));
+                },250);
             }
 
         }
+
+        TabSly( $('.active-super-tab .receipt-content-buttons-frame') );
+
+        $(document).on('click', '.back-receipt', function(){
+            DestroySly( $('.active-super-tab .receipt-content-buttons-frame') );
+            $('.active-super-tab').removeClass('active-super-tab');
+            $('.receipt-type').show();
+        });
 
 });
