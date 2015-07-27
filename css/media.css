@@ -1330,11 +1330,20 @@
 
     .alphabet {
         padding: 0 10px 0px 10px;
-        margin-bottom: 50px;
+        padding-bottom: 140px;
+    }
+
+    .alphabet ul{
+        width: 270px;
+    }
+
+    .alphabet ul li{
+
     }
 
     .alphabet ul li a {
         font-size: 19px;
+        color: #856aab;
     }
 
     .catalog-list {
@@ -1359,26 +1368,28 @@
     }
 
     .catalog-list li.slide-product {
-        min-height: 360px;
+        min-height: 300px;
+        width: 126px;
     }
 
-    .slide-product .slider-products-image {
-        height: 126px;
+    .catalog-list .slide-product .slider-products-image {
+        height: 135px;
     }
 
-    .slide-product .slider-products-image img {
+    .catalog-list .slide-product .slider-products-image img {
         width: auto;
         height: 100%;
     }
 
-    .slide-product .slider-products-description {
+    .catalog-list .slide-product .slider-products-description {
         font-size: 13px;
         width: 77%;
+        margin: 17px 10px 0 18px;
     }
 
-    .slide-product .btn-look a {
-        top: 125px;
-        right: 70px;
+    .catalog-list .slide-product .btn-look a {
+        top: 61px;
+        right: 9px;
         font-size: 13px;
         padding: 8px 15px;
     }
@@ -1398,7 +1409,7 @@
 
     .breadcrumbs-menu-after {
         height: 200px;
-        width: 100%;
+        width: 110%;
 
         padding-top: 70px;
 
