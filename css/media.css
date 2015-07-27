@@ -1989,8 +1989,18 @@
     .production-services ul{
         margin: 20px 0 0 0;
     }
+    
     .production-services ul li {
-        width: 252px;
+        width: 190px;
+        position: relative;
+        padding-left: 74px;
+        margin-bottom: 35px;
+    }
+
+    .production-services li::before{
+        position: absolute;
+        top: 0;
+        left: -10px;
     }
 
     .features h3{
