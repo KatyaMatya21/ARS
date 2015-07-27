@@ -53,8 +53,8 @@
     }
 
     .promo-banner{
-        width: 480px;
-        height: 447px;
+        width: 426px;
+        height: 393px;
     }
 
     .promo-banner:before{
@@ -1046,8 +1046,8 @@
     }
 
     .promo-banner {
-        height: 500px;
-        width: 290px;
+        height: 446px;
+        width: 236px;
 
         margin-top: 55px;
     }
@@ -1065,7 +1065,7 @@
     }
 
     .promo-slider .promo-slide-info {
-        width: 260px;;
+        width: 235px;
     }
 
     /* Карта */
