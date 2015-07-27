@@ -267,16 +267,23 @@ header {
 }
 
 .hide-menu {
-    display: none;
+    opacity: 0;
+    /*display: none;*/
     width: 909px;
     height: 1240px;
     position: absolute;
     top: 0;
-    left: 142px;
-    z-index: 10000;
+    left: -1100px;
+    z-index: -1;
     background: url("../img/menu.png") 0 0 no-repeat;
     box-shadow: 12px 0 26px -16px rgba(0, 0, 0, 0.2);
     padding: 100px 73px 50px 50px;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu > li:first-child:hover .hide-menu {
+    left: 142px;
+    opacity: 1;
 }
 
 .hide-menu h2 {
