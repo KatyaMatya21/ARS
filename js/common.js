@@ -128,7 +128,7 @@ $(document).ready(function(){
 		scrollBar: $('#wrapper .scrollbar'),
             	dragSource: document,
             	//mouseDragging: 0, // Enables dragging by mouse
-            	//touchDragging: 1, // Enables dragging by touch
+            	touchDragging: 1, // Enables dragging by touch
 			
 		speed: 600,
 		releaseSwing: 1,  // Enables release swing easing

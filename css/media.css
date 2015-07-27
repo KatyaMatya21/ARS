@@ -3,6 +3,11 @@
 
 @media (max-width: 1450px) {
 
+    html, body{
+        min-width: 1250px;
+        overflow-x: visible;
+    }
+
     /* index page */
 
     .main-slaider .bx-controls-direction{
@@ -505,6 +510,8 @@
     /* index page */
     body {
         background-color: #ffffff;
+        min-width: 320px;
+        overflow-x: hidden;
     }
 
     main {
