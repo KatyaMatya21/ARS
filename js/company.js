@@ -29,7 +29,7 @@ $(document).ready(function(){
 
         var section = $(this).data('section');
         var CurrentSection = $('#'+section);
-        var offset = CurrentSection.offset().top;
+        var offset = CurrentSection.offset().top - 90;
 
         window.documentSlider.slideTo(offset);
 

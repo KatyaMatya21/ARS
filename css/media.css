@@ -377,6 +377,14 @@
         width: 1100px;
     }
 
+    .popup-event-slider{
+        width: 440px;
+    }
+
+    .popup-event-page{
+        width: 655px;
+    }
+
     /*---------------------------------------------------------------------------------------*/
     /* Энциклопедия Польза */
 
@@ -2398,12 +2406,26 @@
     }
 
     .popup-event-slider{
-        display: none;
+
+    }
+
+    .another{
+        display: block;
+
+        font-family: 'Athelas', sans-serif;
+        color: #a39d95;
+        font-weight: normal;
+        font-size: 20px;
+        text-transform: uppercase;
+
+        margin: 30px 15px 30px 15px;
     }
 
     .popup-event-page{
         margin: 0;
         overflow: visible;
+        width: 290px;
+        /*height: auto;*/
     }
 
     .event-image{
@@ -2424,8 +2446,22 @@
         display: none;
     }
 
-    .specially-for-mobile-popup{
-        display: block;
+    .popup-event-slider ul li.popup-event-slide{
+        width: 260px;
+        padding: 10px 10px 10px 0px;
+        border: none;
+    }
+
+    .popup-event-slider ul li.active-popup-tab {
+        background-color: #fff;
+    }
+
+    .popup-event-slider ul li.active-popup-tab::after{
+        display: none;
+    }
+
+    .popup-event-name{
+        width: 260px;
     }
 
     /*---------------------------------------------------------------------------------------*/

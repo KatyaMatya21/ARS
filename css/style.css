@@ -4445,7 +4445,6 @@ main h2.title-ency {
     height: 700px;
     width: 450px;
     padding: 0;
-    float: left;
 }
 
 .popup-event-slider ul{
@@ -4505,7 +4504,8 @@ main h2.title-ency {
 }
 
 .popup-event-page{
-    margin-left: 450px;
+    float: right;
+    width: 750px;
     height: 790px;
     display: none;
 }
@@ -4582,34 +4582,6 @@ main h2.title-ency {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 
 
-}
-
-.specially-for-mobile-popup{
-    display: none;
-}
-
-.specially-for-mobile-popup ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.specially-for-mobile-popup ul li{
-    margin-bottom: 17px;
-}
-
-.specially-for-mobile-popup .another{
-    margin: 30px 15px 20px 15px;
-
-    font-family: 'Athelas', sans-serif;
-    color: #a39d95;
-    font-weight: normal;
-    font-size: 20px;
-    text-transform: uppercase;
-}
-
-.specially-for-mobile-popup ul li .popup-event-name{
-    width: 260px;
 }
 
 /*---------------------------------------------------------------------------------------*/
