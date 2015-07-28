@@ -528,6 +528,14 @@
         padding-left: 0;
     }
 
+    .receipt-myata{
+        right: -20px;
+    }
+
+    .receipt-flower{
+        left: -20px;
+    }
+
 }
 
 
@@ -2858,6 +2866,15 @@
 
     .back-use {
         padding-bottom: 0;
+    }
+
+    .receipt-myata{
+        right: -67px;
+    }
+
+    .receipt-flower{
+        top: 562px;
+        left: -78px;
     }
 
 }
