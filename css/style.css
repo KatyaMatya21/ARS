@@ -1884,6 +1884,22 @@ body{
     background-position-y: -1440px;
 }
 
+.breadcrumbs-menu-after ul li a .benefit-icon{
+    background-position-y: -1600px;
+}
+
+.breadcrumbs-menu-after ul li a .use-icon{
+    background-position-y: -1760px;
+}
+
+.breadcrumbs-menu-after ul li a .reciept-icon{
+    background-position-y: -1920px;
+}
+
+.breadcrumbs-menu-after ul li a .answer-icon{
+    background-position-y: -2080px;
+}
+
 .breadcrumbs-menu-after ul li a:hover .breadcrumbs-icon{
     background-position-x: -180px;
 }
