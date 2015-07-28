@@ -120,7 +120,7 @@ $(document).ready(function(){
                 DestroySly( $('.active-super-tab .receipt-content-buttons-frame') );
             }*/
 
-            if( win.width() <= 450 ) {
+            if( win.width() <= 480 ) {
                 $('.active-super-tab').removeClass('active-super-tab');
             }else{
                 $('.receipt-type').show();
