@@ -250,6 +250,21 @@ header {
 
 /* Появляющееся меню КАТАЛОГ*/
 
+.catalog-back{
+    display: none;
+    font-family: 'Athelas', sans-serif;
+    font-size: 20px;
+    color: #47474f;
+    font-weight: 600;
+    padding-left: 60px;
+    padding-bottom: 25px;
+    padding-top: 0;
+    border-bottom: 1px solid rgba(223, 222, 224, 0.36);
+    margin-bottom: 20px;
+    background: url("../img/back-arrow-menu.png") 30px 0px no-repeat;
+    cursor: pointer;
+}
+
 #catalog-back{
     display: none;
     font-family: 'Athelas', sans-serif;

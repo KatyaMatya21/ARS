@@ -1,8 +1,65 @@
-$(function(){
+$(function() {
 
-    $('.receipt-list > ul > li').click(function(){
+    var lazyResize = _.debounce(onViewportResize, 300);
+    $(window).on('resize load', lazyResize);
 
-        if( !$(this).hasClass('active') ) {
+    $('.catalog-back').click(function(){
+        $('.receipt-list').hide();
+        $('.receipt-type').show();
+        window.updateDocumentHeight();
+    });
+
+    function onViewportResize() {
+        var win = $(this);
+        if (win.width() <= 480) {
+            $('#mobile-mid-slider').sly({
+                mouseDragging: 1,
+                touchDragging: 1,
+                horizontal: 1,
+                itemNav: 'forceCentered',
+                smart: 1,
+                activateOn: 'click',
+                speed: 200
+            });
+            $('#mobile-mid-slider').sly('activate', $('.active-breadcrumbs-menu-after'));
+
+            bindTabs();
+            unbindItems();
+            bindModileClick();
+
+        } else {
+            $('#mobile-mid-slider').sly(false);
+            unbindTabs();
+            unbindMobileClick();
+            bindItems();
+        }
+    }
+
+    function bindTabs() {
+        $('.receipt-tab').bind('click', function (e) {
+            var $tab = $('#' + $(this).data('target'));
+            $('.receipt-list').hide();
+            $tab.show();
+            $('.receipt-type').hide();
+            window.updateDocumentHeight();
+        });
+    }
+
+    function unbindTabs() {
+        $('.receipt-tab').unbind();
+        $('.receipt-list').removeAttr('style');
+    }
+
+    function bindItems() {
+        $('.receipt-list > ul > li').click( onClickItem );
+    }
+
+    function unbindItems() {
+        $('.receipt-list > ul > li').unbind();
+    }
+
+    function onClickItem() {
+        if (!$(this).hasClass('active')) {
 
             $('.slider-receipt-item').sly(false);
             $('.receipt-list ul > li').removeClass('active');
@@ -11,8 +68,8 @@ $(function(){
 
             $(this).addClass('active');
             var $closer = $('<div class="closer"></div>');
-            $(this).append( $closer );
-            $closer.bind('click',function(e){
+            $(this).append($closer);
+            $closer.bind('click', function (e) {
 
                 $(this).parent().removeClass('active');
                 $(this).parent().find('.receipt-popup').removeAttr('style');
@@ -64,31 +121,29 @@ $(function(){
 
         }
 
-        /*var $slideePopup = $('.slider-receipt-item').get(0);
-        var $slideeOptions = {
-            itemNav: 'basic',
-            smart: 1,
-            activateOn: 'click',
-            speed: 500,
-            mouseDragging: 1,
-            touchDragging: 1,
-            easing: 'swing',
-            itemSelector: 'li.slide-receipt',
-            scrollBy: 1,
-            scrollSource: $slideePopup,
-            prevPage: $slideePopup.parent().find('.slider-fader-left').get(0),
-            nextPage: $slideePopup.parent().find('.slider-fader-right').get(0)
-        };
+    }
 
-        window.slyPopup = new Sly(
-            $slideePopup,
-            $slideeOptions
-        );
+    function onMobileClick(e) {
+        if (!$(this).hasClass('active')) {
+            $(this).addClass('active');
+            window.updateDocumentHeight();
+            var $closer = $('<div class="back-use" style="display: block;">Свернуть</div>');
+            $closer.bind('click', function(e){
+                $(this).parent().removeClass('active');
+                $(this).remove();
+                e.preventDefault();
+                return false;
+            });
+            $(this).append($closer);
+        }
+    }
 
-        window.slyPopup.init();
-*/
-    });
+    function bindModileClick() {
+        $('.receipt-list > ul > li').click( onMobileClick );
+    }
 
-
+    function unbindMobileClick() {
+        $('.receipt-list > ul > li').unbind();
+    }
 
 });

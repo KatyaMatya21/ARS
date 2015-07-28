@@ -524,6 +524,10 @@
         width: 100%;
     }
 
+    .receipt-type ul {
+        padding-left: 0;
+    }
+
 }
 
 
@@ -2697,6 +2701,164 @@
     /*---------------------------------------------------------------------------------------*/
     /* Энциклопедия Рецепты */
 
+    .receipt-type li {
+        display: block;
+    }
+
+    .receipt-content-page .receipt-type ul > li:first-child {
+        background: none;
+    }
+    .receipt-content-page .receipt-type ul > li {
+        background: url("../img/border.png") 0 0 no-repeat;
+    }
+
+    .receipt-content-page .receipt-type ul > li {
+        margin: 0 auto;
+    }
+
+    .receipt-content-page .receipt-list .catalog-back {
+        display: block;
+    }
+
+    .receipt-content-page .receipt-type ul {
+        width: auto;
+    }
+
+    .receipt-content-page .list .receipt-list {
+        width: auto;
+        display: none;
+        padding: 0 15px !important;
+    }
+
+    .receipt-content-page .list .receipt-list > ul > li {
+        width: 210px;
+        margin: 0 auto;
+        background-color: white;
+        border: 1px solid #f0f0f0;
+        margin-bottom: 20px;
+    }
+
+    .receipt-list > ul > li .receipt-description-info {
+        display: none;
+    }
+
+    .receipt-list > ul > li.active .receipt-description-info {
+        display: block;
+    }
+
+    .receipt-list > ul > li.active .receipt-popup-tube {
+        display: none !important;
+        box-shadow: none !important;
+    }
+
+    .receipt-list > ul > li > div.receipt-popup-tube::before, .receipt-list > ul > li > div.receipt-popup-tube::after {
+        display: none;
+    }
+
+    .receipt-list > ul > li.active > div.receipt-popup .receipt-popup-content {
+        box-shadow: none;
+        height: auto;
+    }
+
+    .receipt-list > ul > li.active > div.receipt-popup .slider-receipt-item {
+        height: auto;
+        overflow: visible;
+    }
+
+    .receipt-list > ul > li.active > div.receipt-popup .slider-fader {
+        display: none;
+    }
+
+    .receipt-list > ul > li.active > div.receipt-popup {
+        width: 260px;
+        margin: 0;
+        margin-left: -25px;
+        height: auto;
+        position: relative;
+        z-index: auto;
+        left: auto;
+        min-height: 0;
+        box-shadow: none !important;
+    }
+
+    .receipt-list > ul > li.active {
+        box-shadow: none;
+    }
+
+    /* slider */
+    .receipt-list > ul > li.active .slider-receipt-item > ul > li .slider-products-description .item-name-ru {
+        font-size: 17px;
+        color: #717171;
+        text-transform: uppercase;
+        margin: 0 0 5px;
+        text-decoration: none;
+    }
+
+    .receipt-list > ul > li.active .slider-receipt-item > ul > li .slider-products-description .item-name-lat {
+        font-size: 19px;
+        color: #a4a4a3;
+        width: 180px;
+        margin: 10px auto 0 auto;
+        text-decoration: none;
+    }
+
+    .receipt-list > ul > li.active .slider-receipt-item > ul > li .slider-products-description .item-attributes {
+        display: none;
+    }
+
+    .receipt-list > ul > li.active .slider-receipt-item > ul > li .slider-products-description {
+        float: right;
+        width: 165px;
+        margin: 0 auto 0 auto;
+        padding: 21px 0;
+        text-align: center;
+        font-family: 'Athelas', sans-serif;
+        color: #717171;
+        font-size: 20px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .receipt-list > ul > li.active .slider-receipt-item > ul > li .slider-products-image img {
+        width: auto;
+        height: 75%;
+        text-align: center;
+    }
+
+    .receipt-list > ul > li.active .slider-receipt-item > ul > li .slider-products-image {
+        height: 117px;
+        width: 92px;
+        float: left;
+        border-right: 1px solid #ececec;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .receipt-list > ul > li.active .slider-receipt-item > ul > li {
+        display: block;
+        height: 117px;
+        margin-bottom: 15px;
+        padding: 20px 0 0 0;
+        width: auto;
+        border-top: 1px solid #ececec;
+        border-bottom: 1px solid #ececec;
+        float: none !important;
+        border-radius: 0;
+    }
+
+    .receipt-list > ul > li.active .slider-receipt-item > ul > li::after {
+        display: none !important;
+    }
+
+    .receipt-popup-content .slider-receipt-item ul {
+        margin-top: 45px;
+        padding: 0;
+    }
+
+    .back-use {
+        padding-bottom: 0;
+    }
 
 }
 
