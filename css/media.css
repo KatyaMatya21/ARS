@@ -2379,13 +2379,17 @@
 
     .event-popup{
         width: 290px;
-        height: auto;
+        height: 80%;
         margin-left: -140px;
         overflow: visible;
     }
 
+    .active-popup-event-page {
+        height: auto;
+    }
+
     .popup-close{
-        top: -40px;
+        top: 0px;
         right: 0px;
     }
 

@@ -4518,7 +4518,7 @@ main h2.title-ency {
 
 .popup-event-slider{
     overflow: hidden;
-    height: 745px;
+    height: 790px;
     width: 450px;
     padding: 0;
 }
@@ -4602,7 +4602,6 @@ main h2.title-ency {
     font-weight: normal;
     color: #000000;
     font-size: 22px;
-
     padding: 0 40px;
 }
 
@@ -4612,7 +4611,11 @@ main h2.title-ency {
     margin-bottom: 15px;
 }
 
-.popup-event-description{
+.popup-event-info p {
+    font-family: "Athelas", sans-serif;
+    font-weight: normal;
+    color: #000000;
+    font-size: 22px;
     margin-bottom: 15px;
     line-height: 30px;
 }
