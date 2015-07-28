@@ -394,6 +394,31 @@ header {
     background-position-y: -120px;
 }
 
+.catalog-type-item .bottle-hare-icon::before {
+    background-position-y: -160px;
+}
+
+.catalog-type-item .flower-icon::before {
+    background-position-y: -200px;
+}
+
+.catalog-type-item .hand-icon::before {
+    background-position-y: -240px;
+}
+
+.catalog-type-item .boots-icon::before {
+    background-position-y: -280px;
+}
+
+.catalog-type-item .bottle-pre-efir-icon::before {
+    background-position-y: -320px;
+}
+
+.catalog-type-item .bottle-pre-care-icon::before {
+    background-position-y: -360px;
+}
+
+
 /* index page content */
 
 main {
