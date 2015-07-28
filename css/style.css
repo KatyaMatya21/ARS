@@ -4442,7 +4442,7 @@ main h2.title-ency {
 
 .popup-event-slider{
     overflow: hidden;
-    height: 700px;
+    height: 745px;
     width: 450px;
     padding: 0;
 }
@@ -4560,8 +4560,6 @@ main h2.title-ency {
     background: -ms-linear-gradient(top,  rgba(255,255,255,1) 23%,rgba(255,255,255,0.97) 24%,rgba(255,255,255,0) 60%); /* IE10+ */
     background: linear-gradient(to bottom,  rgba(255,255,255,1) 23%,rgba(255,255,255,0.97) 24%,rgba(255,255,255,0) 60%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
-
-
 }
 
 .decor-popup-bottom{
@@ -4580,8 +4578,10 @@ main h2.title-ency {
     background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 64%); /* IE10+ */
     background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 64%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
 
-
+.another{
+    display: none;
 }
 
 /*---------------------------------------------------------------------------------------*/
