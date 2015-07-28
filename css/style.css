@@ -1821,6 +1821,7 @@ body{
 
     position: relative;
     top: -20px;
+    width: 190px;
 }
 
 .breadcrumbs-name:before{
@@ -1857,6 +1858,30 @@ body{
 
 .breadcrumbs-menu-after ul li a .keramic{
     background-position-y: -480px;
+}
+
+.breadcrumbs-menu-after ul li a .care-bottle{
+    background-position-y: -640px;
+}
+
+.breadcrumbs-menu-after ul li a .flower-care{
+    background-position-y: -800px;
+}
+
+.breadcrumbs-menu-after ul li a .hand-care{
+    background-position-y: -960px;
+}
+
+.breadcrumbs-menu-after ul li a .spa-care{
+    background-position-y: -1120px;
+}
+
+.breadcrumbs-menu-after ul li a .care-bottle-premium{
+    background-position-y: -1280px;
+}
+
+.breadcrumbs-menu-after ul li a .bottle-hair-care-pre{
+    background-position-y: -1440px;
 }
 
 .breadcrumbs-menu-after ul li a:hover .breadcrumbs-icon{
