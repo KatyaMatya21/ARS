@@ -1690,6 +1690,32 @@ body{
     background-position-y: -120px;
 }
 
+.main-catalog-type-item .bottle-hare-icon::before {
+    background-position-y: -160px;
+}
+
+.main-catalog-type-item .flower-icon::before {
+    background-position-y: -200px;
+}
+
+.main-catalog-type-item .hand-icon::before {
+    background-position-y: -240px;
+}
+
+.main-catalog-type-item .boots-icon::before {
+    background-position-y: -280px;
+}
+
+.main-catalog-type-item .bottle-pre-efir-icon::before {
+    background-position-y: -320px;
+}
+
+.main-catalog-type-item .bottle-pre-care-icon::before {
+    background-position-y: -360px;
+}
+
+
+
 #footer-flower-plant {
     z-index: 1;
     position: absolute;
