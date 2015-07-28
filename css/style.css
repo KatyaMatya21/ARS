@@ -2691,9 +2691,6 @@ body{
     color: #717171;
     font-size: 20px;
     width: 90%;
-}
-
-.receipt-illustration .slider-products-description {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -2702,7 +2699,6 @@ body{
 .receipt-illustration .slider-products-description .item-name-ru{
     font-size: 17px;
     color: #717171;
-    text-transform: uppercase;
     text-transform: uppercase;
     margin: 0 0 5px;
 
@@ -5258,7 +5254,7 @@ main h2.title-ency {
 }
 
 .receipt-popup .receipt-popup-tube {
-    height: 100px;
+    height: 65px;
     background-color: white;
     width: 350px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
@@ -5271,11 +5267,105 @@ main h2.title-ency {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 0 10px 10px;
     width: 100%;
-    height: 300px;
+    height: 490px;
     position: relative;
     z-index: 10;
 }
 
 .receipt-content-page .receipt-type {
     border: 0;
+}
+
+
+.receipt-popup-content .slider-receipt-item{
+    overflow: hidden;
+    height: 470px;
+}
+
+.receipt-popup-content .slider-receipt-item ul{
+    margin: 0;
+    padding: 55px 0 0 0;
+    list-style: none;
+}
+
+.receipt-popup-content .slider-receipt-item ul li{
+   display: inline-block;
+    vertical-align: top;
+
+    width: 310px;
+    padding: 25px 25px;
+    background-color: #fff;
+
+    position: relative;
+}
+
+.receipt-popup-content .slider-fader{
+    top: 200px;
+}
+
+.receipt-popup-content .slider-receipt-item ul li a{
+    text-decoration: none;
+}
+
+.receipt-popup-content .slider-receipt-item ul li .slider-products-description{
+    text-align: center;
+    font-family: 'Athelas', sans-serif;
+    color: #717171;
+    font-size: 20px;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    margin-top: 10px;
+}
+
+.receipt-popup-content .slider-receipt-item ul li .slider-products-description .item-name-ru{
+    font-size: 17px;
+    color: #717171;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+
+    text-decoration: none;
+}
+
+.receipt-popup-content .slider-receipt-item ul li .slider-products-description .item-name-lat{
+    font-size: 19px;
+    color: #a4a4a3;
+    width: 180px;
+    margin: 10px auto 0 auto;
+
+    text-decoration: none;
+}
+
+.receipt-popup-content .slider-receipt-item ul li .slider-products-description .item-attributes{
+    color: #a4a4a3;
+    text-decoration: none;
+}
+
+
+.receipt-popup-content .slider-receipt-item ul li .slider-products-image {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    height: 250px;
+}
+
+.receipt-popup-content .slider-receipt-item ul li .slider-products-image img{
+    height: 100%;
+    width: auto;
+}
+
+.receipt-popup-content .slider-receipt-item ul li::after{
+    content: '';
+    background: url("../img/plus.png")0 0 no-repeat;
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    right: 0px;
+    top: 40%;
+}
+
+.receipt-popup-content .slider-receipt-item ul li:last-child::after{
+    display: none;
 }
