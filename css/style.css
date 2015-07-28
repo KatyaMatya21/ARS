@@ -3514,20 +3514,25 @@ main h2.title-ency {
     background-size: 100%;
 }
 
-.production-services .bottle-icon::before {
+.production-services .cook-icon::before {
     background-position-y: 0px;
 }
 
-.production-services .sauna-icon::before {
+.production-services .work-rec-icon::before {
     background-position-y: -70px;
 }
 
-.production-services .present-icon::before {
+.production-services .print-icon::before {
     background-position-y: -140px;
 }
 
-.production-services .keramika-icon::before {
+.production-services .keep-icon::before {
     background-position-y: -210px;
+    top: -12px;
+}
+
+.production-services .ad-icon::before {
+    background-position-y: -280px;
     top: -12px;
 }
 
@@ -3621,7 +3626,7 @@ main h2.title-ency {
 
 .features-icon{
     background: url("../img/red-icons.png") 0 0 no-repeat;
-    width: 105px;
+    width: 120px;
     margin: 0 auto;
     height: 115px;
 }
@@ -3630,16 +3635,32 @@ main h2.title-ency {
     background-position-y: 0px;
 }
 
-.features ul li .bottle-feature{
+.features ul li .house-icon{
     background-position-y: -115px;
 }
 
-.features ul li .present-feature{
+.features ul li .controls-icon{
     background-position-y: -230px;
 }
 
-.features ul li .sauna-feature{
+.features ul li .price-icon{
     background-position-y: -345px;
+}
+
+.features ul li .evroplast-icon{
+    background-position-y: -460px;
+}
+
+.features ul li .car-icon{
+    background-position-y: -575px;
+}
+
+.features ul li .date-icon{
+    background-position-y: -690px;
+}
+
+.features ul li .voice-icon{
+    background-position-y: -805px;
 }
 
 .work{
@@ -4371,34 +4392,31 @@ main h2.title-ency {
     text-align: center;
 }
 
+
+.company-work-feature-slider ul li .beauty-icon{
+    background-position-y: -920px;
+}
+
+.company-work-feature-slider ul li .grow-up-icon{
+    background-position-y: -1035px;
+}
+
+.company-work-feature-slider ul li .curs-icon{
+    background-position-y: -1150px;
+}
+
+.company-work-feature-slider ul li .people-icon{
+    background-position-y: -1265px;
+}
+
+.company-work-feature-slider ul li .main-ars-icon{
+    background-position-y: -1380px;
+}
+
 .company-work-feature-slider .features-name{
     width: 200px;
-    margin-top: 10px;
 }
 
-
-.company-work-feature-slider ul li .features-icon{
-    background: url("../img/red-icons.png") 0 0 no-repeat;
-    width: 105px;
-    margin: 0 auto;
-    height: 115px;
-}
-
-.company-work-feature-slider ul li .keramika-feature{
-    background-position-y: 0px;
-}
-
-.company-work-feature-slider ul li .sauna-feature{
-    background-position-y: -115px;
-}
-
-.company-work-feature-slider ul li .present-feature{
-    background-position-y: -230px;
-}
-
-.company-work-feature-slider ul li .bottle-feature{
-    background-position-y: -345px;
-}
 
 .company-work-feature-slider .slider-fader{
     display: none;
