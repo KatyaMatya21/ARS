@@ -509,6 +509,21 @@
     /*---------------------------------------------------------------------------------------*/
     /* Энциклопедия Рецепты */
 
+    .receipt-content-page .list .receipt-list > ul > li {
+        width: 275px;
+    }
+    .receipt-content-page .list .receipt-list {
+            width: 316px;
+    }
+
+    .receipt-content-page .list, .receipt-popup {
+        width: 1020px;
+    }
+
+    .receipt-popup-tube, .receipt-popup-tube::after {
+        width: 100%;
+    }
+
 }
 
 

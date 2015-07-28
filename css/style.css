@@ -1821,7 +1821,8 @@ body{
 
     position: relative;
     top: -20px;
-    width: 190px;
+    /*width: 190px;*/
+    max-width: 231px;
 }
 
 .breadcrumbs-name:before{
@@ -5293,7 +5294,7 @@ main h2.title-ency {
 
 .receipt-list > ul > li {
     cursor: pointer;
-    /*position: relative;*/
+    position: relative;
 }
 
 .receipt-content-page .list {
@@ -5303,20 +5304,36 @@ main h2.title-ency {
 .receipt-list > ul > li.active {
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
 }
 
 .receipt-list > ul > li.active .receipt-popup {
     display: block;
 }
 
-.receipt-popup .receipt-popup-content::before {
+.receipt-list > ul > li.active .receipt-popup-tube {
+    display: block;
+}
+
+.receipt-list > ul > li.active .closer {
     content: "";
     position: absolute;
-    height: 6px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.receipt-popup-tube::after {
+    content: "";
+    position: absolute;
+    height: 17px;
     width: 350px;
     background-color: white;
     z-index: 11;
-    top: -6px;
+    bottom: -17px;
     left: 0;
 }
 
@@ -5336,15 +5353,20 @@ main h2.title-ency {
     width: 1112px;
     left: 0;
     z-index: 9;
+    margin-top: 50px;
+    /*transition: all 0.5s;*/
 }
 
-.receipt-popup .receipt-popup-tube {
-    height: 65px;
+.receipt-popup-tube {
+    height: 29px;
     background-color: white;
     width: 350px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-    position: relative;
-    z-index: 9;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    display: none;
+    margin-top: 10px;
 }
 
 .receipt-popup .receipt-popup-content {
@@ -5374,13 +5396,12 @@ main h2.title-ency {
 }
 
 .receipt-popup-content .slider-receipt-item ul li{
-   display: inline-block;
+    float: left;
+    display: block;
     vertical-align: top;
-
     width: 310px;
     padding: 25px 25px;
     background-color: #fff;
-
     position: relative;
 }
 
