@@ -396,6 +396,7 @@
 
     .type-oil{
         width: 955px;
+        margin: 50px auto 55px auto;
     }
 
     .type-oil-left{
@@ -455,6 +456,36 @@
         width: 275px;
     }
 
+    .block-type-efir-oil{
+        width: 960px;
+    }
+
+    .get-method{
+        margin: 20px 0 0 0;
+    }
+
+    .for-beauty > ul{
+        width: 900px;
+    }
+
+    .for-beauty > ul li{
+        max-width: 210px;
+        margin-right: 125px;
+    }
+
+    .benefit-lists{
+        width: 960px;
+    }
+
+    .benefit-block{
+        width: 244px;
+
+    }
+
+    .benefit-list{
+        width: 292px;
+        padding: 0 20px;
+    }
 
     /*---------------------------------------------------------------------------------------*/
     /* Энциклопедия Способы применения */
@@ -2536,7 +2567,7 @@
     .benefit-flower{
         z-index: 3;
         top: 435px;
-        right: -133px;
+        right: -170px;
         transform: rotate(-17deg);
     }
 
@@ -2602,6 +2633,7 @@
 
     .for-beauty{
         background: none;
+        margin: 20px 0 0 0;
     }
 
     .title-oil{
@@ -2622,6 +2654,117 @@
         width: auto;
     }
 
+    .half-width-description-left{
+        width: 260px;
+    }
+
+    .half-width-description-left .type-oil-description{
+        width: 260px;
+        float: none;
+        padding: 0;
+    }
+
+    .oil-picture-right{
+        float: none;
+    }
+
+    .oil-picture-left{
+        float: none;
+        margin: 0;
+        width: 285px;
+    }
+
+    .half-width-description-right .type-oil-description{
+        float: none;
+        width: 260px;
+    }
+
+    .block-type-efir-oil{
+        width: 290px;
+    }
+
+    .type-efir-oil{
+        float: none;
+        width: 290px;
+        margin-bottom: 25px;
+    }
+
+    .type-efir-description{
+        text-indent: 15px;
+        width: 240px;
+        padding: 0 0 0 20px;
+    }
+
+    .type-efir-description::before{
+        left: 20px;
+    }
+
+    .type-efir-oil::after{
+        width: 260px;
+        height: 1px;
+
+        right: 15px;
+        bottom: -13px;
+        top:auto;
+    }
+
+    .type-efir-name{
+        padding: 0 0 0 20px;
+        width: 253px;
+        margin-bottom: 10px;
+    }
+
+    .for-beauty > ul{
+        margin: 0 auto;
+        background: url("../img/benefit-frame.png") 0 0 no-repeat;
+        width: 240px;
+        height: 351px;
+        padding: 20px 30px 0 30px;
+        top: 0;
+    }
+
+    .for-beauty > ul li{
+        width: 225px;
+        margin: 0;
+        text-align: center;
+        background: url("../img/border.png") 0 0 no-repeat;
+    }
+
+    .for-beauty > ul li:first-child{
+        background: none;
+    }
+
+    .title-oil-efir{
+        padding: 20px 0;
+        margin: 0;
+        letter-spacing: 1px;
+    }
+
+
+    .benefit-lists{
+        width: 290px;
+        padding: 0 15px;
+    }
+
+    .benefit-list{
+        width: 260px;
+        padding: 0;
+    }
+
+    .benefit-block{
+        width: 218px;
+        background-color: #fff;
+        border: 1px solid #f0f0f0;
+        padding: 15px 20px;
+    }
+
+    .benefit-list:nth-child(2){
+        border: none;
+    }
+
+    .list-back{
+        display: block;
+    }
 
     /*---------------------------------------------------------------------------------------*/
     /* Энциклопедия Способы применения */

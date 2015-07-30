@@ -4813,7 +4813,7 @@ main h2.title-ency {
 }
 
 .get-method{
-    margin: 40px 0 0 0 ;
+    margin: 50px 0 0 0 ;
 }
 
 .title-oil{
@@ -4845,7 +4845,7 @@ main h2.title-ency {
 
 .for-beauty{
     background: url("../img/oil-frame.png") 0 top no-repeat;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .beauty-title{
@@ -4987,7 +4987,7 @@ main h2.title-ency {
 
 .block-type-efir-oil{
     width: 1025px;
-    margin: 35px auto 0 auto;
+    margin: 45px auto 0 auto;
 }
 
 .type-efir-oil{
@@ -5129,6 +5129,26 @@ main h2.title-ency {
 
 .benefit-list ul li{
     display: block;
+}
+
+.list-back{
+    display: none;
+
+    padding-left: 115px;
+    padding-bottom: 25px;
+    padding-top: 0;
+    margin-bottom: 20px;
+    background: url("../img/back-arrow.png") 80px 0px no-repeat;
+    cursor: pointer;
+}
+
+.list-back a{
+    font-family: 'Athelas', sans-serif;
+    font-size: 20px;
+    color: #ffa92f;
+    font-weight: 600;
+    border-bottom: 1px solid #fff7e1;
+    text-decoration: none;
 }
 
 
