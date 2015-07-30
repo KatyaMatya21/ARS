@@ -43,6 +43,47 @@ $(document).ready(function(){
 
     //--------------------------------------------------------------------------------------
 
+    function onMobileTabClick(e) {
+        // Функция вызывается при клике по табу (только в мобильной версии)
+
+            var targetTab = $(this).data('target'); // tab1
+            var tab = $('#'+targetTab); // #tab1
+
+            tab.addClass('benefit-list-active');
+
+            $('.for-beauty > ul').hide();
+            $('.block-before-beauty').hide();
+            $('.answers-title').hide();
+
+            $('.title-oil-efir-mobile').show();
+            window.documentSlider.slideTo(220);
+            window.updateDocumentHeight();
+
+            $('.list-back').show().unbind().bind('click',function(e){
+                $(this).hide();
+                $('.title-oil-efir-mobile').hide();
+                tab.removeClass('benefit-list-active');
+                $('.for-beauty > ul').show();
+                $('.block-before-beauty').show();
+                $('.answers-title').show();
+                window.updateDocumentHeight();
+            });
+
+
+            window.updateDocumentHeight();
+
+        e.preventDefault();
+
+    }
+
+    function bindTabCallbacks() {
+        $('.for-beauty > ul > li').bind('click', onMobileTabClick);
+    }
+
+    function unbindTabCallbacks() {
+        $('.for-beauty > ul > li').unbind();
+    }
+
     function onViewportResize() {
         var win = $(this);
 
@@ -64,8 +105,9 @@ $(document).ready(function(){
             window.mobileMidSlider.init();
             window.mobileMidSlider.activate( $('.active-breadcrumbs-menu-after') );
 
-            $('.active-tab-benefit .oil-blocks').masonry('destroy');
+            //$('.active-tab-benefit .oil-blocks').masonry('destroy');
             window.updateDocumentHeight();
+            bindTabCallbacks();
 
         }else{
 
@@ -81,6 +123,8 @@ $(document).ready(function(){
                 isOriginLeft: true,
                 gutter: 10
             });
+
+            unbindTabCallbacks();
 
         }
     }

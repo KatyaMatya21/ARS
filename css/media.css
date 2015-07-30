@@ -2802,6 +2802,7 @@
         padding: 20px 0;
         margin: 0;
         letter-spacing: 1px;
+        cursor: pointer;
     }
 
 
@@ -2813,6 +2814,11 @@
     .benefit-list{
         width: 260px;
         padding: 0;
+        display: none;
+    }
+
+    .benefit-list-active{
+        display: block;
     }
 
     .benefit-block{
@@ -2826,9 +2832,7 @@
         border: none;
     }
 
-    .list-back{
-        display: block;
-    }
+
 
     /*---------------------------------------------------------------------------------------*/
     /* Энциклопедия Способы применения */
