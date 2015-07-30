@@ -29,6 +29,8 @@ $(document).ready(function(){
             gutter: 10
         });
 
+        window.updateDocumentHeight();
+
     });
 
     var $mans = $('.active-tab-benefit .oil-blocks').masonry({

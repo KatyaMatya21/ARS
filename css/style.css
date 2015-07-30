@@ -4737,7 +4737,7 @@ main h2.title-ency {
 
 .type-oil-description{
     width: 888px;
-    margin: 0 auto 35px auto;
+    margin: 0 auto 20px auto;
 
     color:#5d5c67;
     font-family: 'Athelas', sans-serif;
@@ -4836,7 +4836,7 @@ main h2.title-ency {
     line-height: 30px;
 
     width: 888px;
-    margin: 0 auto 35px auto;
+    margin: 0 auto 30px auto;
 }
 
 .method span{
@@ -4845,7 +4845,7 @@ main h2.title-ency {
 
 .for-beauty{
     background: url("../img/oil-frame.png") 0 top no-repeat;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .beauty-title{
@@ -4947,6 +4947,190 @@ main h2.title-ency {
     left: 214px;
     transform: rotate(-172deg);
 }
+
+.oil-picture-right{
+    background: url("../img/benefit-fruit.png") 0 0 no-repeat;
+    width: 308px;
+    height: 169px;
+    float: right;
+}
+
+.half-width-description-left{
+    width: 888px;
+    margin: 0 auto;
+}
+
+.half-width-description-left .type-oil-description{
+    width: 550px;
+    margin: 0;
+    float: left;
+}
+
+.half-width-description-right{
+    width: 888px;
+    margin: 0 auto;
+}
+
+.half-width-description-right .type-oil-description{
+    width: 555px;
+    margin: 0;
+    float: right;
+}
+
+.oil-picture-left{
+    background: url("../img/benefit-fruit-flower.png") 0 0 no-repeat;
+    width: 295px;
+    height: 186px;
+    float: left;
+    margin-top: 45px;
+}
+
+.block-type-efir-oil{
+    width: 1025px;
+    margin: 35px auto 0 auto;
+}
+
+.type-efir-oil{
+    position: relative;
+    float: left;
+    width: 33%;
+}
+
+.type-efir-name{
+    text-transform: uppercase;
+    color: #5d5c67;
+    font-family: "Athelas", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: left;
+    padding: 0 0 0 30px;
+    margin-bottom: 15px;
+}
+
+.type-efir-description{
+    position: relative;
+    color: #5d5c67;
+    font-family: "Athelas", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 30px;
+    text-indent: 18px;
+
+    width: 280px;
+
+    padding: 0 0 0 30px;
+    margin-bottom: 15px;
+}
+
+.type-efir-description::before{
+    content: '';
+    display: block;
+    width: 12px;
+    height: 1px;
+    position: absolute;
+    background-color: #f44677;
+    top: 15px;
+    left: 30px;
+}
+
+.type-efir-oil::after{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 150px;
+    position: absolute;
+    background-color: #e5e5e5;
+    top: 60px;
+    right: 0;
+}
+
+.type-efir-oil:last-child::after{
+    display: none;
+}
+
+.title-oil-efir{
+    color: #f44677;
+    font-family: "Athelas", sans-serif;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 30px;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.for-beauty > ul{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    width: 1080px;
+    position: relative;
+    top: -15px;
+}
+
+.for-beauty > ul li{
+    display: inline-block;
+    vertical-align: top;
+
+    margin-right: 70px;
+    max-width: 320px;
+    background-color: #fff;
+}
+
+.for-beauty ul li:nth-child(2){
+    width: 300px;
+}
+
+.for-beauty ul li:last-child{
+    margin: 0;
+    width: 250px;
+}
+
+.benefit-block{
+    margin: 0 0 10px 0;
+    background-color: #fafafa;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px 25px;
+}
+
+.benefit-lists{
+    margin: 0 auto;
+    width: 1100px;
+}
+
+.benefit-list{
+    width: 350px;
+    float: left;
+    padding: 0 10px;
+}
+
+.benefit-list:first-child{
+    padding-left: 0;
+}
+
+.benefit-list:last-child{
+    padding-right: 0;
+}
+
+.benefit-list:nth-child(2){
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+}
+
+.benefit-list ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.benefit-list ul li{
+    display: block;
+}
+
 
 
 /*---------------------------------------------------------------------------------------*/
