@@ -18,6 +18,7 @@ $(document).ready(function(){
 
         $('.active-tab-question').removeClass('active-tab-question');
         $(this).addClass('active-tab-question');
+        updateDocumentHeight();
     });
 
     $('.question-switch').bind('click',function(){
