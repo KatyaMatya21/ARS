@@ -22,6 +22,7 @@ $(document).ready(function(){
     });
 
     $('.question-switch').bind('click',function(){
+        $('.question-switch-active').removeClass('question-switch-active');
         $(this).toggleClass('question-switch-active');
         updateDocumentHeight();
     });

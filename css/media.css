@@ -547,14 +547,14 @@
     /* Энциклопедия Рецепты */
 
     .receipt-content-page .list .receipt-list > ul > li {
-        width: 275px;
+        width: 265px;
     }
     .receipt-content-page .list .receipt-list {
-            width: 316px;
+            width: 312px;
     }
 
     .receipt-content-page .list, .receipt-popup {
-        width: 1020px;
+        width: 1000px;
     }
 
     .receipt-popup-tube, .receipt-popup-tube::after {
@@ -3131,5 +3131,10 @@
 
 }
 
+@media (max-height: 940px) {
+    #upBtn {
+        position: relative;
+    }
+}
 
 

@@ -713,12 +713,12 @@ main {
 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.11);
 
-    border-style: solid;
     border-width: 27px;
     -moz-border-image: url("../img/border-shadow-block.png") 27 repeat;
     -webkit-border-image: url("../img/border-shadow-block.png") 27 repeat;
     -o-border-image: url("../img/border-shadow-block.png") 27 repeat;
     border-image: url("../img/border-shadow-block.png") 27 fill repeat;
+    border-style: solid;
 }
 
 #slider-type-frame {
@@ -1083,6 +1083,7 @@ ul.slider-type-products {
     -webkit-border-image: url("../img/border-shadow-block.png") 45 repeat;
     -o-border-image: url("../img/border-shadow-block.png") 45 repeat;
     border-image: url("../img/border-shadow-block.png") 45 fill repeat;
+    border-style: solid;
 }
 
 li.promo-slide {
@@ -1405,6 +1406,12 @@ footer {
     font-size: 20px;
     font-weight: bold;
     line-height: 26px;
+    position: relative;
+    z-index: 999;
+}
+
+.footer-contacts .work-time + .footer-city {
+    margin-top: 10px;
 }
 
 .footer-contacts .contact-moscow {
@@ -2199,11 +2206,15 @@ body{
     display: block;
 }
 
+.slide-product li:hover .btn-look{
+    display: block !important;
+}
+
 .slide-product .btn-look{
     display: none;
 }
 
-.slide-product .btn-look a{
+.slide-product .btn-look a:last-child{
     text-decoration: none;
     font-family: "Athelas", sans-serif;
     font-size: 20px;
@@ -2391,6 +2402,7 @@ body{
 
     padding: 15px 20px;
     margin-bottom: 20px;
+    border-style: solid;
 }
 
 .item-info .info-more{
@@ -2538,7 +2550,7 @@ body{
     -moz-border-image: url("../img/border-round-big.png") 11 round round;
     -webkit-border-image: url("../img/border-round-big.png") 11 round round;
     -o-border-image: url("../img/border-round-big.png") 11 round round;
-
+    border-style: solid;
     border-width: 12px;
 }
 
@@ -2590,6 +2602,7 @@ body{
     -webkit-border-image: url("../img/border-round-big.png") 11 round round;
     -o-border-image:url("../img/border-round-big.png") 11 round round;
     border-width: 12px;
+    border-style: solid;
 }
 
 .part-useful ul {
@@ -3046,6 +3059,9 @@ body{
     border-top-right-radius: 15px;
 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+
+    position: relative;
+    z-index: 9999;
 }
 
 .map-menu-point{
@@ -5727,4 +5743,8 @@ main h2.title-ency {
 
 .receipt-popup-content .slider-receipt-item ul li:last-child::after{
     display: none;
+}
+
+.slide-product > a {
+    text-decoration: none;
 }
